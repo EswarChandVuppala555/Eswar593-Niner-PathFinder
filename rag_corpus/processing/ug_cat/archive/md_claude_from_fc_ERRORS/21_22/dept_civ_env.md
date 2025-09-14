@@ -1,0 +1,69 @@
+# Department of Civil and Environmental Engineering
+
+The [Department of Civil and Environmental Engineering](http://cee.uncc.edu/) provides outstanding educational and research experiences for students at all levels. Undergraduate students are exposed to technical content in all four civil engineering disciplines, including Environmental/Water Resources Engineering, Geotechnical Engineering, Structures, and Transportation, as part of the required curriculum. Students can also elect to earn a concentration in Land Development Engineering or Energy Infrastructure. Graduate students typically complete research and/or coursework focusing on one of these technical areas.
+
+Some of the challenges faced by Civil Engineers include: 1) the analysis, design, construction, and monitoring of foundation systems, buildings, bridges, dams, and other structures; 2) water resources for urban use, industry, and land reclamation; 3) systems for water transmission and river control; 4) water quality control systems for purification and waste treatment; 5) transportation systems including highways, mass transit, airports, railroads, pipelines, canals, and harbor facilities; 6) solutions for environmental problems including air pollution, ground pollution, water pollution, noise pollution, ecological effects, land development, and urban and regional planning; and 7) power infrastructure design and testing. Civil engineers must balance the need for constructed facilities with the need to protect natural and social environments while safeguarding the health, safety, and welfare of the public.
+
+### Degree Programs
+
+Civil and Environmental Engineering students can pursue the following degrees:
+
+- Bachelor of Science in Civil Engineering (B.S.C.E.)
+- Master of Science in Civil Engineering (M.S.C.E.)
+- Master of Science in Engineering (M.S.E.)
+- Doctor of Philosophy (Ph.D.) in Civil Engineering
+- Doctor of Philosophy (Ph.D.) in Infrastructure and Environmental Systems (INES)
+
+While the B.S.C.E. curriculum is designed to provide undergraduate students with a broad Civil and Environmental Engineering educational experience, undergraduate students may also select an optional concentration in two select areas:
+
+- Energy Infrastructure
+- Land Development Engineering
+
+Students should consider the graduate study options offered by the Department of Civil and Environmental Engineering as they plan their undergraduate program of study. While qualified students can begin working on a Master's degree at the completion of their B.S.C.E., students also have two options for an accelerated Master's degree:
+
+1. Incoming freshmen may elect to enroll in the 5-year program to obtain both a B.S. and an M.S. degree upon graduation.
+2. An early-entry M.S. degree option is available to students who meet the 3.2 GPA criterion. Qualified students who elect this option apply to the Graduate School as an undergraduate student, and are permitted to double-count 9 credit hours of graduate coursework towards upper-level undergraduate electives. For additional information about the graduate programs, see the [_UNC Charlotte Graduate Catalog_](https://catalog.uncc.edu/).
+
+### Program Educational Objectives
+
+The Bachelor of Science in Civil Engineering (BSCE) Program Educational Objectives (PEO) listed below describe the program's objectives for BSCE graduates three to five years after they have completed the program.
+
+1. BSCE program graduates will be progressing successfully in their career by engaging in leadership positions in the Civil and Environmental Engineering profession or other career areas.
+2. BSCE program graduates will be demonstrating integrity and ethical behavior in all professional activities. Graduates will further demonstrate professionalism by nearing/obtaining professional licensure as appropriate for their chosen career, and by actively participating in professional activities.
+3. BSCE program graduates will be demonstrating their technical ability to solve problems and/or manage engineering solutions from conception through implementation.
+4. BSCE program graduates will be maintaining and expanding professional competencies and mastering emerging technologies by engaging in lifelong learning that includes graduate studies and professional education.
+5. BSCE program graduates will strive to incorporate global, societal, economic, and environmental impacts in their professional work, consistent with the principles of sustainable development.
+6. BSCE program graduates will be engaging and collaborating with the communities in which they live and work.
+
+### Accreditation
+
+The undergraduate Civil Engineering Program within the Department of Civil and Environmental Engineering at The University of North Carolina at Charlotte is accredited by the Engineering Accreditation Commission of ABET, [http://www.abet.org](http://www.abet.org/).
+
+### Student Outcomes
+
+The following student outcomes for the BSCE program support the program educational objectives. Attainment of these outcomes prepares graduates to enter the professional practice of engineering. Student outcomes include:
+
+1. An ability to identify, formulate, and solve complex engineering problems by applying principles of engineering, science, and mathematics;
+2. An ability to apply engineering design to produce solutions that meet specified needs with consideration of public health, safety, and welfare, as well as global, cultural, social, environmental, and economic factors;
+3. An ability to communicate effectively with a range of audiences;
+4. An ability to recognize ethical and professional responsibilities in engineering situations and make informed judgments, which must consider the impact of engineering solutions in global, economic, environmental, and societal contexts;
+5. An ability to function effectively on a team whose members together provide leadership, create a collaborative and inclusive environment, establish goals, plan tasks, and meet objectives;
+6. An ability to develop and conduct appropriate experimentation, analyze and interpret data, and use engineering judgment to draw conclusions; and
+7. An ability to acquire and apply new knowledge as needed, using appropriate learning strategies.
+
+### ASCE Program Criteria
+
+ABET requires that accredited programs meet program-specific criteria established by the American Society of Civil Engineers (ASCE). Specifically, the Civil Engineering program at UNC Charlotte must meet ASCE program-specific criteria related to: 1) Curriculum and 2) Faculty as outlined below:
+
+1. The curriculum must prepare graduates to apply knowledge of mathematics through differential equations, calculus-based physics, chemistry, and at least one additional area of basic science; apply probability and statistics to address uncertainty; analyze and solve problems in at least four technical areas appropriate to civil engineering; conduct experiments in at least two technical areas of civil engineering and analyze and interpret the resulting data; design a system, component, or process in at least two civil engineering contexts; include principles of sustainability in design; explain basic concepts in project management, business, public policy, and leadership; analyze issues in professional ethics; and explain the importance of professional licensure.
+2. The program must demonstrate that faculty teaching courses that are primarily design in content are qualified to teach the subject matter by virtue of professional licensure, or by education and design experience. The program must demonstrate that it is not critically dependent on one individual.
+
+### Programs
+
+**Majors**
+- [Civil Engineering, B.S.C.E.](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7545)
+- [Civil Engineering, Energy Infrastructure Concentration, B.S.C.E.](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7546)
+- [Civil Engineering, Land Development Engineering Concentration, B.S.C.E.](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719)
+
+**Early Entry Programs**
+- [Civil Engineering, M.S., Early Entry](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7678)

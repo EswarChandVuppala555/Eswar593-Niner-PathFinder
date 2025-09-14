@@ -1,0 +1,267 @@
+# Civil Engineering, Land Development Engineering Concentration, B.S.C.E.
+
+The [Bachelor of Science in Civil Engineering (B.S.C.E.)](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7545) with a Concentration in Land Development Engineering is intended for students interested in a specialized focus in land development engineering as it relates to civil engineering and infrastructure issues.
+
+Through careful course selection and scheduling, students can obtain the Concentration in Land Development Engineering within the required 120 credit hour B.S.C.E. curriculum. Students completing the requirements described in this program receive a special designation on their transcripts showing they have completed the Concentration in Land Development Engineering.
+
+## Admission Requirements
+
+### Freshmen
+Freshman admission is competitive. Based upon an overall evaluation of high school record with particular emphasis on advanced courses in math and science and SAT or ACT scores, freshmen may be admitted directly to an engineering major or as engineering undecided.
+
+- **Minimum GPA:** n/a
+- **Pre-Major/Prerequisite Courses:** Freshmen MUST present a pre-calculus equivalent course, a math course during the high school senior year (grade 12/13) or math intensive science course such as physics or chemistry if no math courses are available, with no grades below C in any math courses. Students with AP test scores of at least 3 on AP Calculus AB or BC or early college high school students who present transfer credit for calculus equivalent to [MATH 1241](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#tt8802) or higher are exempted from having a math course in the senior year.
+- **Other:** Minimum SAT-Math score of 570 or ACT-Math subscore of 23
+- **Declaration of Major:** Students may declare the major at time of admission or at any time if in good standing with the College and University.
+
+### Transfers
+All transfer students will be admitted to the lower division of a department, and evaluation of transfer credits follows the North Carolina articulation agreements. Transfers from an ABET-accredited engineering program who do not meet the GPA requirement may be admitted upon the recommendation of the chair of the major department.
+
+- **Minimum GPA:** 2.5 (3.0 for Mechanical Engineering)
+- **Pre-Major/Prerequisite Courses:** Calculus I course (with grade of C or above) equivalent to [MATH 1241](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#tt4131)
+- **Transferable Credit Hours:** 24
+
+## Academic Progression Requirements
+
+### Freshman Year Requirements
+All new freshmen, early college students, and transfer students with only one year semester at another institution are initially advised by a central office within the College of Engineering. Students must satisfy the following requirements in order to progress in the curriculum and matriculate to their major department.
+
+- Follow the advice and recommendations of their faculty advisors.
+- Follow all prerequisite, corequisite, and progression requirements of their program.
+- Earn at least a 2.250 GPA in the first semester.
+- Complete all non-elective courses in the Freshman year curriculum with grades of C or above.
+- Pass all courses within three attempts, including withdrawing from a course with a grade of W.
+- Complete the Freshman curriculum within three regular semesters, if starting in the required first semester mathematics course.
+- Earn a 2.500 cumulative GPA upon completion of the Freshman curriculum.
+
+### Sophomore through Senior Year Requirements
+- Maintain an overall GPA of 2.000 in the University.
+- Maintain a major cumulative GPA of 2.000 for all courses in the departmental curriculum. Failure to meet this requirement for two consecutive semesters will result in not being permitted to enroll in College of Engineering courses.
+- Take courses in the curriculum a maximum of two times to achieve a satisfactory grade, including withdrawing from the course with a grade of W.
+
+An undergraduate student who fails to satisfy one or more of the progression requirements stated above, but who nonetheless meets the conditions for continued enrollment in the University, will be ineligible to reenroll in the College of Engineering unless an appeal is accepted by the College of Engineering. If an appeal is accepted, requirements for continued enrollment appropriate to the individual situation are specified in a "Continuation Agreement" that is mutually agreed upon and signed by the student and his/her appropriate advisor.
+
+A student who has been suspended by the University must follow University guidelines for appeal. Readmission to the College of Engineering after a University suspension is not automatic. An application for readmission must be made by the student and approved by the College/department. Students who are readmitted by the College of Engineering after suspension by the University must meet requirements for continued enrollment appropriate to their individual situation. These requirements are specified in a "Continuation Agreement" that is mutually agreed upon and signed by the student and his/her appropriate advisor. The consequences of failure to meet the requirements of the agreement may be articulated in the agreement itself. However, if these consequences are not included in the agreement, failure to meet the requirements will automatically result in the student not being permitted to continue to enroll in College of Engineering courses.
+
+## Degree Requirements
+
+### General Education Courses (18-19 credit hours)
+
+For details on required LBST, UWRT, and Social Sciences courses, refer to the [General Education Program](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7755). Elective courses should be chosen to satisfy University General Education requirements, meet the objectives of a broad education consistent with the educational goals of the profession, and complement the student's overall educational plan. To avoid taking "extra" elective courses, students must select their elective courses carefully after consulting with their faculty advisor.
+
+### Foundation Courses (30 credit hours)
+
+#### Required Foundation Courses (27 credit hours)
+
+- [CHEM 1251 - General Chemistry I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CHEM 1251L - General Chemistry I Laboratory](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (1) *
+- [MATH 1241 - Calculus I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [MATH 1242 - Calculus II](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [MATH 2171 - Differential Equations](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [MATH 2241 - Calculus III](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [PHYS 2101 - Physics for Science and Engineering I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [PHYS 2101L - Physics for Science and Engineering I Laboratory](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (1) *
+- [STAT 3128 - Probability and Statistics for Engineers](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [CHEM 1252 - General Chemistry II](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- and [CHEM 1252L - General Chemistry II Laboratory](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (1)
+- OR
+- [PHYS 2102 - Physics for Science and Engineering II](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- and [PHYS 2102L - Physics for Science and Engineering II Laboratory](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (1)
+
+#### Elective Foundation Course (3 credit hours)
+
+*Select one of the following:*
+- [BIOL 1110 - Principles of Biology I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [BIOL 1115 - Principles of Biology II](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [BIOL 2120 - General Biology I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [BIOL 2259 - Fundamentals of Microbiology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [BIOL 2273 - Human Anatomy and Physiology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [BIOL 3111 - Cell Biology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [BIOL 4250 - Microbiology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [ESCI 1101 - Earth Sciences-Geography](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [GEOL 1200 - Physical Geology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [GEOL 2100 - The Violent Earth](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [GEOL 3190 - Environmental Geology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+
+### Major Courses (48 credit hours)
+
+- [ENGR 1201 - Introduction to Engineering Practices and Principles I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (2) *
+- [ENGR 1202 - Introduction to Engineering Practices and Principles II](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (2) *
+- [CEGR 2102 - Engineering Economic Analysis](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 2103 - Surveying and Technical Drawing](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 2154 - Design Project Lab](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (2) (O) *
+- [CEGR 3111 - Construction Engineering](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 3122 - Structural Analysis](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 3141 - Introduction to Environmental Engineering](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 3143 - Hydraulics and Hydrology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 3153 - Transportation Laboratory](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (2) (W)
+- [CEGR 3155 - Environmental Laboratory](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (2) (W)
+- [CEGR 3161 - Transportation Engineering I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 3201 - Systems and Design](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [CEGR 3255 - Structural Materials I Laboratory](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (2) (W) *
+- [CEGR 3258 - Geotechnical Laboratory](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (2) (W)
+- [CEGR 3278 - Geotechnical Engineering](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [ENGR 3295 - Multidisciplinary Professional Development](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (1)
+- [MEGR 2141 - Engineering Mechanics I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [MEGR 2144 - Introduction to Solid Mechanics](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+
+### Note:
+*A grade of C or above is required.
+
+### Elective Courses (24 credit hours)
+
+#### Civil Engineering Design Elective Courses (6 credit hours)
+
+*Select one course in at least two technical areas (Options):*
+
+##### Option 1: Environmental Engineering
+- [CEGR 4142 - Water Treatment Engineering](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 4147 - Stormwater Management](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 4242 - Wastewater Treatment Design](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+
+##### Option 2: Geotechnical Engineering
+- [CEGR 4278 - Geotechnical Engineering II](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 4264 - Landfill Design](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 4270 - Earth Pressures and Retaining Structures](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+
+##### Option 3: Structural Engineering
+- [CEGR 3221 - Structural Steel Design I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 3225 - Reinforced Concrete Design I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 4122 - Power Plant Design](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+
+##### Option 4: Transportation Engineering
+- [CEGR 4161 - Advanced Traffic Engineering](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 4162 - Transportation Planning](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 4185 - Geometric Design of Highways](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+- [CEGR 4262 - Traffic Engineering](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) *
+
+##### Note:
+*A grade of C or above is required.
+
+#### Mechanical/Electrical Engineering Elective Courses (3 credit hours)
+
+*Select one of the following:*
+- [ECGR 2161 - Basic Electrical Engineering I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [MEGR 3111 - Thermodynamics I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [MEGR 3121 - Dynamics Systems I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+
+#### Civil Engineering Restricted Elective Courses (3 credit hours)
+
+*Select one of the following (that hasn't already been taken):*
+- [CEGR 3221 - Structural Steel Design I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [CEGR 3225 - Reinforced Concrete Design I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+
+#### Civil Engineering Unrestricted Elective Courses (6 credit hours)
+
+*Select two from the following:*
+- CEGR 3000-3999
+- CEGR 4000-4999
+
+#### Technical Elective Courses (6 credit hours)
+
+Select two technical elective courses from the list below. Any course not appearing on this list requires written permission from the Undergraduate Program Director prior to registering for the course. Any non-listed courses must be at the 3000-level or above and must come from one of the departments listed below.
+
+##### Accounting
+- [ACCT 3330 - Managerial Accounting and the Decision Process](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+
+##### Biology
+- [BIOL 4144 - Advanced Ecology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (4) (W)
+- [BIOL 4250 - Microbiology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- BIOL 3000-4999
+
+##### Business Administration
+- [BLAW 3150 - Business Law I](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [BLAW 3250 - Business Law II](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [COMM 3160 - Business Communications](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) (O,W)
+- [CMET 4127 - Construction Law and Regulatory Issues](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [FINN 3120 - Financial Management](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [MKTG 3110 - Principles of Marketing](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+
+##### Chemistry
+- [CHEM 1252 - General Chemistry II](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- CHEM 2000-4999
+
+##### Computer Science
+- ITCS 3000-4999
+
+##### Earth Sciences
+- [ESCI 3180 - Environmental Impact Analysis](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [ESCI 4140 - Hydrologic Processes](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (4)
+- [GEOL 3130 - Structural Geology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (4)
+- [GEOL 3190 - Environmental Geology](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- GEOL 3000-4999
+
+##### Economics
+- [ECON 3125 - Managerial Economics](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [ECON 4150 - Urban and Regional Economics](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [ECON 4160 - Economics of Transportation](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [ECON 4171 - Economics of International Trade](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [ECON 4181 - Energy and Environmental Economics](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- ECON 3000-4999
+
+##### Engineering
+- CEGR 3000-4999
+- ECGR 3000-4999
+- MEGR 3000-4999
+- SEGR 3000-4999
+
+##### Geography
+- [GEOG 2120 - Geographic Information Systems: Survey of Applications and Techniques](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (4)
+- [GEOG 3100 - The City and Its Region](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [GEOG 3115 - Urban Transportation Problems](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) (W)
+- [GEOG 3150 - Manufacturing Geography](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [GEOG 3200 - Land Use Planning](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [GEOG 3210 - Regional Planning](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [GEOG 3215 - Environmental Planning](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3) (W)
+- [GEOG 4155 - Retail Location](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [GEOG 4160 - The Geography of Transportation Systems](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- GEOG 3000-4999
+
+##### Management Information Systems
+- INFO 3000-4999
+
+##### Mathematics
+- [MATH 2164 - Matrices and Linear Algebra](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [MATH 2242 - Calculus IV](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- MATH 3000-4999
+
+##### Physics
+- PHYS 3000-4999
+
+##### Operations Management
+- [OPER 3100 - Operations Management](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [OPER 3201 - Operations Planning and Control](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [OPER 3203 - Decision Modeling and Analysis](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [OPER 3204 - Management of Service and Project Operations](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [OPER 3206 - Quality Assurance and Management](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+
+##### Operations Research
+- [OPRS 3111 - Operations Research: Deterministic Models](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [OPRS 3113 - Operations Research: Probabilistic Models](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- OPRS 3000-4999
+
+##### Statistics
+- STAT 3000-4999
+
+## Concentration Requirements (12 credit hours)
+
+Of the 120 required credit hours in the BSCE degree, students opting for this concentration must complete a minimum of 12 credit hours that satisfy the following requirements:
+
+### Concentration Courses (6 credit hours)
+
+- [CEGR 3231 - Land Development Engineering Fundamentals](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [CEGR 4185 - Geometric Design of Highways](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+
+### Concentration Elective Courses (6 credit hours)
+
+*Select two of the following:*
+- [CEGR 3233 - Land Development Engineering Studio](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [CEGR 3235 - Land Development Engineering - Advanced Site Analysis](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [CEGR 4147 - Stormwater Management](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+- [CEGR 4247 - Sustainability](https://catalog.charlotte.edu/preview_program.php?catoid=29&poid=7719#) (3)
+
+## Degree Total = 120 Credit Hours
+
+## Grade Requirements
+
+A grade of C or above is required for select Major Courses, as noted above. Students must earn at least a 2.5 GPA in the selected Concentration Courses.

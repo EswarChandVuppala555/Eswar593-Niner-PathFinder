@@ -1,0 +1,70 @@
+## Run the App
+
+1. **Install software**
+
+    - [**Visual Studio Code**] integrated development enviornment - optional 
+
+    - [**Python Language**] 3.13 is used within the project but any recent version (3.11 or later) will probably work
+
+    - [**Git**](https://git-scm.com/downloads) version control software
+
+    - [**Docker Desktop**](https://git-scm.com/downloads) containerization software
+
+2. **Clone repository using Git** - From the command line, run:
+
+    ```bash
+    git clone https://github.com/neal-logan/niner-pathfinder
+    ```
+
+3. **Set up environmental variables** - In the project folder, create a file called **.env** according to .env.example with necessary secrets.
+
+4. **Run with Docker**
+
+    - Start Docker Desktop.  Then, from the command line in the project folder, run:
+
+    ```bash
+    docker compose -f docker-compose.yml --env-file .env up -d --build
+    ```
+
+5. **Chat!** - To interact with the Streamlit: Open a web browser and navigate to [**localhost:8501**](localhost:8501)
+
+6. **Shutdown/cleanup** - Remember to shut down and clean up by deleting your Docker Containers and Docker Images in Docker Desktop - otherwise it'll keep running in the background
+
+## Project Structure
+
+### Folders
+```
+├─ **chat_backend** - Files for the backend  
+├─ **chat_frontend_streamlit** - Files for working frontend using Streamlit
+├─ **chroma_loader** - Loads the Chroma vector database on startup, then stops
+├─ **docs** - Contains additional documentation including diagrams
+├─ **evaluation** - Contains evaluation results
+├─ **rag_corpus** - Contains all files (including metadata) comprising the retrieval-augmented generation (RAG) corpus, including originals documents, partially-processed copies, and fully-processed documents.
+ ├─ **/original** - contains original, unaltered files
+ ├─ **/preprocessing** - contains partially-processed files, including results of scraping
+ ├─ **/staged** - contains fully-processed documents staged for production.  NOTE: In production, the Dockerfiles copy this folder or certain contents to their respective /app/rag_corpus folders, omitting "staged".  The entire folder is provided to the backend and to the Chroma loader, while the frontend takes only enough information to populate dropdown menus.
+```
+### Docker-Compose Containers 
+
+The Docker deployment consists of four containers:
+
+- **chat_backend** - FastAPI interface that handles chat requests, coordinating planning, information retrieval, and generation tasks and providing responses to the frontend (or evaluation scripts)  
+
+- **chat_frontend_streamlit** - interactive application that sends chat requests to the backend and displays responses 
+
+- **chroma** - vector database that supports semantic search for retrieval-augmented generation
+
+- **chroma_loader** - loads the RAG corpus into the Chroma vector database
+
+## Development Target
+
+### System Diagram
+
+<img width="1000" alt="A system diagram covering the prompt and response processes" src="docs\system_diagram.png">
+
+### Chat App Interface
+
+<div align="center">
+<img width="1000" alt="interface layout" src="docs\interface_layout.svg">
+</div>
+

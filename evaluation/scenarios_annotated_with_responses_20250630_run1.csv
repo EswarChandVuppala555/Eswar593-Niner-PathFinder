@@ -1,0 +1,1625 @@
+index,set,topic,user_prompt,credit_hours,catalog_year,degree_major_concentration,should_retrieve_semantic_courses,should_retrieve_semantic_programs,should_request_semantic_support_resources,should_retrieve_current_major,should_retrieve_current_major_sample_schedule,should_retrieve_current_major_courses,should_ask_planned_student_schedule,should_ask_completed_courses,should_ask_student_interests,should_refer_to_class_schedule,should_refer_to_advisor,provide_generic_advice,generated_response,generation_response_grade,response_failure_reason,planning_time,retrieval_time,generation_time,planning_attempts,analytical_summary,information_requests,actually_requested_semantic_courses,actually_requested_semantic_programs,actually_requested_semantic_support_resources,actually_requested_current_major,actually_requested_current_major_sample_schedules,errors_semantic_courses,errors_semantic_programs,errors_semantic_support_resources,errors_current_major,errors_current_major_sample_schedules
+1,generic_1,Academic Planning & Course Selection,Which courses should I prioritize for next semester to stay on track for graduation?,Up to 29,2023-2024,"BSCPE Computer Engineering, Machine Learning Concentration",0,0,0,1,1,1,0,1,?,1,1,?,"Since you’re pursuing a B.S. in Computer Engineering with a Machine Learning concentration and currently have earned up to 29 credit hours, you're likely in the early stages of your degree. To stay on track for graduation, you should focus on completing foundational first- and second-year courses required for your major. Here are the next steps you should consider:
+
+### 1. **Complete Remaining Pre-Major Courses**
+   If you haven’t completed all Pre-Major courses (14 credit hours), prioritize these:
+   - **MATH 1241** - Calculus I (if not completed)
+   - **MATH 1242** - Calculus II
+   - **PHYS 2101** - Physics for Science and Engineering I
+   - **PHYS 2101L** - Physics Lab I
+   - **ENGR 1201** and **ENGR 1202** - Intro to Engineering courses
+
+   Completing these earns you prerequisites for major-level courses and ensures you're on track to meet program progression requirements.
+
+### 2. **Begin Related Courses**
+   Many of the following courses are prerequisites for upper-level Computer Engineering courses, so completing them early is critical:
+   - **MATH 2164** - Matrices and Linear Algebra
+   - **MATH 2171** - Differential Equations
+   - **STAT 3128** - Probability and Statistics for Engineers
+   - **PHYS 2102** - Physics for Science and Engineering II (and lab, **PHYS 2102L**)
+
+### 3. **Start Taking Early Major Courses**
+   Once pre-major courses are completed, shift your focus to the following foundational computer engineering courses:
+   - **ECGR 2103** - Computer Utilization in C++
+   - **ECGR 2104** - Computer Engineering Programming II
+   - **ECGR 2111** - Network Theory I
+   - **ECGR 2161** - Basic Electrical Engineering I  
+
+   These courses are prerequisites for higher-level Machine Learning classes, so the sooner you complete them, the earlier you can progress to core and concentration-specific courses.
+
+### 4. **Plan for General Education Requirements**
+   Don’t neglect general education courses. If you have room in your schedule, include courses that satisfy university general education requirements. These typically include introductory writing, humanities, and social science courses. Completing these alongside your major courses helps you avoid overloading in your later years.
+
+---
+
+It’s strongly recommended that you meet with your academic advisor to confirm which specific courses you should take based on your progress and verify prerequisites. Your advisor can also help you sequence the courses appropriately while balancing your workload. If you'd like, I can help you prepare questions to ask your advisor! Let me know.",1,,2.962875843,1.766778946,6.270181656,1,The user is seeking guidance on selecting courses for the upcoming semester in order to stay on track for graduation in their declared degree program: BSCPE Computer Engineering with a Machine Learning Concentration. The user has earned up to 29 credits and wishes to ensure their course selections align with their program requirements and progression toward graduation.,"<Specific_Request_Current_Major> </Specific_Request_Current_Major>  
+<Specific_Request_Current_Major_Sample_Schedules> </Specific_Request_Current_Major_Sample_Schedules>  
+<Semantic_Request_Courses> Semantic search for core and concentration-related courses in the BSCPE Computer Engineering program with a Machine Learning Concentration, for the 2023-2024 catalog year. Include details about prerequisites, co-requisites, and sequence recommendations for courses within the degree program. </Semantic_Request_Courses>",1,0,0,1,1,fp,tn,tn,tp,tp
+2,generic_1,Academic Planning & Course Selection,Are there any prerequisite chains I should be aware of that could delay my graduation?,Up to 29,2024-2025,BSME Mechanical Engineering,0,0,0,1,?,1,0,1,0,?,1,?,"Yes, there are several prerequisite chains in the **Mechanical Engineering B.S.M.E. program** that can impact your graduation timeline if not carefully planned. Mechanical Engineering is a structured and sequential program, meaning many courses depend on specific prerequisites. Here are key areas to watch for:
+
+### 1. **Mathematics Sequence**
+   - **MATH 1241 (Calculus I)** → **MATH 1242 (Calculus II)** → **MATH 2241 (Calculus III)** → **MATH 2171 (Differential Equations)**  
+   - These courses form the foundation of the engineering curriculum. Any delays in completing this sequence will affect your ability to take core engineering courses, such as **PHYS 2101**, **MEGR 2141**, and other upper-level courses.
+
+---
+
+### 2. **Physics Sequence**
+   - **PHYS 2101 (Physics for Science and Engineering I)** → **PHYS 2102 (Physics for Science and Engineering II)**  
+   - Both are prerequisites for several engineering courses like **ENGR 1202**, **MEGR 2141**, and **MEGR 3111 (Thermodynamics I)**. Completing **Calculus I** is required for **PHYS 2101**, so it's critical to start math early.
+
+---
+
+### 3. **Core Engineering Courses**
+   - Many sophomore-level courses have prerequisites, creating chains that need to be followed carefully:
+     - **ENGR 1201 → ENGR 1202 → MEGR 2141 → MEGR 2156**
+     - **MEGR 2141 (Engineering Mechanics I)** → **MEGR 2144 (Introduction to Solid Mechanics)** → **MEGR 3152 (Mechanics and Materials Lab)**  
+       *Missing one course in this chain can delay several others.*
+     - **MEGR 3111 (Thermodynamics I)** → **MEGR 3112 (Thermodynamics II)**  
+
+---
+
+### 4. **Laboratory and Design Courses**
+   - **MEGR 2156 (Design Projects I)** is a prerequisite for many upper-level design and lab courses:
+     - **MEGR 3156, MEGR 3255 (Senior Design I)**  
+   - You’ll need these senior design courses for graduation. Delaying **MEGR 2156** can push back your capstone sequence.
+
+---
+
+### 5. **Concentrations and Technical Electives**
+   - If you’re pursuing a concentration (e.g., Biomedical, Energy), specific prerequisites apply:
+     - Example: For **Senior Design I** courses like **MEGR 3275 (Biomedical Engineering Senior Design I)** or **MEGR 3455 (Energy Senior Design I)**, you'll need to have completed concentration-specific courses beforehand.
+   - Plan these electives and prerequisites early based on your concentration or career goals.
+
+---
+
+### 6. **Two-Attempt Rule**
+   - You only have **two attempts** per course (including withdrawals), and you must pass critical courses with a **C or better** (e.g., **MEGR 2141, MEGR 2156, MEGR 3171L**). Failing to meet this rule can also cause delays.
+
+---
+
+### Tips to Avoid Delays:
+   - Meet regularly with your **academic advisor** to ensure you’re staying on track.
+   - Use your degree audit to verify that you’ve met prerequisites and identify gaps early.
+   - Take advantage of summer sessions if you fall behind in math, physics, or foundational courses.
+   - Don’t overload yourself; falling behind in key prerequisites can affect your ability to progress through the major.
+
+Would you like to review your current course sequence or plan? I’d be happy to help clarify or suggest adjustments!",1,,3.088963032,0.649264812,9.29611063,1,"The student is asking about prerequisite chains in their BSME Mechanical Engineering program for the 2024-2025 catalog year. Specifically, they want to understand if there are any course sequences that could potentially delay their graduation if not taken in order or on time. They are concerned with course planning and ensuring efficient progress within their major.","<Specific_Request_Current_Major>  </Specific_Request_Current_Major>  
+<Specific_Request_Current_Major_Sample_Schedules>  </Specific_Request_Current_Major_Sample_Schedules>  
+<Semantic_Request_Courses> The student is seeking detailed information about prerequisite and corequisite chains in their BSME Mechanical Engineering program for the 2024-2025 catalog year. Focus on key foundational or sequential courses that could impact graduation timing, including their prerequisites and typical semester offerings. Mention critical sequences or bottlenecks. </Semantic_Request_Courses>",1,0,0,1,1,fp,tn,tn,tp,opt-yes
+3,generic_1,Academic Planning & Course Selection,What's the recommended sequence for my remaining core ME courses?,90 to 119,2021-2022,"BSEE Electrical Engineering, Power and Energy Systems Concentration",0,0,0,?,1,?,0,1,0,0,1,?,"Since you're a senior with 90-119 credit hours in the **BSEE Electrical Engineering, Power and Energy Systems Concentration** and operating under the 2021-2022 catalog, your remaining course sequence depends on your completed requirements and prerequisites for core courses. Here’s a general recommended guideline:
+
+### 1. **Check the Prerequisite Flow**  
+Your core Mechanical Engineering (ME) courses and senior-level electives typically follow a structured path to ensure prerequisite requirements are met. Examples:
+   - Courses like **Thermodynamics II (MEGR 3112)** have a prerequisite of Thermodynamics I.
+   - If a **Senior Design Capstone** is part of your program, ensure all its prerequisites are completed prior to enrolling.
+
+### 2. **Recommended Order**
+   Based on general course structures:
+   - **Thermodynamic/Heat Transfer Core:**
+     - Complete any remaining Thermodynamics courses (e.g., **MEGR 3112**).
+     - **Heat Transfer or Energy Concentration Required Courses** (these often build on Thermodynamics or similar).
+   - **Specialized Energy/Power Systems Courses:**
+     Take courses focusing on energy, electrical power systems, or renewables that align with your Power and Energy concentration (e.g., **ELET 3141, ETEL 3231**, or related).
+   - **Senior Design:**
+     - If your program includes a two-semester capstone design experience (e.g., **MEGR 3455 & MEGR 3456**), ensure those are planned in consecutive semesters during your remaining studies.
+
+### 3. **Technical Electives**
+   - Select technical electives that meet program requirements and align with your career interests (e.g., **MEGR 4094 – Special Topics in Energy Engineering** or **AEEE 4250 – Analysis of Renewable Energy Systems**).
+
+### 4. **Speak with Your Advisor**
+It’s crucial to verify your remaining requirements with your academic advisor or your degree audit. Course availability and prerequisites can vary, so your advisor will ensure you’re on track to complete all requirements in a timely manner.
+
+Would you like to explore possible electives or senior design options in more detail? Let me know!",1,,2.542449713,0.802118301,5.869545698,1,"The user is asking for the recommended course sequence for their remaining core Mechanical Engineering (ME) courses. Although they are in the BSEE Electrical Engineering program with a concentration in Power and Energy Systems, the mention of ""core ME courses"" might indicate either a miscommunication or a genuine need to address overlap or electives they need to fulfill. Their intent is to understand the sequencing of specific courses within their curriculum.","<Specific_Request_Current_Major_Sample_Schedules></Specific_Request_Current_Major_Sample_Schedules>
+<Semantic_Request_Courses>Identify core Mechanical Engineering courses or equivalent courses offered in the BSEE Electrical Engineering program, particularly those that might overlap or be relevant to the Power and Energy Systems concentration, such as thermodynamics, materials, or mechanics of materials. Include prerequisites and sequencing considerations. </Semantic_Request_Courses>",1,0,0,0,1,fp,tn,tn,opt-no,tp
+4,generic_1,Academic Planning & Course Selection,Should I take any courses over the summer to lighten my regular semester load?,Up to 29,2025-2026,BS Environmental Engineering,0,0,0,1,1,?,?,?,?,1,?,?,"Taking courses over the summer can be a great way to make your regular semester workload more manageable, especially since you're just starting your academic journey with up to 29 credit hours completed. Here are a few things to consider:
+
+### Potential Benefits:
+1. **Lighter Semester Workload:** Summer courses allow you to spread out your credit hours, which can help you focus more on tough classes during the fall/spring semesters.
+2. **Prerequisite Planning:** If there are courses required as prerequisites for upper-division or major-specific classes, summer is a great opportunity to knock them out.
+3. **Graduation Timeline:** Taking summer courses can help you stay on track (or even ahead) if you’re working toward graduating in four years.
+
+### Things to Keep in Mind:
+1. **Course Availability:** Check whether the courses you need are offered during the summer sessions. 
+2. **Difficulty of Courses:** If you're considering a challenging course, the accelerated pace of summer classes may be something to factor in.
+3. **Balance:** Summer is also a great time to rest and recharge. Think about what schedule works best for your academic and personal life balance.
+
+### What to Do Next:
+- Look at the suggested course sequence for your program (BS in Environmental Engineering). Are there classes in the 2025–2026 catalog that could fit into your summer plans or fulfill prerequisites for the next semester?
+- Speak with your academic advisor to map out which courses to prioritize over the summer, and ensure it aligns with your graduation plan.
+- If you’re looking at General Education courses, summer can be a great time for those as well!
+
+If you’d like more help reviewing your program’s course sequencing, feel free to ask!",1,,2.668789864,0.000280142,5.226233244,1,The user wants guidance on whether they should take summer courses to reduce their course load during regular semesters. The user's intent is related to planning and optimizing their academic schedule for their BS Environmental Engineering program within their catalog year (2025-2026). They are seeking advice specific to their program's requirements and course progression.,"<Specific_Request_Current_Major_Sample_Schedules></Specific_Request_Current_Major_Sample_Schedules>  
+<Semantic_Request_Support_Resources>Provide information about advising resources or personnel who can help students make decisions about summer courses and academic planning. Include terms like ""summer term advising,"" ""academic planning,"" and ""Environmental Engineering scheduling advice.""</Semantic_Request_Support_Resources>",0,0,1,0,1,tn,tn,fp,fn,tp
+5,generic_1,Academic Planning & Course Selection,Which electives would best complement my career interests?,Up to 29,2025-2026,BSME Mechanical Engineering,0,0,0,1,?,?,0,?,1,0,?,?,"That’s a great question! The best electives for you will depend on your specific career interests within mechanical engineering. Here are a few suggestions based on popular career paths within the field:
+
+---
+
+### **1. Automotive Engineering**
+If you’re interested in designing or working with vehicles, consider:
+- **MEGR 3210 - Automotive Power Plants**
+- **MEGR 3211 - Road Vehicle Dynamics**
+- **MEGR 3242 - Applied Vehicle Aerodynamics**
+- **MEGR 3244 - Tire Mechanics**
+- **MEGR 4240 - Advanced Automotive Powerplants**
+
+---
+
+### **2. Aerospace/Flight Engineering**
+For a focus on aircraft or aerospace systems, take:
+- **MEGR 3310 - Flight Mechanics**
+- **MEGR 4310 - Uncrewed Aerial Vehicles**
+- **MEGR 4311 - Aerospace Materials**
+- **MEGR 4312 - Aerospace Propulsion**
+
+---
+
+### **3. Energy and Sustainability**
+If you’re motivated by renewable energy or sustainable systems:
+- **MEGR 3261 - Sustainable Energy**
+- **MEGR 3262 - Turbomachinery**
+- **MEGR 3245 - Advanced Experimental Methods**  
+- **MEGR 3260 - Clean Coal Technology**
+
+---
+
+### **4. Biomedical Engineering**
+For careers in healthcare technologies, prosthetics, or fluidics:
+- **MEGR 3233 - Introduction to Biomaterials**
+- **MEGR 3234 - Introduction to Biodynamics**
+- **MEGR 3270 - Biomedical Fluidics: Microfluidics**
+- **MEGR 4271 - Orthopedic Biomechanics**
+- **MEGR 4274 - Bioelectronic Medicine**
+
+---
+
+### **5. Manufacturing and Robotics**
+For a career in robotics, automation, or advanced manufacturing:
+- **MEGR 4127 - Introduction to Robotics**
+- **MEGR 3231 - Advanced CAD/CAM**
+- **MEGR 3271 - Biomedical Manufacturing: 3D Biofabrication**
+- **MEGR 4280 - Advanced Manufacturing Processes**
+
+---
+
+### **6. Materials Science/Engineering**
+If you’re interested in working with advanced materials:
+- **MEGR 3162 - Mechanical Behavior and Strengthening of Solids**
+- **MEGR 3232 - Plastic Part Design**
+- **MEGR 4272 - Introduction to Bio-Polymers and Composites**
+
+---
+
+### **7. Research and Development**
+For students who may pursue graduate school or innovative projects:
+- **MEGR 3225 - Introduction to Finite Element Analysis**
+- **MEGR 4090/4091 - Special Topics in Mechanical or Aerospace Engineering**  
+- **MEGR 3282 - Statistical Process Control and Metrology**
+
+---
+
+### **What To Do Next**
+To make the most informed decision, I recommend:
+1. Reflecting on your long-term career aspirations.
+2. Speaking with your academic advisor. They can provide personalized guidance and may have suggestions based on industry demand or faculty expertise.
+3. Discussing options with professors or professionals in your field of interest to understand how electives align with career goals.
+
+If you’d like to explore additional career paths or need help narrowing down these options, feel free to share more details!",1,,1.768797398,0.000376463,7.176547289,1,"The user is asking for recommendations on electives that would best align with their career interests. They are seeking guidance to optimize their elective choices in line with their professional aspirations, likely within the context of their BSME Mechanical Engineering program.","<Specific_Request_Current_Major> </Specific_Request_Current_Major>  
+<Semantic_Request_Support_Resources> Suggest resources or advising services that assist students in identifying electives aligned with career interests within the BSME Mechanical Engineering program. Include any specific resources like career advisors or faculty mentors. </Semantic_Request_Support_Resources>",0,0,1,1,0,tn,tn,fp,tp,opt-no
+6,generic_1,Academic Planning & Course Selection,Are there any particularly challenging course combinations I should avoid taking together?,None yet!,2025-2026,BS Dual Degree Physics and Mechanical Engineering,0,0,0,1,?,1,?,?,0,0,1,?,"Great question! Balancing your course load is an important part of academic success—especially with a demanding program like the BS Dual Degree in Physics and Mechanical Engineering. While every student's experience may vary, there are some general strategies to avoid overwhelming combinations:
+
+### 1. **Avoid Multiple Heavy Lab Courses in the Same Semester**
+   Physics and engineering programs often include intensive lab courses. These labs typically demand significant time for preparation, attendance, and post-lab analysis, which can quickly dominate your schedule. Try to balance lab courses with lecture-based or less time-intensive classes.
+
+### 2. **Spread Out Math-Intensive Courses**
+   Both physics and mechanical engineering make use of advanced math, like calculus and differential equations. Taking multiple math-heavy courses in the same semester (e.g., Engineering Dynamics, Thermodynamics, and Electromagnetism) can be overwhelming. Try to distribute these courses across different semesters.
+
+### 3. **Watch for Capstone or Senior Design Overlap**
+   When you approach your final years, be mindful of senior-level courses like a capstone project or senior design in engineering. These courses require significant collaboration, long-term planning, and presentations, which can interfere with the rigorous demands of other high-level coursework.
+
+### 4. **Balance Theory with Application**
+   Courses in your program may focus differently on theoretical concepts (like Quantum Mechanics) versus applied skills (like CAD or Fluid Mechanics). Mixing these types can help keep your workload manageable and better rounded.
+
+### 5. **Consider General Education Timing**
+   Don’t overlook general education courses! While they may seem easier or unrelated to your major, bundling too many technical courses together and pushing general education requirements later isn’t always ideal. Plan to mix in general education courses for a change of pace.
+
+### Suggestions to Help Plan:
+   - **Review your program map:** If course sequences or sample plans are available, use them to help guide your semester schedules.
+   - **Meet with your advisor regularly:** Since your program spans two disciplines, your advisor can help ensure you're on track and not overscheduled in any one semester.
+   - **Check prerequisites early:** Some courses have prerequisites that need to be taken in specific order, so mapping this out early can prevent scheduling conflicts.
+
+If you have specific courses in mind, feel free to share them, and I can provide more advice!",1,,5.287035942,0.000228167,6.499635696,1,"The user is asking for guidance on course planning within the BS Dual Degree Physics and Mechanical Engineering program for the 2025-2026 catalog year. Specifically, they are inquiring about particularly challenging combinations of courses to avoid taking together, likely to better manage their workload and academic success.","<Specific_Request_Current_Major_Sample_Schedules></Specific_Request_Current_Major_Sample_Schedules><Semantic_Request_Support_Resources>Request information about advising resources and academic support to assist students in planning their course combinations effectively and managing workload. Relevant keywords include ""advising,"" ""academic support,"" and ""course planning.""</Semantic_Request_Support_Resources>",0,0,1,0,1,tn,tn,fp,fn,opt-yes
+7,generic_1,Academic Planning & Course Selection,"What's the typical credit load for students in my year, and is my planned load reasonable?",30 to 59,2022-2023,"BSME Mechanical Engineering, Motorsports Engineering Concentration",0,0,?,?,1,0,1,0,?,0,1,?,"The typical credit load for students in your year (second year of the **BSME Mechanical Engineering, Motorsports Engineering Concentration**) is usually around **15-18 credit hours per semester** to stay on track for graduation in four years. However, since you’ve earned 30-59 credits, you may need to check whether you’re following your program’s course sequence and meeting prerequisites.
+
+To determine if your planned load is reasonable:
+
+1. **Factor in Your Workload:** A standard course load of 15 credit hours is generally manageable if you don’t have significant time commitments outside school. Taking more than 15 may require careful time management.
+
+2. **Consider Prerequisites:** Ensure your planned courses align with the recommended degree flow (e.g., completing mathematics, physics, and engineering requirements in order).
+
+3. **Check Balance:** Balance courses between demanding ones (e.g., engineering or motorsports labs) and those with lighter workloads to prevent burnout.
+
+I recommend reviewing your flowchart or degree progression plan, which outlines the course sequence for your program. If you’re unsure, scheduling a meeting with your academic advisor can help confirm whether your planned credit load will keep you on track.
+
+Would you like guidance on balancing a specific set of courses you're planning to take? Let me know!",1,,1.578796148,0.001311064,3.525809765,1,"The user is asking about the typical credit load for students in their catalog year and whether their planned credit load aligns with program expectations. They are seeking guidance to ensure their course schedule is reasonable and manageable in the context of their academic trajectory in the BSME Mechanical Engineering, Motorsports Engineering Concentration.","<Specific_Request_Current_Major_Sample_Schedules>  
+</Specific_Request_Current_Major_Sample_Schedules>",0,0,0,0,1,tn,tn,opt-no,opt-no,tp
+8,generic_1,Academic Planning & Course Selection,Are there any new courses being offered that might be relevant to my interests?,150 or more,2022-2023,"BSEE Electrical Engineering, Machine Learning Concentration",0,0,0,?,0,?,0,0,?,1,?,?,"Based on your program (BSEE in Electrical Engineering with a Machine Learning concentration), the following courses listed in the catalog may align well with your interests. Several seem to focus on machine learning, artificial intelligence, and emerging technologies:
+
+1. **ECGR 4105 - Introduction to Machine Learning**  
+   This foundational course is likely already required for your concentration, but it's essential as it covers supervised/unsupervised learning, optimization, and deep learning.
+
+2. **ECGR 4127 - Machine Learning for the Internet of Things**  
+   Prerequisite: ECGR 4105. This course focuses on deploying machine learning models in IoT devices with limited resources, making it highly relevant to edge and embedded systems.
+
+3. **ECGR 4106 - Real-Time Machine Learning**  
+   Prerequisite: ECGR 3101 or ECGR 3111. Focuses on real-time inference using tools like PyTorch and TensorFlow, with an emphasis on practical applications of neural networks.
+
+4. **ECGR 4117 - AI for Robotics and Automation**  
+   Prerequisite: ECGR 3101 or ECGR 3111. Explores the use of machine learning for autonomous systems, including robotic applications, with connections to deep learning implementations.
+
+5. **ECGR 4116 - Artificial Intelligence for Biomedical Applications**  
+   Prerequisite: ECGR 4105. If you’re interested in healthcare applications, this course introduces AI concepts applied specifically to biomedical challenges, including medical image processing.
+
+6. **ECGR 4103 - Machine Vision, AI, and Image Processing**  
+   Prerequisite: ECGR 3111. Covers computer vision and machine learning techniques for image processing, with practical societal applications.
+
+These courses represent detailed explorations into machine learning and AI applications and may help deepen your knowledge while diversifying the real-world contexts in which you can apply these skills.
+
+Would you like to dive deeper into any of these courses, or should I assist in clarifying their prerequisites or degree applicability? Additionally, speaking with your academic advisor to determine how these may fit into your degree plan and career goals is highly recommended! ",1,,2.253627062,0.850618601,4.544624567,1,"The user is inquiring about new courses that could be relevant to their interests, which are likely aligned with their degree program: a Bachelor of Science in Electrical Engineering with a Machine Learning Concentration. The user may be seeking innovative or recently introduced courses specific to electrical engineering, machine learning, or related interdisciplinary fields.","<Semantic_Request_Courses>Search for recently introduced courses (or those flagged as new offerings) in the catalog that are relevant to Electrical Engineering, Machine Learning, or interdisciplinary fields overlapping with these domains. Include course names, codes, descriptions, and prerequisites. Keywords: ""new courses,"" ""Electrical Engineering,"" ""Machine Learning."" </Semantic_Request_Courses>",1,0,0,0,0,fp,tn,tn,opt-no,tn
+9,generic_1,Graduation Timeline & Requirements,"Based on my current progress, what's my realistic earliest graduation date?",30 to 59,2025-2026,"BSEE Electrical Engineering, Machine Learning Concentration",0,0,0,1,1,1,1,1,0,0,1,?,"To estimate your earliest graduation date, we need to consider a few factors:
+
+1. **Credit Hours Remaining:**  
+   The Bachelor of Science in Electrical Engineering (BSEE) typically requires **120 credit hours** to graduate (though confirm this based on your program’s specific requirements for your catalog year). Since you’ve earned between **30 to 59 credits**, let’s assume you have approximately **61 to 90 credits** remaining.
+
+2. **Course Load Per Semester:**  
+   If you’re taking a **full-time course load** of 15 credit hours per semester (a common load to graduate in a timely manner), you could potentially complete roughly **30 credit hours per academic year (fall + spring)**. Summer courses could allow you to complete even more.
+
+3. **Prerequisite Chains and Course Offerings:**  
+   Engineering programs are typically structured with prerequisite chains, meaning some courses must be taken in sequence. Additionally, not every course may be offered every term, so you’ll need to plan carefully. Your Machine Learning Concentration courses could also add specific requirements that may extend your timeline if not sequenced properly. 
+
+4. **Other Considerations:**  
+   If you’re participating in internships, co-ops, or research opportunities, these may impact the number of credits you can take each term, potentially delaying graduation. However, these can build professional experience that’s incredibly valuable.
+
+### Example Graduation Timeline:
+- If you need **90 credits** and maintain 15 credits per semester (plus summer courses), you could realistically graduate in **3 years** (around **Spring 2026**).
+- If you need closer to **61 credits**, a more aggressive plan with similar course loads could allow for graduation in **2 years** (around **Spring 2025**).
+
+---
+
+### Next Steps:
+- **Recommendation:** Meet with your academic advisor to create a detailed degree plan. They can confirm your remaining requirements and ensure you’re on track to meet prerequisites and graduation goals.  
+- If you haven’t already, consider summer courses or higher course loads to accelerate your timeline. Remember to balance your workload to maintain good academic and personal well-being!",0,error in retrieval,1.462603569,0.000324488,5.238623619,1,The user wants to determine their earliest realistic graduation date based on their current progress in the BSEE Electrical Engineering program with a Machine Learning Concentration. This involves understanding the remaining credit or course requirements specific to their catalog year (2025-2026) and how quickly those can be completed. Scheduling considerations such as required prerequisites and class availability may also be relevant to address the query.,"<Specific_Request_Current_Major/>
+<Specific_Request_Current_Major_Sample_Schedules/>",0,0,0,0,0,tn,tn,tn,fn,fn
+10,generic_1,Graduation Timeline & Requirements,Am I on track to meet all degree requirements by my target graduation date?,60 to 89,2022-2023,BSME Mechanical Engineering,0,0,0,1,1,?,1,1,0,1,1,?,"It’s great that you’re thinking about staying on track for graduation! Based on the details provided (your enrollment in the BSME program with 60–89 credit hours completed and the 2022-2023 catalog year), here's a general outline of how to assess your progress:
+
+1. **Credit Hours Total**:
+   - You need **120 credit hours** to graduate. 
+   - If you’ve earned around 60–89 credit hours, you’re about halfway through, which can be on track depending on your target graduation date and course load per semester.
+
+2. **Core Requirements**:
+   - Ensure you’ve completed (or are enrolled in) **General Education courses** (18–19 credit hours).
+   - Confirm completion of required **Foundation Courses** (24 credit hours), such as Calculus I–III, Physics with Lab, Chemistry with Lab, and Differential Equations.
+   - Stay on track with the **Major Courses**, which total 57 credit hours. By now, you should have likely taken prerequisite and sophomore-level mechanical engineering courses like MEGR 2141 (Engineering Mechanics I) and possibly some Junior-level coursework (e.g., Thermodynamics I).
+
+3. **Restricted Electives**:
+   - You’ll need 21 credit hours of electives:
+     - Design elective (3 hours) like MEGR 3216 or MEGR 3221.
+     - Science elective (3 hours) like BIOL 1110 or CHEM 1252.
+     - Math elective (3 hours) such as STAT 3128 or a combined option with an elective like MEGR 3282 + MATH 2164/3171.
+     - Technical electives (12 hours, with at least 3 MEGR courses).
+   - **If you haven’t started registering for electives** yet, consider when you’ll complete these requirements, as they are often taken in your Junior or Senior years.
+
+4. **Progression Requirements**:
+   - Ensure you’re maintaining minimum **GPA requirements**:
+     - Overall GPA of **2.0.**
+     - Major GPA of **2.0** in MEGR courses.
+   - All courses need to be passed in **two attempts, including withdrawals**.
+   - Double-check with your advisor that you’re meeting all sophomore/junior progression requirements for advancing within the program.
+
+5. **Plan Completion**:
+   - If you’re aiming to graduate in a certain number of semesters, divide the remaining credit hours into those terms. For example:
+     - If 60 hours remain and your target is four more semesters, plan for 15 credits per semester.
+     - Some courses (especially Major or Elective courses) require prerequisites, which may impact your timeline. Review degree maps or meet with your advisor to confirm the order of required courses.
+
+### Next Steps:
+To be absolutely sure that you’re on track:
+   - **Run a Degree Audit** through your university’s system (e.g., DegreeWorks, if your institution uses it).
+   - Schedule a meeting with your academic advisor. They’ll validate your plan, help arrange course sequencing for remaining requirements, and ensure you’re ready for graduation.
+
+Let me know if you want help understanding specific course requirements or planning your semesters! 😊",1,,1.927614927,0.000397205,7.896080732,1,"The user is asking for guidance on whether they are on track to meet all degree requirements for their BSME Mechanical Engineering program by their target graduation date. The user is likely seeking an evaluation of their progress in terms of credit hours, completed coursework, and remaining requirements within their catalog year (2022-2023).","<Specific_Request_Current_Major> Request information about the student's current degree program, including requirements, courses, and other relevant details, for the student's catalog year. </Specific_Request_Current_Major>
+<Specific_Request_Current_Major_Sample_Schedules> Request example schedules for the student's major and catalog year.  Request this when the user prompt is about scheduling courses or planning a semester or to understand how the program usually flows. </Specific_Request_Current_Major_Sample_Schedules>",0,0,0,1,1,tn,tn,tn,tp,tp
+11,generic_1,Graduation Timeline & Requirements,Are there any hidden requirements or often-overlooked graduation criteria I should know about?,90 to 119,2022-2023,"BSSE Systems Engineering, Energy Systems Concentration",0,0,0,1,1,1,?,?,0,1,1,?,"Great question! It’s always a good idea to ensure you’re on top of everything, especially as you get closer to graduation. While the major requirements for the **Systems Engineering, Energy Systems Concentration (B.S.S.E.)** are generally clear, here are some often-overlooked or ""hidden"" requirements to keep in mind:
+
+### 1. **Minimum GPA Requirements**
+   - **Overall GPA**: You must maintain a **minimum 2.0 cumulative GPA** at the university level.
+   - **Major GPA**: A **minimum major GPA of 2.0** (all courses in the departmental curriculum) is also required. Be careful not to slip below this threshold for more than one semester, as failure to meet this for two consecutive semesters may prevent you from enrolling in College of Engineering courses.
+
+### 2. **Course Attempts**
+   - You can only attempt each course **twice**. This includes withdrawing from a course with a grade of W. Failing to pass a required course within two attempts may lead to delays and require you to consult with your advisor for alternative solutions.
+   - You’re also limited to **three attempts** to pass all courses in the freshman curriculum.
+
+### 3. **General Education Overlap**
+   - Some courses satisfy both General Education and major requirements (e.g., ECON 2101/2102, CHEM 1251/1251L, PHYS 2101/2101L, etc.). While these count toward fulfilling multiple areas, it’s easy to overlook these overlaps or think they only fulfill one requirement. Double-check your DegreeWorks to see how these apply.
+
+### 4. **Physical Science Elective**
+   - A 3-credit-hour **Physical Science Elective** is required (e.g., BIOL 1110, GEOL 1200, etc.), but students sometimes overlook it when focusing on engineering-specific coursework. Ensure this requirement is fulfilled.
+
+### 5. **General Education Writing and Oral Goals**
+   - You need to complete all **writing intensive (W)** and **oral communication (O)** course requirements, which are typically embedded in specific major courses (e.g., SEGR 3111, SEGR 3290, and SEGR 3291). Keep track of these to avoid scrambling at the last minute.
+
+### 6. **120 Credit Hours Total**
+   - A minimum of **120 credit hours** is required for graduation. While this should align with your program’s coursework, if you’ve ever changed majors or taken transfer/AP credits, some students find they’re short of this total due to courses that don’t apply toward degree requirements.
+
+### 7. **Technical Electives**
+   - You’re required to complete **9 credit hours of technical electives** (6 must be from the College of Engineering). If prerequisites or scheduling conflicts arise, it’s smart to plan these ahead with your advisor to ensure you meet the requirement.
+
+### 8. **Energy Systems Concentration**
+   - The concentration-specific electives require you to complete **12 credit hours** of coursework. Ensure you carefully track which electives you’ve taken and speak with your advisor to confirm all energy systems requirements are met.
+
+### 9. **Appeal Process for Progression Issues**
+   - If you run into issues meeting GPA or progression requirements, you may need to formally appeal to the College of Engineering. The **Continuation Agreement** is a strict contract tailored to help you stay on track, so make sure to address any academic struggles proactively with your advisor.
+
+---
+
+### Tips to Stay on Track
+To avoid surprises:
+- Regularly review your **DegreeWorks** or equivalent graduation tracking system.
+- Speak with your **advisor every semester** to confirm you’re meeting all requirements, especially toward the end of your program.
+- Take advantage of resources like tutoring or academic counseling for any challenging courses.
+- File your **graduation application** early to allow for a review of your progress and identify any missing components.
+
+You’re so close—keep pushing and don’t hesitate to reach out for guidance! Let me know if you need help with anything specific. 😊",1,,2.193270683,0.000494003,9.704432487,1,"The student is seeking information about any hidden, easily overlooked, or often-missed requirements needed to graduate. The student is in the 2022-2023 catalog year for the BSSE Systems Engineering program with a concentration in Energy Systems and has already earned between 90 and 119 credits.","<Specific_Request_Current_Major> </Specific_Request_Current_Major>  
+<Specific_Request_Current_Major_Sample_Schedules> </Specific_Request_Current_Major_Sample_Schedules>  
+<Semantic_Request_Support_Resources> A search for advising or institutional resources that outline degree audit processes, frequently missed graduation requirements (such as residency requirements, capstone projects, or minimum GPA policies), or policies tailored to the BSSE program or energy systems concentration. </Semantic_Request_Support_Resources>",0,0,1,1,1,tn,tn,fp,tp,tp
+12,generic_1,Graduation Timeline & Requirements,What happens if I need to repeat a course - how would that affect my timeline?,60 to 89,2023-2024,BS Dual Degree Physics and Computer Engineering,0,0,0,1,1,0,1,0,0,1,1,?,"If you need to repeat a course in your BS Dual Degree Physics and Computer Engineering program, it may affect your timeline depending on the following factors:
+
+### 1. **Course Availability and Prerequisites**  
+   - Many courses in your program have prerequisites and must be taken in sequence. For example, physics and engineering courses often build on foundational courses (e.g., PHYS 2102 or MATH 2241). If the course you need to repeat is a prerequisite for another, this could delay your progress until you successfully complete it. Additionally, some courses might only be offered in certain semesters (fall or spring), which could further extend the timeline.
+
+### 2. **Credit Hour Load**  
+   - Retaking a course means dedicating additional time to that course, which could limit your ability to take other classes. This might also affect your full-time enrollment status if you aren’t able to maintain at least 12 credit hours in a semester, which can have financial aid implications.
+
+### 3. **Two-Attempt Limit on Key Courses**  
+   - For admission and progression, key courses like PHYS 2101, PHYS 2102, and MATH 2241 can only be attempted twice to earn the required grade of C or better. If you have already used those two attempts, you may need to consult with your advisor about alternative solutions or how this could impact your ability to stay in the program.
+
+### 4. **GPA Considerations**  
+   - Repeating a course can have an impact on your GPA and overall progression in the program. You’ll need a minimum 2.0 cumulative GPA, a 2.0 average in your major courses, and no more than two attempts at most PHYS courses to successfully move forward.
+
+### Steps to Take:
+   - **Speak with Your Academic Advisor:** They can help you revise your academic plan, determine how the repeated course would fit into your schedule, and identify the specific impact on your graduation timeline.
+   - **Review Financial Aid Policies:** If you rely on financial aid, check with the Office of Financial Aid to understand how course repetition might affect your eligibility.
+   - **Think About Support Resources:** Consider using resources like tutoring, study groups, or supplemental instruction to ensure success when you retake the course.
+
+Would you like guidance on specific courses or additional resources?",1,,2.79516387,0.000905752,7.62284708,1,"The user is inquiring about the potential impact of needing to repeat a course on their academic timeline. They are specifically concerned about how this might affect their progress in their current degree program, the BS Dual Degree in Physics and Computer Engineering, for the 2023-2024 catalog year. This could involve additional time to complete prerequisites, delays in meeting program requirements, or changes to suggested course sequences.","<Specific_Request_Current_Major_Sample_Schedules></Specific_Request_Current_Major_Sample_Schedules>
+<Specific_Request_Current_Major></Specific_Request_Current_Major>
+<Semantic_Request_Support_Resources>Request information about academic advising or counseling services to help students assess the impact of retaking courses and plan their schedules effectively. Keywords: course repetition, schedule planning, academic timeline, advising.</Semantic_Request_Support_Resources>",0,0,1,1,1,tn,tn,fp,tp,tp
+13,generic_1,Graduation Timeline & Requirements,"Should I consider pursuing a minor, and how would that impact my graduation timeline?",30 to 59,2024-2025,BSCM Construction Management,?,1,0,1,1,?,1,1,?,?,1,?,"Pursuing a minor can be a great choice depending on your interests, goals, and how it aligns with your career plan. Here are some factors to consider, as well as how it might impact your graduation timeline:
+
+---
+
+### **Benefits of Pursuing a Minor**
+- **Enhanced Career Opportunities**: A minor, particularly in a complementary field, can make you more versatile and competitive in the job market. For example, Construction Management students often pursue minors in Business (such as Operations and Supply Chain Management) to strengthen their project management and organizational skills.
+  
+- **Personal Interests**: A minor allows you to dive deeper into a secondary interest that you’re passionate about.
+  
+- **Specialization**: The right minor can serve as an extra credential, preparing you for specific roles or industries (e.g., real estate development, urban planning, etc.).
+
+---
+
+### **Impact on Graduation Timeline**
+Adding a minor may extend your time to graduation, depending on several factors, including:
+1. **Overlap with Major Requirements**: Some minors have courses that double-count toward your General Education or major requirements. For example, coursework in the Business minor may already align with your Construction Management degree’s required business foundation courses.
+   
+2. **Credit Hour Load**: If you’re taking a full course load (12-15 credits per semester) and can incorporate minor courses into your schedule without adding extra semesters, your timeline should stay on track. If it requires additional semesters, that may increase tuition costs and delay entry into the workforce.
+
+3. **Remaining Coursework**: If you’re already halfway done with your degree (30-59 credits completed), it’s essential to consult with your advisor to determine how many credits for the minor can fit into your remaining plan of study.
+
+---
+
+### **Steps to Take**
+1. **Select a Minor That Aligns with Your Goals:** For Construction Management majors, a **Business, Operations, and Supply Chain Management minor** is directly relevant. Other options, such as Geographic Information Systems (GIS) or Environmental Planning, might also complement your studies.
+   
+2. **Meet With Your Advisor**: Your advisor can help you:
+   - Evaluate which courses you’ve already taken that could count toward a minor.
+   - Formulate a plan to fit minor requirements into your current graduation timeline.
+
+3. **Review the Requirements**: Check the specific course requirements for the minor and compare them with courses already required for your major.
+
+---
+
+### **Recommendation**
+Declaring a minor is a strategic move if it aligns with your personal interests or career goals and doesn’t create too much extra burden. Whether or not it might delay your graduation depends on how many additional courses are required. To avoid surprises, I highly recommend meeting with your academic advisor to create a detailed degree plan.
+
+Let me know if you’d like help identifying minors that could fit with your Construction Management major!",1,,3.824884176,0.993259668,8.142708302,1,"The user is asking for guidance on whether they should pursue a minor and how adding a minor to their current BSCM (Construction Management) major would affect their graduation timeline. The user's intent is to better understand the potential benefits or drawbacks of adding a minor, particularly in relation to their required coursework and time to degree completion.","<Specific_Request_Current_Major></Specific_Request_Current_Major>
+<Semantic_Request_Programs>Provide information about commonly paired minors for a BSCM (Construction Management) major, and how they might complement the student's degree. Include relevant details about minor requirements, elective credits, and potential alignment with construction management.</Semantic_Request_Programs>
+<Specific_Request_Current_Major_Sample_Schedules></Specific_Request_Current_Major_Sample_Schedules>",0,1,0,1,1,opt-no,tp,tn,tp,tp
+14,generic_1,Graduation Timeline & Requirements,What's the process for degree audit and final graduation clearance?,30 to 59,2025-2026,"BSME Mechanical Engineering, Biomedical Engineering Concentration",0,0,0,0,0,0,0,0,0,0,1,?,"The process for degree audit and final graduation clearance involves several steps to ensure you meet all requirements for your BSME with a concentration in Biomedical Engineering. Here's a general outline:
+
+### 1. **Degree Audit Review**
+   - A degree audit is a detailed review of your academic record to confirm that all required coursework, GPA requirements, and other criteria for your degree program have been completed.
+   - To access your degree audit, log in to the **DegreeWorks system** through My UNC Charlotte. DegreeWorks will show your completed coursework, in-progress classes, and any remaining degree requirements.
+   - **Be sure to check:**
+     - You’ve completed all courses required for your program, including any Technical Electives for the Biomedical Engineering concentration.
+     - All required courses have a grade meeting minimum requirements (e.g., a grade of C or better for specific courses).
+     - You’ve met the **overall GPA** requirement of 3.0 for the concentration and any other program-specific GPA requirements.
+
+### 2. **Meet With Your Advisor**
+   - Schedule a meeting with your academic advisor to review your degree audit. They will confirm that you’re on track to graduate and help identify any issues.
+   - Discuss questions about elective requirements and make sure you've fulfilled all credit hour requirements for graduation (120 total hours for your degree program).
+
+### 3. **Apply for Graduation**
+   - Submit the **Application for Graduation** through Banner Self-Service by the deadline for your expected term of graduation. You’ll need to confirm or provide information like name spelling (for your diploma).
+   - Deadlines typically occur early in the semester you plan to graduate. Check the University Academic Calendar for exact dates.
+
+### 4. **Final Semester Requirements**
+   - Complete any outstanding courses, ensuring they meet the required grades.
+   - Work with faculty as needed to finalize your Biomedical Engineering Senior Design project (MEGR 3275 and MEGR 3276) with an approved biomedical-related focus.
+
+### 5. **Final Review by the Office of the Registrar**
+   - After grades are posted for your final semester, the Registrar’s Office will perform a final clearance review.
+   - They ensure all requirements—such as credit hours, GPA, and course requirements—are satisfied.
+
+### 6. **Graduation Confirmation**
+   - Once cleared, you’ll receive confirmation of your graduation status. Diplomas are typically mailed a few weeks after the semester ends.
+
+### Helpful Tips:
+- Stay in touch with your advisor and monitor deadlines closely.
+- Contact the **Office of the Registrar** for any questions about your degree audit or issues with graduation processing.
+
+Let me know if you'd like more help navigating any of these steps! I’d also encourage reaching out to your advisor to ensure a smooth process.",1,,2.490804195,0.000350237,6.747253656,1,"The user wants to understand the process for a degree audit and obtaining final graduation clearance. This is likely to involve academic procedures for confirming that all requirements for their BSME Mechanical Engineering degree with a Biomedical Engineering Concentration have been met. The user may want information on the timeline, required steps, and whom to contact to complete the process.","<Specific_Request_Current_Major>  </Specific_Request_Current_Major>  
+<Semantic_Request_Support_Resources> Provide information about academic advising, degree audits, and graduation clearance processes specific to the BSME Mechanical Engineering major with a catalog year of 2025-2026. Include details about required forms, relevant deadlines, and contacts for assistance. </Semantic_Request_Support_Resources>",0,0,1,1,0,tn,tn,fp,fp,tn
+15,generic_1,Research & Professional Development,Are there undergraduate research opportunities available in areas I'm interested in?,30 to 59,2024-2025,BS Dual Degree Physics and Mechanical Engineering,1,1,0,1,0,0,0,0,1,1,1,?,"Yes, undergraduate research opportunities are typically available for students interested in both physics and mechanical engineering! Participating in research is a fantastic way to deepen your knowledge, gain hands-on experience, and prepare for future academic or professional goals.
+
+To get started, here are some steps you can take:
+
+1. **Check with Faculty and Departments**: Reach out to professors in the Physics and Mechanical Engineering departments whose work aligns with your interests. Faculty often welcome undergraduate researchers into their labs or may know about ongoing projects you could join.
+
+2. **Research Centers and Labs**: Look into research centers or labs at UNC Charlotte that focus on topics related to your degree program. These could include areas like materials science, thermodynamics, electromagnetics, computational modeling, or robotics.
+
+3. **Office of Undergraduate Research**: Many universities, including UNC Charlotte, have offices or programs specifically designed to support undergraduate research. They may offer resources like research grants or opportunities to present your findings.
+
+4. **Talk to Your Academic Advisor**: Your academic advisor can help you identify research options that fit your interests and academic goals. They may also have insights into faculty-led projects or upcoming research opportunities specific to your catalog year.
+
+5. **Network with Upperclassmen**: Speaking with students who are further along in your program or field of interest can give you valuable insights into how they got involved in research and which professors or labs might be a good fit for you.
+
+Would you like help identifying specific topics or next steps? If so, feel free to let me know!",1,,1.960710526,0.000187874,4.273836136,1,"The user is inquiring about undergraduate research opportunities, specifically within their areas of interest. As the user's degree program is BS Dual Degree in Physics and Mechanical Engineering and their catalog year is 2024-2025, their interests likely align with fields pertaining to physics, mechanical engineering, or interdisciplinary applications. The user seeks guidance on available research opportunities related to these fields.","<Semantic_Request_Support_Resources> Search for undergraduate research resources, opportunities, or programs available for students in the Physics and Mechanical Engineering dual degree program, specifically focusing on fields related to physics, mechanical engineering, and interdisciplinary research. </Semantic_Request_Support_Resources>",0,0,1,0,0,fn,fn,fp,fn,tn
+16,generic_1,Research & Professional Development,How do I get involved in faculty research projects?,90 to 119,2021-2022,"BSSE Systems Engineering, Energy Systems Concentration",0,?,0,0,0,0,0,0,0,0,1,1,"Getting involved in faculty research projects is a fantastic way to gain hands-on experience, deepen your knowledge, and build connections in your field. Here’s how you can get started:
+
+1. **Explore Faculty Research Areas:**  
+   Look into the research interests of your department’s faculty. Faculty profiles, department websites, and recent publications are great resources to learn about their current projects. For BSSE Systems Engineering, look for professors involved in energy systems or related areas to your concentration.
+
+2. **Reach Out to Faculty:**  
+   Once you’ve identified a faculty member whose work interests you, send them a polite, professional email. Introduce yourself, mention your academic background (e.g., BSSE with an Energy Systems concentration), and explain why you're interested in their research. Share any relevant skills or coursework that could contribute to their work.
+
+3. **Utilize Department Resources:**  
+   Your department may have research opportunities posted online or announced through emails and newsletters. Stay updated on these!
+
+4. **Network in Class or Events:**  
+   Engage with your professors during office hours or after class. You can also attend departmental seminars, talks, or events to meet and connect with faculty informally.
+
+5. **Speak with Your Advisor:**  
+   Your academic advisor can often connect you with research opportunities and help guide your approach to reaching out to faculty.
+
+6. **Prepare for the Commitment:**  
+   Be ready to discuss how you can balance research work with your coursework, especially if you’re nearing graduation with 90+ credit hours. Faculty may want to know your availability and long-term interest in the project.
+
+Would you like suggestions on how to draft an email to a professor or more specific advice? Let me know!",1,,1.374090195,0.000200987,5.497221947,1,"The user is seeking guidance on how to get involved in faculty research projects. This is a general academic query related to participating in undergraduate research opportunities, potentially related to their major (BSSE Systems Engineering, Energy Systems Concentration).",<Semantic_Request_Support_Resources>Search for resources and guidance on undergraduate research opportunities and how to get involved in faculty-led research projects. Emphasize resources available to students in the Systems Engineering program or Energy Systems concentration. Include relevant advising or departmental contacts.</Semantic_Request_Support_Resources>,0,0,1,0,0,tn,opt-no,fp,tn,tn
+17,generic_1,Research & Professional Development,Should I consider doing an independent study or honors thesis?,30 to 59,2024-2025,BSSE Systems Engineering,0,0,0,1,1,1,0,0,1,1,1,1,"Whether to pursue an independent study or honors thesis largely depends on your academic goals, interests, and career aspirations. Here's an overview to help you decide:
+
+### **Reasons to Consider Independent Study or Honors Thesis**
+1. **Deepen Expertise**: Both options allow you to explore topics in systems engineering (or related areas) in greater depth beyond your standard coursework.
+2. **Develop Research Skills**: They provide an excellent opportunity to learn and apply research methodologies, analytical tools, and problem-solving strategies.
+3. **Work Closely with Faculty**: You'll collaborate closely with a faculty mentor, which can lead to valuable mentorship, deeper learning, and strong reference letters for jobs or graduate school.
+4. **Enhance Your Resume**: Completing an independent study or honors thesis highlights your initiative, critical thinking, and ability to complete substantial projects—qualities highly valued by employers and graduate programs.
+5. **Prepare for Graduate School**: These experiences are particularly beneficial if you're considering graduate studies or academic research, as they demonstrate your ability to conduct independent, advanced-level work.
+
+### **Independent Study vs. Honors Thesis**
+- **Independent Study**:  
+   - More flexible and may focus on a niche interest or skill you want to develop.
+   - Often involves fewer credit hours, so it may require less time commitment.
+   - May or may not involve a full research paper; it could focus on applied topics, technical projects, or other personalized learning goals.
+   - Might be a good starting point if you're testing your interest in research.
+
+- **Honors Thesis**:
+   - Involves producing a formal research or design project with the expectation of presenting your findings at the end.
+   - Typically more rigorous: includes hypothesis-driven research, data collection, and analysis.
+   - Often serves as the capstone requirement for graduating with honors.
+   - Best suited for students planning to go to graduate school or interested in a highly recognized academic project.
+
+### **What to Consider Before Making Your Decision**
+- **Interests and Goals**: Do you want to focus on a particular topic that isn't covered in depth in your curriculum? Do you see research or field-specific expertise as part of your future career?
+- **Time Commitment**: Make sure you have room in your schedule to dedicate to an intensive project. It may require a semester or more of work.
+- **GPA and Progression**: Honors projects may have specific GPA or course requirements. An independent study might be more flexible.
+- **Faculty Support**: Reach out to professors whose work aligns with your interests. Are they available to mentor you?
+- **Opportunities in Systems Engineering**: Consider how the project might connect to areas like operations research, decision analysis, or systems design.
+
+### **Next Steps**
+1. Speak with your academic advisor to discuss the feasibility of integrating an independent study or honors thesis into your BSSE program plan.
+2. Reach out to faculty members in the Systems Engineering department to explore possible topics and see if they’re open to mentoring you.
+3. Review specific academic requirements for honors theses or independent studies at UNC Charlotte.
+
+Ultimately, both options provide valuable experiences that can set you apart in your career or academic future. If you have a specific area of curiosity or long-term goals in research or advanced engineering roles, it's definitely worth pursuing!",1,,2.261143923,0.000425339,7.944612741,1,"The student is seeking guidance on whether to pursue an independent study or an honors thesis. This involves understanding the academic and professional benefits of these options, how they might align with their Systems Engineering (BSSE) major, and what resources or requirements are necessary to undertake either path within their degree program. Additionally, the student may benefit from determining if these options fit within their remaining credit hours and academic timeline.","<Specific_Request_Current_Major> </Specific_Request_Current_Major>
+<Semantic_Request_Support_Resources> Provide information about academic support resources related to independent study or honors thesis programs, including guidelines, faculty advisors, and eligibility criteria. Include specific mention of Systems Engineering (BSSE) programs, if applicable, and academic year 2024-2025. </Semantic_Request_Support_Resources>",0,0,1,1,0,tn,tn,fp,tp,fn
+18,generic_1,Research & Professional Development,What opportunities exist for presenting research at conferences?,30 to 59,2024-2025,BS Dual Degree Physics and Electrical Engineering,?,?,0,0,0,0,0,0,1,?,1,1,"Presenting research at conferences is a great way to gain experience, network, and showcase your work. Since you're pursuing a BS Dual Degree in Physics and Electrical Engineering, there are several options to consider:
+
+1. **Undergraduate Research Programs:** Many universities, including UNC Charlotte, encourage students to engage in research with faculty. Reach out to professors in your department for research opportunities as they often guide students on how to present their findings at local and national conferences.
+
+2. **University-Wide Conferences or Symposiums:** UNC Charlotte may host research conferences or undergraduate poster events where you can present your work in a supportive environment.
+
+3. **Discipline-Specific Conferences:**
+   - For Physics, organizations like the *American Physical Society (APS)* and *American Association of Physics Teachers (AAPT)* host conferences specifically for students.
+   - For Electrical Engineering, events through the *Institute of Electrical and Electronics Engineers (IEEE)* are great platforms that often have a student track.
+   - Participate in regional or national student research competitions and conferences as well.
+
+4. **Funding Support:** UNC Charlotte students can often apply for departmental or university-level funding to cover conference travel expenses. Check with your program advisor or the Office of Undergraduate Research for more information about these resources.
+
+5. **Faculty Mentorship:** A faculty member you are conducting research with may help identify appropriate conferences and assist in the application process for presenting.
+
+If you're interested in pursuing these opportunities, consider reaching out to your academic advisor or a faculty member in Physics or Electrical Engineering to discuss specific research initiatives and presentation options. Let me know if you'd like help connecting with the right resources!",1,,2.597090006,0.000261068,3.978043079,1,"The user is inquiring about opportunities to present their research at conferences. They are likely seeking information about relevant programs, events, or platforms that support student research presentation. This may include departmental, institutional, or external opportunities, as well as any related resources to prepare for such events.","<Semantic_Request_Support_Resources> Search for resources and opportunities for presenting research at conferences. Include information specifically about undergraduate research presentation opportunities, conference travel grants, research symposiums, or similar events. Keywords: research conferences, presentation opportunities, undergraduate research, travel grants. </Semantic_Request_Support_Resources>",0,0,1,0,0,opt-no,opt-no,fp,tn,tn
+19,generic_1,Research & Professional Development,Are there any engineering competitions or design teams I should join?,150 or more,2021-2022,BSCE Civil Engineering,?,1,1,0,0,0,0,0,1,0,?,1,"Yes! As a Civil Engineering student, participating in design teams or engineering competitions is a fantastic way to gain practical experience, work collaboratively, and enhance your resume. Here are some types of opportunities you may be interested in:
+
+1. **Concrete Canoe Competition** (American Society of Civil Engineers - ASCE): This is a popular competition where students design, build, and race a canoe made of concrete. It's a great way to apply structural and materials engineering knowledge.
+
+2. **Steel Bridge Competition** (ASCE): Teams design and construct a scale steel bridge within set specifications and test it for strength, stiffness, and cost-effectiveness. It’s a great opportunity to learn about structural design and fabrication.
+
+3. **Seismic Design Team**: Some universities offer student teams focused on building earthquake-resistant structures and competing in design simulations.
+
+4. **ASCE Student Chapter Activities**: Many universities have an ASCE student chapter with various competitions, workshops, and events tailored for civil engineering students.
+
+5. **Design-Build Competitions**: These competitions often focus on interdisciplinary collaboration to design, plan, and sometimes construct various infrastructure projects.
+
+6. **Sustainability Contests**: If you're interested in sustainable engineering, look for challenges like creating innovative green infrastructure or renewable energy systems.
+
+I recommend checking with UNC Charlotte’s student organizations, especially the ASCE student chapter or any other engineering societies offered. If you're unsure how to get involved, your academic advisor or engineering department may be able to provide more details!  
+
+Would you like help finding contact information for a relevant organization at UNC Charlotte?",1,,1.952703953,0.000207663,4.078725815,1,"The user is asking about extracurricular opportunities related to their Civil Engineering program, specifically engineering competitions or design teams they can join. They may be seeking to enhance their academic and professional experience and potentially gain hands-on or collaborative learning opportunities.","<Semantic_Request_Support_Resources> Search for engineering-related extracurricular activities, specifically competitions, design teams, or similar opportunities for Civil Engineering students. Include information on how to join these teams or participate in these competitions. Keywords: Civil Engineering, engineering design teams, competitions, extracurriculars, BSCE. </Semantic_Request_Support_Resources>",0,0,1,0,0,opt-no,fn,tp,tn,tn
+20,generic_1,Research & Professional Development,How important is research experience for my career goals?,120 to 149,2021-2022,"BSEE Electrical Engineering, Machine Learning Concentration",0,0,0,1,0,0,0,0,1,0,1,?,"Research experience can be incredibly valuable for your career goals, especially in a field like electrical engineering with a machine learning concentration. Its importance largely depends on the specific path you plan to take after graduation, so let me break it down:
+
+### If You Plan to Pursue Graduate Studies or Work in Research & Development (R&D):
+Research experience is almost essential if you’re considering graduate school, such as a master’s or Ph.D. program. Beyond strengthening your graduate applications, it teaches you skills in problem-solving, critical thinking, technical writing, and experimentation that will set you apart in academic or industrial R&D.
+
+Engaging in research allows you to:
+- Explore advanced topics beyond coursework.
+- Learn how to conduct literature reviews and stay updated on cutting-edge technologies.
+- Contribute to publications, helping you build a professional reputation.
+
+For graduate admissions, research can demonstrate your interest and competence in a specific area, like machine learning or artificial intelligence.
+
+### If You Are Planning for an Industry-Focused Career:
+Research experience is still valuable but not always required. It can:
+- Help you stand out in interviews, especially for roles that involve innovation, data analysis, or advanced problem-solving, such as machine learning engineering, AI development, or systems integration.
+- Demonstrate hands-on expertise with real-world challenges, analytical tools, or frameworks commonly used in the industry.
+- Complement experiences like internships or co-ops, giving you a mix of academic and applied skills.
+
+Even in industry positions, employers value applicants capable of self-directed work, intellectual curiosity, and innovative thinking—all strengths honed in a research environment.
+
+### Types of Research Experiences to Consider:
+1. **Undergraduate Research Programs:** Joining a professor's research group can give you direct involvement in ongoing projects. Reach out to faculty members whose work aligns with your interests.
+2. **Capstone or Senior Design Projects:** Your degree requires a senior design project—approaching it from a research-driven perspective can provide a stepping stone to deeper inquiry.
+3. **Internships with Research Components:** Some industry internships include research into new technologies, offering practical exposure and networking opportunities.
+4. **Machine Learning-Specific Research:** Seek out opportunities related to algorithm design, AI applications, or neural networks to align with your concentration.
+
+### Final Thoughts:
+Your immediate goal should be to clarify how research fits into the career you envision. If you’re unsure, consider meeting with your academic advisor or faculty members, as they can guide you to research opportunities that align with your goals. Additionally, ask about possible connections to industry or graduate programs based on their expertise. 
+
+Would you like help finding research opportunities, or details on reaching out to a professor?",1,,2.365162611,0.387244463,7.389751911,1,"The user is seeking guidance on the importance of research experience for career goals, possibly within the field of electrical engineering with a focus on machine learning, based on their degree program. This may involve understanding how research experience aligns with industry or academia career paths, and whether it enhances skills or employability in these fields.","<Semantic_Request_Support_Resources> Search for career advising resources, mentorship programs, or research opportunities tailored to electrical engineering students with a concentration in machine learning. Include resources or guidance on the benefits of research experience for career development in both industry and academia. </Semantic_Request_Support_Resources>
+<Semantic_Request_Programs> Search for programs or initiatives that support student research in electrical engineering and machine learning. Look for internships, fellowships, or research assistantships that align with the user's degree program and future goals. </Semantic_Request_Programs>",0,1,1,0,0,tn,fp,fp,fn,tn
+21,generic_1,Internships & Co-ops,"When should I start applying for internships, and what's the typical timeline?",120 to 149,2022-2023,"BSEE Electrical Engineering, Power and Energy Systems Concentration",0,0,0,?,0,0,0,?,?,0,?,1,"You’re in a great position to start considering internships! Here’s an overview of the typical internship timeline to help you:
+
+1. **When to Start Applying**:  
+   - Companies often post summer internship positions as early as **September to December** of the previous year.  
+   - For spring internships, applications usually open between **August and October**, while fall internship applications can open in the late **spring or early summer**.  
+
+   Since you’re further along in your degree (120+ credits), it’s an excellent time to focus on summer 2024 or your next opportunity—begin applying as early as possible to maximize your chances.
+
+2. **Steps to Take Early**:  
+   - **Fall Semester (Current Time)**: Research companies in the power and energy systems field. Update your resume and LinkedIn profile, prepare a cover letter, and attend career fairs and networking events. UNC Charlotte often has career fairs organized through the University Career Center.
+   - **Application Deadlines**: Some competitive programs have deadlines as early as **October or November**, so pay close attention to listings.
+
+3. **Typical Timelines**:  
+   - Applications typically close by **February to March** for summer internships, but many employers hire on a rolling basis, so don’t wait until deadlines.  
+   - Interviews are usually conducted shortly after application deadlines, with offers sent out during late winter or early spring.  
+
+4. **Key Resources**:  
+   - Use platforms like Handshake (if available at UNC Charlotte), LinkedIn, and company websites to find opportunities.  
+   - Be sure to check with your advisor or the Career Center to ensure that internships align with your degree requirements and career goals. Specific opportunities may be available to students in the Power and Energy Systems concentration.  
+
+Would you like help with resources for your resume or tips specific to finding a power-systems-related internship? Let me know!",1,,1.65354991,0.000157356,5.93279171,1,"The user is asking for guidance on when to start applying for internships and wants to understand the typical timeline for this process. This is a general request related to career planning and preparation focused on internships, likely relevant to their current degree program in electrical engineering with a power and energy systems concentration.","<Semantic_Request_Support_Resources>Perform a semantic search for career support resources, internship application guidelines, and timelines specific to electrical engineering students, especially those in the power and energy systems concentration. Include any advice related to preparing a timeline for applications. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,fp,opt-no,tn
+22,generic_1,Internships & Co-ops,Are there any companies that regularly recruit from our program?,150 or more,2021-2022,"BSME Mechanical Engineering, Energy Engineering Concentration",0,0,1,?,0,0,0,0,?,0,1,?,"While I don’t have a list of specific companies that recruit directly from the **BSME Mechanical Engineering program, Energy Engineering Concentration**, UNC Charlotte has strong ties with regional and national employers in the fields of energy, engineering, and technology. Many companies regularly recruit from the College of Engineering through career fairs, networking events, and partnerships with the university.
+
+It’s a good idea to:  
+1. **Check in with the Career Center and EPIC** (the Energy Production and Infrastructure Center at UNC Charlotte). They often have lists of companies that work with engineering students for internships, co-ops, and full-time opportunities.  
+2. **Participate in the Engineering Career Fair** (held each semester), where many employers come specifically to recruit College of Engineering students.  
+3. **Network with professors and advisors**, as they often maintain connections with companies in the energy and mechanical engineering industries.  
+
+Some industries that commonly recruit mechanical engineers include renewable energy, utilities, manufacturing, and consulting. Speak with your academic advisor or career counselor for personalized advice on targeting companies aligned with your career interests!",1,,1.588844538,0.000164986,3.841154575,1,"The user is asking about companies that regularly recruit students from their specific degree program, which is the BSME Mechanical Engineering program with a concentration in Energy Engineering. The intent appears to be related to career opportunities and employer connections specific to their field of study.","<Semantic_Request_Support_Resources>Search for career support resources that list companies or employers that regularly recruit mechanical engineering students, particularly those with a concentration in energy engineering. Include career services resources, career fairs, and employer partnerships that align with mechanical and energy engineering. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,opt-no,tn
+23,generic_1,Internships & Co-ops,How do I balance internship opportunities with my academic schedule?,60 to 89,2023-2024,"BSCPE Computer Engineering, Machine Learning Concentration",0,0,1,1,1,0,1,?,?,0,?,1,"Balancing internships with your academic schedule can be challenging but rewarding! Here are some tips to help you manage both effectively:
+
+### 1. **Plan Ahead**  
+   - Review your course schedule to identify heavier semesters (e.g., those with core or technical courses) and lighter semesters where an internship may be more manageable.  
+   - Look at course prerequisites and sequencing to ensure you're on track for graduation while accommodating an internship.  
+
+### 2. **Consider Part-Time Internships or Summer Opportunities**  
+   - Many companies offer part-time opportunities specifically designed for students. Working 10–20 hours a week during the semester can make it more manageable.  
+   - Full-time internships during the summer may allow you to focus solely on professional development without the demands of coursework.  
+
+### 3. **Leverage Electives and Credits**  
+   - If your degree program allows you to earn academic credit for an internship, it can help lighten your course load while gaining professional experience. Speak to your advisor to confirm if this is an option in your Machine Learning Concentration.  
+
+### 4. **Use Effective Time Management**  
+   - Use a planner or scheduling app to organize classes, assignment deadlines, and internship commitments.
+   - Prioritize tasks and avoid overcommitting. Internships are valuable, but your academics should remain a top priority.
+
+### 5. **Communicate with Your Employer and Professors**  
+   - Be transparent with your internship employer about your academic responsibilities. Many companies are flexible when they understand your position as a student.  
+   - If you foresee scheduling conflicts, notify professors early to explore possible solutions.
+
+### 6. **Discuss Options with Your Academic Advisor**  
+   - Your advisor can help you explore ways to structure your schedule, find internship-friendly semesters, and ensure that you're staying on track with both credits and graduation requirements.  
+
+Would you like help identifying internship opportunities or strategies for a specific semester? Let me know!",1,,2.613494635,0.000214577,4.831745625,1,The user is seeking advice on balancing internship opportunities with their academic schedule. They are looking for guidance on how to integrate internships into their current academic plan for the BSCPE Computer Engineering program with a Machine Learning Concentration. The user may also benefit from resources or tools that help with scheduling and planning or information about support services that assist with internships and academic balance.,"<Specific_Request_Current_Major_Sample_Schedules></Specific_Request_Current_Major_Sample_Schedules>
+<Semantic_Request_Support_Resources>Search for resources that assist with balancing internships and academics, such as career advisors, academic advisors, time management workshops, or tools for academic planning. Include terms like ""internship support,"" ""academic advising,"" and ""time management resources.""</Semantic_Request_Support_Resources>",0,0,1,0,1,tn,tn,tp,fn,tp
+24,generic_1,Internships & Co-ops,"Should I consider co-op programs, and how would they affect my graduation date?",None yet!,2025-2026,BSCPE Computer Engineering,0,1,1,?,?,0,1,1,?,1,1,1,"Co-op (Cooperative Education) programs can be a fantastic opportunity to gain hands-on work experience in a professional setting while earning your degree. They often involve alternating semesters of academic study and full-time paid work, which helps students build their resumes, make valuable industry connections, and apply classroom knowledge in real-world scenarios.
+
+**Benefits of a Co-op Program:**
+- Helps you develop technical and professional skills in the computer engineering field.
+- Offers valuable networking opportunities with potential employers.
+- Provides a clearer sense of what you enjoy (or don’t) in a work environment.
+- Can improve your employability after graduation.
+
+**How It Could Affect Graduation:**
+Participating in a co-op program may extend your graduation date by 1-2 semesters, as many students choose to take time off from full-time coursework during their co-op terms. However, some students work with their advisors to take online or part-time classes while on co-op to minimize delays. It depends on how flexible your schedule is and whether you can plan your remaining coursework efficiently.
+
+**Things to Consider:**
+- Co-ops can be competitive, so it's a good idea to start exploring the program and preparing your resume early.
+- Reach out to your **academic advisor** or your university's career center to learn about co-op opportunities and how they align with the BSCPE program requirements.
+- Discuss how a co-op would fit into your personalized academic plan to ensure it supports your goals.
+
+If you're interested, I recommend speaking with your advisor to discuss your graduation timeline and how to incorporate co-op opportunities effectively. They can help you decide if it's the right fit for you!",1,,2.213406563,0.000313997,4.208194256,1,"The user is asking for guidance on whether to consider co-op programs as part of their academic journey in the BSCPE Computer Engineering program. Specifically, the user wants to understand the impact of participating in a co-op program on their graduation timeline. The inquiry suggests interest in understanding both academic and professional implications, such as extended study duration and career preparation.","<Specific_Request_Current_Major_Sample_Schedules></Specific_Request_Current_Major_Sample_Schedules>
+<Semantic_Request_Support_Resources>Search for information about co-op programs, particularly for Computer Engineering students. Include details such as how co-ops align with degree requirements, influence degree timelines, and offer career preparation opportunities. Keywords: co-op programs, graduation timeline, BSCPE Computer Engineering.</Semantic_Request_Support_Resources>",0,0,1,0,1,tn,fn,tp,opt-no,opt-yes
+25,generic_1,Internships & Co-ops,What resources are available to help with resume writing and interview preparation?,30 to 59,2025-2026,BSCM Construction Management,0,0,1,0,0,0,0,0,?,0,?,1,"UNC Charlotte offers several great resources to support you with resume writing and interview preparation. Here are a few options to consider:
+
+1. **University Career Center (UCC):**
+   - The Career Center provides personalized one-on-one coaching for resume reviews, interview practice, and overall career guidance. Schedule an appointment through Hire-A-Niner.
+   - They also offer drop-in hours for quick resume critiques — no appointment needed.
+   - Practice interviews are available to help you refine your answers and build confidence.
+
+2. **Career Fairs and Workshops:**
+   - The UCC frequently hosts workshops on resume writing, interview strategies, and professional communication, as well as career fairs where you can network and practice skills in real-world settings.
+
+3. **Online Resources:**
+   - Hire-A-Niner, the UCC's career management platform, includes templates for resumes, cover letter tips, and self-assessment tools.
+   - Big Interview, available through the UCC, is an interactive platform where you can practice interviews in a simulated environment and get feedback.
+
+4. **Faculty and Advisors:**
+   - Your Construction Management program advisors and faculty might also share industry-specific resume and interview tips or recommend helpful resources to make you stand out.
+
+Would you like guidance on scheduling an appointment with the Career Center or accessing any of these tools? Let me know!",1,,1.806201935,0.00042963,3.964097261,1,"The student is asking about resources available to assist with resume writing and interview preparation. This inquiry focuses on support services related to career development, possibly offered by the university or program-specific resources within the BSCM Construction Management degree.","<Semantic_Request_Support_Resources> Search for resources related to resume writing, interview preparation, and general career development support. Include details about services such as career centers, workshops, one-on-one advising, or online tools relevant to these topics. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+26,generic_1,Academic Performance & Support,What study strategies work best for upper-level ME courses?,150 or more,2022-2023,BSME Mechanical Engineering,0,0,1,1,0,1,?,0,?,0,1,?,"Upper-level mechanical engineering (ME) courses are often conceptually challenging and require strong problem-solving skills. Here are some effective study strategies to help you succeed:
+
+### 1. **Stay Organized**
+   - Review course syllabi early and track deadlines for assignments, exams, and projects.
+   - Break your study schedule into smaller, manageable sessions to review concepts regularly rather than cramming.
+
+### 2. **Understand the Fundamentals**
+   - Advanced ME courses often build on foundational topics like thermodynamics, fluid mechanics, and statics.
+   - Revisit key principles when necessary to ensure you can confidently apply them in problem-solving.
+
+### 3. **Practice Problem-Solving**
+   - **Work on Homework Assignments Diligently**: Treat each problem as practice for exams. Focus on understanding the problem-solving process instead of just the final answer.
+   - **Use Textbook Problems**: Complete as many practice problems as possible, especially those not assigned in class. Some professors pull exam questions from the textbook or similar resources.
+
+### 4. **Collaborate**
+   - **Join Study Groups**: Discussing problems with peers often uncovers key insights and clarifies difficult concepts.
+   - **Utilize Office Hours**: Visit your professors or TAs frequently to ask questions and get feedback on your problem-solving approach.
+
+### 5. **Use Online and Campus Resources**
+   - Platforms like Khan Academy, YouTube, or engineering-specific forums can provide alternative explanations of tough topics.
+   - Utilize any tutoring or academic support offered by UNC Charlotte for engineering students.
+
+### 6. **Master MATLAB/Software Tools**
+   - Many ME courses involve computational tools like MATLAB, Solidworks, or similar software. Practice these outside of class so you’re confident applying them to coursework and projects.
+
+### 7. **Don’t Neglect Labs and Projects**
+   - Apply theoretical knowledge actively in lab settings and projects. Mechanisms you design or analyze during these assignments often reinforce class concepts.
+
+### 8. **Focus on Time Management**
+   - Many upper-level courses are project-heavy or involve multiple chapters of course material. Break large tasks into smaller milestones and prioritize them wisely.
+
+### 9. **Prepare for Exams Strategically**
+   - Make a formula sheet (if allowed) or concept maps to consolidate key equations and concepts.
+   - Revisit past exams, quizzes, or homework to understand the professor’s testing style.
+
+---
+
+If you’re struggling with specific courses, connecting with an academic advisor or engineering peer mentor can also help you strategize. Best of luck in your upper-level ME courses! You're almost at the finish line!",1,,2.128061771,0.000157833,6.352213144,1,"The user is asking for study strategies specifically tailored for upper-level Mechanical Engineering (ME) courses. This suggests a focus on effective approaches for understanding and mastering advanced engineering concepts, technical problem-solving, and possibly preparing for capstone or other senior-level requirements. The user's catalog year, program, and completed credit hours indicate they are likely nearing graduation.","<Semantic_Request_Support_Resources>Search for resources and strategies specific to studying upper-level Mechanical Engineering courses. This may include subject-specific study guides, peer study groups, tutoring options, and time management techniques for technical courses like thermodynamics, fluid mechanics, or capstone project preparation. Keywords: Mechanical Engineering, upper-level courses, study strategies, time management, senior-level curriculum.</Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,fn,tn
+27,generic_1,Academic Performance & Support,Are there tutoring services or supplemental instruction programs available?,60 to 89,2023-2024,"BSCE Civil Engineering, Land Development Engineering Concentration",0,0,1,0,0,0,0,0,0,0,1,0,"Yes! UNC Charlotte offers several tutoring and supplemental instruction (SI) resources to support your academic success. Here are some key options:
+
+1. **University Center for Academic Excellence (UCAE):**
+   - Provides free tutoring services for various subjects, including math, science, and engineering courses.
+   - Offers **Supplemental Instruction (SI)** sessions, which are peer-led study groups for courses that are typically challenging.
+
+2. **Engineering-Specific Support:**
+   - The College of Engineering may also offer specialized academic resources or tutoring for certain engineering courses. Check with your department or faculty for additional opportunities tailored to civil engineering students.
+
+3. **Writing Resources:**
+   - The Writing Resources Center (WRC) is available if you need help with reports, technical writing, or other written assignments.
+
+4. **Peer Assistance Groups:**
+   - Many student organizations, such as civil engineering societies (ASCE or others), may offer informal tutoring or study groups.
+
+I recommend contacting UCAE or visiting their website for details about schedules, available subjects, and how to sign up. It’s also a good idea to check with your academic advisor for any additional resources specific to your program. Let me know if you’d like help finding contact information!",1,,1.821221113,0.000117779,3.631849527,1,"The user is inquiring about tutoring services or supplemental instruction programs, specifically resources to support their academic success within their current degree program or more broadly at the institution.","<Semantic_Request_Support_Resources>Search for available tutoring services, supplemental instruction programs, and other academic support resources. Include options relevant to Civil Engineering or STEM fields, as well as any general academic support services offered by the institution. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+28,generic_1,Academic Performance & Support,How can I best prepare for the FE exam?,60 to 89,2022-2023,"BSCE Civil Engineering, Energy Infrastructure Concentration",0,0,1,?,0,0,0,0,0,0,1,1,"Great question! The Fundamentals of Engineering (FE) exam is an important step toward becoming a licensed professional engineer (PE). Here are some tips to help you prepare:
+
+### 1. **Understand the Exam Format**
+   - The FE exam is computer-based and includes 110 multiple-choice questions.
+   - For the Civil Engineering version, topics include mathematics, statics, mechanics of materials, fluid mechanics, environmental engineering, geotechnical engineering, and structural analysis, among others.
+
+### 2. **Review the NCEES FE Reference Handbook**
+   - The NCEES (National Council of Examiners for Engineering and Surveying) FE Reference Handbook is the only resource allowed during the exam. Familiarize yourself with it to save time during the test. You can download it for free from the NCEES website after registering.
+
+### 3. **Plan a Study Schedule**
+   - Create a study schedule based on the number of months or weeks you have to prepare. Dedicate time each week to cover specific topics or review weak areas.
+   - Many students aim for at least 2–4 months of preparation.
+
+### 4. **Use Prep Materials**
+   - Consider using FE preparation books, online courses, or study materials tailored to the specific Civil Engineering FE exam. Kaplan, PPI, and others offer useful resources. 
+   - Online practice exams are especially helpful for simulating the real test experience.
+
+### 5. **Take Practice Tests**
+   - Take timed practice exams to improve your speed and accuracy. Review your mistakes to identify areas that need improvement.
+
+### 6. **Focus on Key Topics**
+   - For the Civil track, pay special attention to:
+     - Statics and dynamics
+     - Structural analysis/design
+     - Hydraulics and hydrology
+     - Transportation engineering
+     - Engineering economics
+     - Remember, these topics often carry more weight on the exam.
+
+### 7. **Form Study Groups**
+   - Studying with peers can help you stay motivated and allow you to work on challenging topics together. 
+
+### 8. **Check Your Program Curriculum**
+   - Since you're studying Civil Engineering with an Energy Infrastructure concentration, focus on coursework that aligns with exam topics. If you feel rusty on certain content, professors or advisors can guide you on how to strengthen those areas.
+
+### 9. **Talk to Your Advisor**
+   - Some schools, including UNC Charlotte, may offer FE prep resources or workshops. Check with your advisor if any are available for students in your program.
+
+### 10. **Register Early & Stay Calm**
+   - Plan ahead by registering for the exam at a time that doesn’t conflict with exams or other major responsibilities. If you’re calm and prepared, you’ll perform better on test day.
+
+If you need additional resources or help prioritizing study areas, your academic advisor or professors can provide targeted advice. Good luck—you’ve got this!",1,,4.565927505,0.001113653,6.329961538,1,"The user is asking for guidance on preparing for the Fundamentals of Engineering (FE) exam. This suggests they may be seeking recommendations for study strategies, resources (such as study guides, courses, or materials), and information about relevant topics covered in the exam, particularly as it pertains to their BSCE Civil Engineering program with an Energy Infrastructure concentration.","<Semantic_Request_Support_Resources> Provide information about support resources available to help the student prepare for the FE exam. This might include tutoring services, engineering faculty support, available FE prep courses, workshops, or study groups. Keywords: FE exam preparation, civil engineering, study support. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,opt-no,tn
+29,generic_1,Academic Performance & Support,What should I do if I'm struggling in a particular course?,30 to 59,2023-2024,"BSME Mechanical Engineering, Energy Engineering Concentration",0,0,1,0,0,0,0,0,0,0,1,1,"I'm sorry to hear you're having a tough time! Here are some steps to help you get back on track:
+
+1. **Talk to Your Instructor**: Start by reaching out to your professor or teaching assistant during office hours or by email. They can clarify difficult concepts, provide guidance, or suggest additional resources.
+
+2. **Use Campus Resources**: Check if UNC Charlotte offers tutoring or academic support services. The **University Center for Academic Excellence (UCAE)** provides tutoring, academic skills workshops, and supplemental instruction, which can help with challenging courses.
+
+3. **Form Study Groups**: Collaborating with classmates can be incredibly helpful. You can work through problems together and learn from each other’s strengths.
+
+4. **Revisit Your Study Habits**: Reflect on how you're studying. Are you using an organized schedule, avoiding distractions, and actively reviewing material? Small changes can have a big impact.
+
+5. **Manage Your Time**: If balancing multiple courses feels overwhelming, create a detailed study plan to allocate specific times to focus on this course.
+
+6. **Talk to Your Academic Advisor**: They can help assess your progress, guide you on dropping a course (if necessary), or suggest strategies for success.
+
+Let me know if you’d like help finding specific tutoring resources or support services at UNC Charlotte! You got this!",1,,1.692279816,0.000190973,3.018041849,1,The user is seeking advice and resources for handling challenges in a specific course they are struggling with. The intent is to identify actionable steps or support systems that can help them improve their understanding and performance in the course.,"<Semantic_Request_Support_Resources>Search for academic support resources available to students, including tutoring services, faculty office hours, academic advising, peer study groups, mental health resources, and any services tailored specifically for the Mechanical Engineering program or Energy Engineering concentration.</Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+30,generic_1,Academic Performance & Support,Are there any academic support programs specifically for engineering students?,120 to 149,2022-2023,BSCE Civil Engineering,0,0,1,0,0,0,0,0,0,0,1,?,"Yes, there are typically academic support programs designed specifically for engineering students! At many universities, these programs help build skills, provide tutoring, and offer resources tailored to the challenges of engineering coursework. For example, some common support structures include:
+
+1. **Engineering-Specific Tutoring:** Many engineering colleges provide free tutoring services for foundational courses like math, physics, and key engineering subjects.
+   
+2. **Peer Mentoring Programs:** Engineering programs often connect students with upper-level peers who can provide guidance, advice, and academic support.
+
+3. **Academic Workshops:** Workshops or seminars may be offered, focusing on time management, exam preparation, or study skills specifically for STEM students.
+
+4. **Faculty Office Hours and Success Centers:** Many universities encourage engineering students to take advantage of faculty office hours or dedicated spaces, like an engineering student success center.
+
+5. **Student Organizations:** Engineering societies, such as the American Society of Civil Engineers (ASCE), often provide academic and networking support.
+
+I recommend reaching out to the William States Lee College of Engineering at UNC Charlotte or checking the engineering department’s website to learn more about resources offered specifically for civil engineering students. You may also want to consult your academic advisor for additional guidance! 
+
+Let me know if you'd like help finding those resources!",1,,1.541356802,0.000323772,2.813431978,1,"The user is inquiring about academic support programs or resources specifically designed for engineering students. This likely pertains to services that can aid in their academic success, such as tutoring, study groups, workshops, or specialized advising for engineering majors.","<Semantic_Request_Support_Resources> Search for academic support programs or resources tailored to engineering students. This may include tutoring centers, peer mentoring, workshops, or department-specific advising and support initiatives. Keywords: engineering support programs, civil engineering, academic success, tutoring. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+31,generic_1,Mental Health & Well-being,What mental health resources are available on campus?,60 to 89,2024-2025,BSCE Civil Engineering,0,0,1,0,0,0,0,0,0,0,1,1,"UNC Charlotte offers a range of mental health resources to support students' well-being. Here are some key services available on campus:
+
+1. **Center for Counseling and Psychological Services (CAPS):**
+   - CAPS provides individual, group, and crisis counseling for students.
+   - They offer workshops, outreach programs, and consultations.
+   - Services typically include short-term counseling, and referrals are available for long-term needs.
+   - CAPS also has a 24/7 crisis hotline: **704-687-0311**.
+
+2. **NinerCare:**
+   - NinerCare is a support network for students in distress. If you're concerned about yourself or someone else, you can submit a referral, and the team will provide resources and assistance.
+
+3. **Group Therapy and Support Groups:**
+   - CAPS hosts themed group therapy sessions, such as stress management, mindfulness, and identity-based support groups.
+
+4. **#NinerWellness Peer Educators:**
+   - The wellness educators provide workshops and resources on stress management, mental wellness, and self-care.
+
+5. **Suicide Prevention Training:**
+   - The university offers programs like QPR (Question, Persuade, Refer) to help students and staff recognize and assist someone in crisis.
+
+6. **SilverCloud:**
+   - An online self-guided mental wellness platform focusing on anxiety, depression, and stress.
+
+7. **Campus Recreation Services:**
+   - Engaging in physical activity can help your mental health. The university provides fitness programs, intramural sports, and recreational opportunities.
+
+8. **Health Center Referral Services:**
+   - The Student Health Center can provide medical support and connect students with mental health professionals if needed.
+
+If you're feeling overwhelmed or in need of support, contacting CAPS or Student Health is a great first step. You can also talk to your academic advisor or another trusted campus resource for advice. 
+
+Would you like information on scheduling an appointment or accessing off-campus resources? ",1,,1.648630857,0.000363111,5.814390182,1,"The user is asking about mental health resources available on campus. They are seeking information on support services such as counseling, mental health programs, or other resources that address mental wellness. The intent is to understand what is available to them as a student.","<Semantic_Request_Support_Resources>Search for mental health resources available on campus, including counseling services, group therapy, wellness programs, and any other relevant support services. Keywords: mental health, counseling, campus resources, wellness programs.</Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+32,generic_1,Mental Health & Well-being,How do I access counseling services if I'm feeling overwhelmed?,90 to 119,2021-2022,"BSME Mechanical Engineering, Motorsports Engineering Concentration",0,0,1,0,0,0,0,0,0,0,1,1,"I'm really sorry to hear you’re feeling this way, but it’s great that you’re reaching out for help. UNC Charlotte offers supportive resources to help you through challenging times.
+
+You can access counseling services through the **Center for Counseling and Psychological Services (CAPS)** on campus. Here's how to get started:
+
+1. **Initial Consultation**: CAPS provides brief consultations to help assess your needs. You can schedule an appointment by calling the CAPS office at **704-687-0311**.
+   
+2. **Location**: CAPS is located in the Christine F. Price Center for Counseling and Psychological Services on the Atkins Annex, near the main campus.
+
+3. **Emergency or Crisis Help**: If you're in crisis, CAPS also offers immediate assistance during office hours and an after-hours crisis hotline. You can call the same number listed above to connect with a counselor 24/7.
+
+4. **Other Resources**: If you aren't ready for counseling, CAPS offers workshops and group sessions for topics like stress management and mindfulness, which might help you feel a little more in control.
+
+Taking that first step can be hard, but you’ve got support. Additionally, don’t hesitate to mention this to a trusted advisor, professor, or mentor—they may be able to provide additional guidance or support. Let me know if you’d like help with anything else!",1,,1.604548693,0.000190973,3.517480612,1,"The user is seeking information on how to access counseling services for support with feeling overwhelmed. This suggests the need for guidance on available mental health or counseling resources, including how to schedule an appointment, who to contact, and what services may be available to them.","<Semantic_Request_Support_Resources> Request information about counseling or mental health resources available to students, including steps to access services, scheduling options, and contact details. Keywords: counseling, mental health, overwhelmed, student support. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+33,generic_1,Mental Health & Well-being,Are there support groups for engineering students dealing with academic stress?,Up to 29,2024-2025,BSME Mechanical Engineering,0,0,1,0,0,0,0,0,0,0,1,?,"Yes, there are often support groups and resources available specifically for engineering students dealing with academic stress. At UNC Charlotte, students in demanding programs like Mechanical Engineering can access several types of support:
+
+1. **University Counseling Center**: The Counseling Center offers group therapy sessions, workshops, and individual counseling. They may also have support groups centered on academic stress or challenges faced by students in rigorous programs.
+
+2. **Engineering-Specific Peer Support**: The College of Engineering may have peer mentoring programs or student organizations where you can connect with other students who understand the unique pressures of your major.
+
+3. **Student Organizations**: Groups like American Society of Mechanical Engineers (ASME), National Society of Black Engineers (NSBE), or Society of Women Engineers (SWE) are great places to build a support network and share strategies for managing stress.
+
+4. **Tutoring and Academic Resources**: The university should offer tutoring services and study groups, which can help alleviate academic pressure by providing structured assistance.
+
+5. **Success Coaches and Advisors**: Your academic advisor or a student success coach can help you navigate academic challenges, time management, and other stressors.
+
+To find what’s available, I recommend reaching out to your academic advisor or checking on the **University Counseling Center** and the **William States Lee College of Engineering** websites. They can guide you to support options tailored to your needs! Let me know if you need help finding contact information or navigating any services.",1,,1.511819124,0.000203848,3.785175323,1,"The user is inquiring about support groups or resources available specifically for engineering students, such as stress management or groups addressing academic challenges. The student is seeking resources relevant to their academic stress and well-being, ideally tailored to the engineering context.","<Semantic_Request_Support_Resources> Search for support resources that address academic stress and mental health for engineering students. Include resources tailored to mechanical engineering students or engineering programs in general, such as peer support groups, counseling, or workshops for stress management. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+34,generic_1,Mental Health & Well-being,What's the process for getting academic accommodations if I need them?,120 to 149,2022-2023,"BSME Mechanical Engineering, Motorsports Engineering Concentration",0,0,1,0,0,0,0,0,0,0,1,?,"If you need academic accommodations, the process typically involves working with the Office of Disability Services at UNC Charlotte. Here's a general overview of what to do:
+
+1. **Register with the Office of Disability Services (DS):**  
+   Visit their website or office and complete the registration process. You’ll need to provide documentation of your disability (e.g., medical records or a psychological evaluation).
+
+2. **Meet with a Disability Services Specialist:**  
+   After registering, you'll meet with a DS staff member to discuss your specific needs. They will review your documentation and work with you to determine appropriate accommodations.
+
+3. **Receive Your Accommodation Plan:**  
+   Once approved, you’ll be given an official accommodation letter outlining the accommodations you’re eligible for, such as extended time on tests, note-taking assistance, or other supports.
+
+4. **Communicate with Your Professors:**  
+   You’ll need to share your accommodation letter with your professors and discuss how accommodations will be implemented in each class. It’s best to do this early in the semester.
+
+5. **Stay in Contact with DS:**  
+   If your needs change or you encounter any issues, reach out to the DS office for assistance.
+
+I encourage you to contact the Office of Disability Services directly—they'll guide you through the process and ensure you have the support you need. Let me know if you'd like help finding their contact info or resources!",1,,1.52717948,0.000273228,3.424598455,1,"The user is asking for information about the process for obtaining academic accommodations, likely due to a disability or other qualifying condition. They are seeking guidance on steps to follow, relevant offices, or resources available to support their needs.","<Semantic_Request_Support_Resources> Search for resources and information regarding the process of obtaining academic accommodations, including relevant offices (e.g., Accessibility Services or Disability Support) and any procedural guidance. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+35,generic_1,Mental Health & Well-being,How do I maintain work-life balance while keeping up with demanding coursework?,150 or more,2022-2023,BS Dual Degree Physics and Computer Engineering,0,0,1,0,0,0,0,0,0,0,1,1,"That's a great question! Maintaining a healthy work-life balance while handling a demanding academic load takes planning and mindfulness. Here are a few tips that can help:
+
+### 1. **Time Management**
+   - **Plan Ahead:** Use a planner or digital calendar to schedule classes, study sessions, assignments, and relaxation time. Prioritize important tasks and deadlines.
+   - **Set Realistic Goals:** Break large tasks into smaller, manageable steps, and set achievable daily goals.
+
+### 2. **Prioritize Self-Care**
+   - **Sleep:** Aim for 7-8 hours of sleep each night to stay alert and focused.
+   - **Eat Well & Exercise:** A balanced diet and regular physical activity can improve your concentration and energy levels.
+   - **Take Breaks:** Step away briefly during study sessions to reset and keep your mind fresh.
+
+### 3. **Stay Organized**
+   - Keep track of deadlines and assignments with tools like a to-do list or productivity app.
+   - Organize course materials so you can easily find what you need, saving time and reducing stress.
+
+### 4. **Learn to Say No**
+   - It’s okay to decline additional responsibilities or social activities if they interfere with your academic and personal balance.
+
+### 5. **Seek Support**
+   - **Build a Support System:** Connect with friends, study groups, or peers for encouragement and motivation.
+   - **Use Campus Resources:** UNC Charlotte likely offers resources such as academic coaching, peer tutoring, or counseling services to assist with time management and stress management. 
+
+### 6. **Set Boundaries**
+   - Dedicate specific times to unplug and enjoy hobbies, relaxation, or time with loved ones.
+
+Given the rigor of your Dual Degree in Physics and Computer Engineering, pacing yourself is essential. If you're feeling overwhelmed or need personalized strategies, I highly recommend connecting with your academic advisor or UNC Charlotte’s Counseling & Psychological Services (CAPS). They can provide additional resources to support your academic success and well-being!",1,,1.55743885,0.000891685,4.219842911,1,"The user is seeking guidance on maintaining work-life balance while handling the rigorous coursework of their BS Dual Degree in Physics and Computer Engineering. The user’s concern is related to managing stress, prioritizing tasks, and effectively balancing academic responsibilities with personal life, given the demanding nature of their program.","<Semantic_Request_Support_Resources>Semantic search for resources related to work-life balance, stress management, time management, and student wellness. Include specific academic and personal support services such as tutoring, counseling, and wellness programs that can help students manage demanding coursework.</Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+36,generic_1,Mental Health & Well-being,Are there stress management workshops or wellness programs available?,Up to 29,2024-2025,"BSCE Civil Engineering, Land Development Engineering Concentration",0,0,1,0,0,0,0,0,0,0,1,?,"Yes, most universities, including UNC Charlotte, offer stress management workshops and wellness programs to support student mental health and well-being. These programs typically include mindfulness sessions, stress relief techniques, mental health resources, and workshops on managing academic and personal pressures.
+
+I recommend checking with **UNC Charlotte's Counseling and Psychological Services (CAPS)** or your campus **Wellness Center**. They often host events and provide resources tailored to students' needs. Additionally, your academic advisors or engineering department may also have information on similar programs specifically for engineering students.
+
+Would you like guidance on how to contact CAPS or find more details?",1,,3.208543301,0.000233889,2.155149937,1,The user is inquiring about stress management workshops or wellness programs available to students. The intent is to identify resources that support student mental health and well-being. The user did not specify whether they are looking for on-campus or virtual options.,"<Semantic_Request_Support_Resources>Search for available stress management workshops, wellness programs, and other resources focused on mental health and well-being. Include details on accessibility for students, such as on-campus or online options, schedules, and contact information.</Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+37,generic_1,Financial Aid & Scholarships,Are there any scholarships specifically for mechanical engineering students?,150 or more,2021-2022,"BSSE Systems Engineering, Energy Systems Concentration",0,0,1,0,0,0,0,0,0,0,1,?,"Scholarship opportunities for students, including those in related fields like mechanical or systems engineering, can vary by institution and program. At UNC Charlotte, there may be scholarships available specifically for engineering students through the **William States Lee College of Engineering** or other campus departments. These scholarships are often based on academic achievement, financial need, or specific areas of interest like energy systems or mechanical engineering.
+
+I recommend taking these steps to explore scholarship opportunities:
+
+1. **Check the Engineering College's Scholarship Page**: Visit the William States Lee College of Engineering website to see if they list any scholarships for your field or related fields, like renewable energy or systems engineering.
+
+2. **Contact the Office of Financial Aid**: They can provide a list of general scholarships available across all programs and might also have details on engineering-specific assistance.
+
+3. **Speak with Your Department**: Professors or advisors in the Systems Engineering and Energy Systems program may know of scholarships specifically tied to your concentration or career goals.
+
+4. **Look for External Scholarships**: Organizations like ASME (American Society of Mechanical Engineers), IEEE, or energy-specific foundations may offer scholarships relevant to your field.
+
+Would you like help finding links to these resources or drafting an email to your advisor or financial aid office?",1,,1.555674553,0.00028491,2.830937862,1,"The user is inquiring about scholarships specifically designed for mechanical engineering students. Even though the user's degree program is in Systems Engineering with an Energy Systems Concentration, they are seeking financial aid opportunities targeted toward mechanical engineering, likely related to their academic or professional interests.","<Semantic_Request_Support_Resources> Search for scholarships related to mechanical engineering. Include information on eligibility requirements, application processes, and deadlines for such scholarships. Focus on opportunities that may overlap with energy systems or systems engineering if relevant. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+38,generic_1,Financial Aid & Scholarships,What merit-based aid might I be eligible for given my 3.3 GPA?,60 to 89,2024-2025,"BSME Mechanical Engineering, Biomedical Engineering Concentration",0,0,1,0,0,0,0,0,0,0,1,?,"Merit-based aid eligibility often depends on specific scholarship requirements, such as GPA, program of study, year of study, and other criteria. While a 3.3 GPA is strong, opportunities may vary depending on the scholarships offered each academic year. Here are some steps to identify potential merit-based aid opportunities:
+
+1. **University Scholarships**: Check UNC Charlotte’s Office of Financial Aid or Scholarships website for merit-based scholarships available to current students. Some may target specific majors, class standings, or extracurricular involvement.
+
+2. **Departmental Scholarships**: Contact the Department of Mechanical Engineering and Engineering Science to inquire about scholarships specific to your degree program, especially the Biomedical Engineering concentration. Some departments offer scholarships for students in specific concentrations or with excellent academic performance.
+
+3. **External Scholarships**: Explore external scholarships offered through industry organizations, particularly ones focused on mechanical or biomedical engineering. Examples include scholarships from the American Society of Mechanical Engineers (ASME) or the Biomedical Engineering Society (BMES).
+
+4. **Honors/Award Programs**: If you’re involved in any honors programs or campus organizations, ask if they offer scholarships to active members who meet GPA or participation criteria.
+
+Since requirements and eligibility conditions can vary, I recommend speaking with the Financial Aid Office or your academic advisor to get personalized recommendations tailored to your academic achievements and program. Have you already explored specific scholarships, or would you like help accessing scholarship resources?",1,,1.588858366,0.000208139,3.907238483,1,"The user is inquiring about merit-based aid eligibility and is providing specific details about their GPA (3.3). They appear to be seeking institutional or program-specific scholarships or financial aid opportunities aligned with their academic performance. The user’s major, catalog year, and credit standing could also influence the availability of program-specific scholarships or aid.","<Semantic_Request_Support_Resources>Search for merit-based scholarships or financial aid opportunities available to students in the BSME Mechanical Engineering program with a Biomedical Engineering Concentration for the 2024-2025 catalog year. Also, prioritize any GPA-specific scholarship criteria for students with a 3.3 GPA or higher. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+39,generic_1,Financial Aid & Scholarships,Are there any work-study opportunities in the engineering department?,150 or more,2022-2023,BS Dual Degree Physics and Mechanical Engineering,0,0,1,0,0,0,0,0,0,0,1,?,"Yes, work-study opportunities may be available in the engineering department, but availability can vary based on departmental needs and funding. Work-study positions typically involve tasks such as assisting with research projects, supporting lab operations, or administrative work. These opportunities are usually open to students who qualify for federal work-study funding through their FAFSA application.
+
+Since you're already in the BS Dual Degree Physics and Mechanical Engineering program, it could also help to connect with professors or department staff to inquire about openings, even if they aren't officially posted.
+
+I recommend doing the following:
+1. Check with the **William States Lee College of Engineering**’s student services office or website for specific work-study openings.
+2. Explore job postings through the **University Career Center's Hire-A-Niner platform**, as some work-study positions are posted there.
+3. Speak with your academic advisor or department coordinator—they might know about upcoming opportunities.
+
+Would you like help finding the contact information for the engineering department or student services?",1,,1.438678741,0.000169992,2.642344952,1,"The user is inquiring about work-study opportunities specifically within the engineering department. They are likely looking for information on available roles, application requirements, and potentially any department or program-specific resources for work-study.","<Semantic_Request_Support_Resources> Search for information related to work-study opportunities in the engineering department. Include details about available roles, eligibility criteria, the application process, and any departmental or institutional resources that support work-study programs for engineering students. Focus on opportunities relevant to the dual-degree program if possible. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+40,generic_1,Financial Aid & Scholarships,How do I apply for departmental scholarships or awards?,150 or more,2021-2022,BSCE Civil Engineering,0,0,1,0,0,0,0,0,0,0,1,?,"Applying for departmental scholarships or awards is a great way to support your academic journey! For students in the **Civil Engineering (BSCE)** program, here's a general guide to navigate the process:
+
+1. **Check the Department Website**: Start by visiting the Civil Engineering department's website at UNC Charlotte. Departments often maintain a list of scholarships or awards, along with application criteria, deadlines, and instructions.
+
+2. **Understand Eligibility**: Review the specific eligibility requirements for each scholarship or award. These can include GPA, credit hours, class standing, or involvement in extracurricular activities.
+
+3. **Prepare Required Materials**: Most applications will require supporting materials like:
+   - A personal statement or essay
+   - A resume highlighting relevant experience, community service, or leadership
+   - Letters of recommendation from professors or advisors 
+   - Your transcript (official or unofficial)
+
+4. **Meet Deadlines**: Deadlines are critical, so make a note of all upcoming application due dates. Ensure you give yourself plenty of time to prepare strong supporting materials.
+
+5. **Contact Your Academic Advisor**: Your advisor is an excellent resource for guidance on scholarship applications. They can help you identify opportunities and review your application materials.
+
+6. **Check Online Systems or Platforms**: UNC Charlotte may use specific platforms or forms, like NinerScholars, for institutional and departmental scholarship applications. Confirm whether departmental scholarships are handled through these systems or directly through the department.
+
+If you're unsure where to start, I recommend reaching out to the **Civil Engineering Department Office** for more detailed guidance or contacting your **academic advisor**.
+
+Is there a specific scholarship or award you're targeting? I can try and help clarify further!",1,,2.178366661,0.000377655,5.343932629,1,"The user is inquiring about the application process for departmental scholarships or awards. Their specific interest relates to opportunities within the Civil Engineering department or related to their program (BSCE Civil Engineering). This may include criteria, deadlines, or processes required for academic or departmental funding opportunities.","<Semantic_Request_Support_Resources> Search for departmental or academic scholarships and awards processes for the Civil Engineering program. Include specific details such as criteria, deadlines, how to apply, and any contacts relevant to the process. Keywords: departmental scholarships, Civil Engineering, BSCE, 2021-2022 catalog year. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+41,generic_1,Career Planning & Networking,What career paths are most common for graduates from our program?,None yet!,2025-2026,BS Dual Degree Physics and Mechanical Engineering,0,0,1,0,0,0,0,0,0,0,1,?,"Graduates from a BS Dual Degree in Physics and Mechanical Engineering program often have diverse career opportunities due to their strong foundation in both disciplines. Common career paths include:
+
+1. **Mechanical Engineer**: Design, develop, and maintain mechanical systems, often in industries like manufacturing, automotive, aerospace, or robotics.
+   
+2. **Aerospace Engineer**: Work on design, testing, and production of aircraft, spacecraft, and related systems.
+   
+3. **Research and Development Scientist/Engineer**: Use your physics background for applied scientific research, particularly in fields like materials science or renewable energy.
+   
+4. **Energy Sector Roles**: Work in nuclear, renewable energy, or related industries to optimize energy systems or develop innovative technologies.
+
+5. **Data Scientist/Analyst**: Leverage problem-solving and quantitative skills in data analytics, machine learning, or computational modeling.
+
+6. **Automotive Engineer**: Focus on designing and improving vehicle systems, including autonomous and electric vehicle technologies.
+
+7. **Robotics/Automation Engineer**: Create and program robotic systems for industrial, medical, or defense applications.
+
+8. **Graduate Studies/Academia**: Pursue advanced degrees in engineering, physics, or related fields for roles in teaching, research, or specialized industries.
+
+If you're uncertain about any of these paths or want to discuss which might align best with your interests, I recommend reaching out to your academic advisor or career services office. They can help you explore opportunities tailored to your goals!",1,,1.680719376,0.000160217,3.523132086,1,"The user is asking about common career paths for graduates of the BS Dual Degree Physics and Mechanical Engineering program. This includes information about roles, industries, or fields these graduates typically enter. The user seems to be looking for guidance or insights into potential future opportunities based on their degree.","<Semantic_Request_Support_Resources> Identify formal career support resources, such as career services, alumni networks, internships, or co-op programs, specifically tailored for the BS Dual Degree Physics and Mechanical Engineering program. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+42,generic_1,Career Planning & Networking,Are there any professional organizations I should join as a student?,120 to 149,2022-2023,BSME Mechanical Engineering,0,0,1,0,0,0,0,0,0,0,1,?,"Yes! Joining professional organizations is a great way to build connections, gain industry knowledge, and enhance your resume. As a Mechanical Engineering student, here are some professional organizations that could be a good fit:
+
+1. **American Society of Mechanical Engineers (ASME):**
+   ASME offers networking opportunities, workshops, competitions, and resources specific to the mechanical engineering field. As a student, membership is often offered at a discounted rate.
+
+2. **Society of Automotive Engineers (SAE):**
+   If you're interested in automotive engineering, aerospace, or robotics, SAE is a great organization to consider. Many universities have student chapters that participate in design competitions like Formula SAE.
+
+3. **Institute of Electrical and Electronics Engineers (IEEE):**
+   Although more focused on electrical and computer engineering, IEEE also dives into robotics, automation, and emerging technologies that overlap with mechanical engineering.
+
+4. **Society of Women Engineers (SWE):**
+   If you're a woman in engineering, SWE offers excellent support, scholarships, and networking opportunities.
+
+5. **National Society of Black Engineers (NSBE) or Society of Hispanic Professional Engineers (SHPE):**
+   These organizations aim to support underrepresented groups in engineering, providing mentorship, professional development, and community-building opportunities.
+
+6. **Pi Tau Sigma (Mechanical Engineering Honor Society):**
+   If your GPA qualifies, Pi Tau Sigma focuses on leadership and academic excellence in mechanical engineering.
+
+Additionally, check if there are student chapters of these organizations within your department! Most chapters host networking events, technical workshops, and even career fairs.
+
+If you're unsure which organization to start with, speak with your professors, advisors, or classmates to find out which ones are most active on campus.",1,,1.354903221,0.000196934,3.598029375,1,"The student is seeking information about professional organizations that are beneficial for a mechanical engineering undergraduate student to join. The intent is likely to understand what opportunities for networking, professional development, or involvement are available within their field of study.","<Semantic_Request_Support_Resources> Please provide a list of professional organizations related to mechanical engineering, especially those known to offer benefits for undergraduate students, such as ASME (American Society of Mechanical Engineers), SAE (Society of Automotive Engineers), or other relevant organizations. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+43,generic_1,Career Planning & Networking,How do I connect with alumni working in my areas of interest?,Up to 29,2023-2024,BSCM Construction Management,0,0,1,0,0,0,0,0,0,0,1,?,"Connecting with alumni is an excellent way to build your professional network and gather advice! Here are some steps you can take to engage with alumni in the Construction Management field:
+
+### 1. **Join UNC Charlotte Networking Platforms**
+   - Use platforms like **Niner Network**, the official UNC Charlotte alumni and student networking website. Many alumni are eager to connect with current students and offer guidance.
+   - Build a professional profile, and look for alumni who studied Construction Management or are now working in fields related to construction, project management, or real estate development.
+
+---
+
+### 2. **Leverage LinkedIn**
+   - Create or optimize your LinkedIn profile to highlight your major in Construction Management.
+   - Use the ""Alumni Tool"" on LinkedIn to search for UNC Charlotte graduates in your field of interest by filtering for keywords like ""construction"" or ""project management.""
+   - When reaching out, personalize your message by mentioning your shared connection to UNC Charlotte and why you’re interested in speaking with them.
+
+---
+
+### 3. **Attend Career and Networking Events**
+   - Check out career fairs, panel discussions, and alumni events hosted by the **University Career Center for Work, Service, and Internships (UCC)** or the **Department of Engineering Technology and Construction Management (ETCM)**. These events often bring alumni back to campus for networking.
+   - Don't miss any ""mentor networking"" or industry-specific mixers, as these frequently include alumni professionals.
+
+---
+
+### 4. **Talk to Faculty and Advisors**
+   - Many professors and academic advisors have industry connections and may be able to introduce you to alumni directly or recommend alumni to contact.
+   - Share your specific areas of interest in the Construction Management field to ensure they connect you with the right people.
+
+---
+
+### 5. **Join Professional Organizations**
+   - Participate in student chapters of organizations such as the **Associated Builders and Contractors (ABC)** or the **Associated General Contractors of America (AGC)**, which often host events with alumni in the industry.
+
+Let me know if you'd like more help figuring out your first steps! Or, you could contact your academic or career advisor for personalized recommendations.",1,,1.387126207,0.000174046,8.042948008,1,"The user is seeking guidance on connecting with alumni who are working in areas related to their degree program or fields of interest. The intent is to explore networking opportunities, possibly for career advice, mentorship, or professional development.","<Semantic_Request_Support_Resources>Search for resources related to connecting with alumni, such as career services, alumni networks, professional organizations, or mentorship programs. Keywords: alumni networking, career services, mentorship, Construction Management.</Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+44,generic_1,Career Planning & Networking,What career services are available specifically for engineering students?,90 to 119,2023-2024,"BSEE Electrical Engineering, Machine Learning Concentration",0,0,1,0,0,0,0,0,0,0,1,?,"UNC Charlotte offers a range of career services tailored specifically for engineering students through the **Engineering Career Center** and **University Career Center**:
+
+1. **Engineering Career Center (ECC):**
+   - **Career Advising:** Specialized career advisors assist engineering students in exploring career paths, preparing resumes, LinkedIn profiles, and practicing for interviews tailored to engineering industries.
+   - **Internship and Co-op Support:** Guidance on finding, applying for, and registering internships or co-ops.
+   - **Workshops and Events:** Programs on topics such as job search strategies, salary negotiation, and industry-specific skills.
+   - **Career Fairs:** The ECC hosts engineering-focused career fairs connecting students with employers in technology, manufacturing, and other engineering-driven sectors.
+   - **Employer Connections:** Partnerships with companies offering internships, co-ops, and full-time engineering roles.
+   
+2. **University Career Center:**
+   While not engineering-specific, the University Career Center supplements the ECC with broader resources, including job boards, career assessments, and networking opportunities available to all UNC Charlotte students.
+
+I encourage you to schedule a meeting with the **Engineering Career Center** for more tailored guidance. They can help you as you prepare for internships, your career launch, or any professional goals related to your Electrical Engineering program! Would you like more details on contacting them or upcoming events?",1,,2.064830065,0.000202894,3.369157553,1,"The user is asking about career services specifically tailored for engineering students. They may be looking for resources such as job placement support, internship opportunities, resume-building workshops, networking events, or guidance tailored to the engineering field.","<Semantic_Request_Support_Resources> Search for career services and resources that cater specifically to engineering students. Include any tailored engineering career support, such as internship programs, career fairs, mentoring networks, resume reviews, or field-specific workshops. Keywords: engineering career services, electrical engineering, job placement, internships, professional development. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+45,generic_1,Career Planning & Networking,"Should I consider graduate school, and if so, when should I start preparing applications?",120 to 149,2021-2022,BS Dual Degree Physics and Mechanical Engineering,0,1,?,1,0,0,0,?,1,0,1,1,"Whether you should consider graduate school depends on your career goals and interests. Graduate school can open doors to specialized job opportunities, research positions, and leadership roles, particularly in fields like engineering and physics. For example, a master’s or doctoral degree is often essential for advanced roles in research and development, academia, or industries requiring expertise in areas like renewable energy, quantum physics, materials science, or robotics.
+
+### Reasons to Consider Graduate School:
+- If your career goals demand advanced technical expertise or higher qualifications.
+- If you're passionate about research, innovation, or teaching.
+- If you're interested in obtaining leadership or specialized roles in engineering or physics-related industries.
+
+### When to Start Preparing Applications:
+The graduate school application process can take several months, so it’s ideal to start preparing about **12-18 months before you plan to start graduate school**. Here’s a timeline to consider:
+
+1. **Assess Your Goals:** As early as possible, evaluate if graduate school aligns with your career aspirations. Speak with professors, advisors, or industry professionals for guidance.
+   
+2. **Research Programs (12-18 months before enrollment):** Start exploring graduate programs that align with your interests. Look into admissions requirements, faculty research areas, and funding opportunities.
+   
+3. **Prepare for Exams (12-15 months before enrollment):** Many programs require standardized tests like the GRE (Graduate Record Examination). Begin studying early to ensure you have time to retake if needed.
+
+4. **Gather Materials (9-12 months before enrollment):**
+   - Draft your **personal statement** detailing your goals, motivations, and experience.
+   - Update your **résumé** or CV.
+   - Reach out to faculty or employers for **letters of recommendation** (give them at least 4-6 weeks' notice).
+   - Obtain transcripts from all institutions you’ve attended.
+
+5. **Submit Applications (6-9 months before enrollment):** Application deadlines are typically between late fall and early spring (e.g., December to February for fall enrollment). Submit all documents and take note of funding or fellowship deadlines.
+
+6. **Interviews/Visits (4-6 months before enrollment):** Some graduate programs require interviews or invite candidates to visit campus. Prepare by familiarizing yourself with the faculty and research in the program.
+
+7. **Make a Decision (2-4 months before enrollment):** Consider offers carefully, taking into account funding, research opportunities, and program reputation.
+
+### Additional Tips:
+- Talk to professors or academic advisors who can provide guidance tailored to your field and goals. They may also recommend programs or write strong recommendation letters.
+- If you’re close to graduating (with 120–149 credits earned), determine whether you want to enter the workforce first to gain practical experience or transition directly into graduate school.
+- Explore dual-degree or accelerated graduate programs (e.g., a combined BS/MS) if available in your field.
+
+Let me know if you’d like guidance on specific graduate school programs or advice on deciding whether it’s the right path for you!",1,,1.719829082,0.000402927,7.687437773,1,"The user is seeking guidance about pursuing graduate school, specifically relating to their BS Dual Degree in Physics and Mechanical Engineering. They want advice on whether they should consider applying to graduate school and the appropriate timeline for preparing graduate school applications. Their inquiry likely includes considerations about academic preparation, career goals, and understanding the graduate school application process.","<Specific_Request_Current_Major></Specific_Request_Current_Major>
+<Semantic_Request_Support_Resources>Search for advising resources and career services that can provide graduate school preparation guidance, including timelines, application requirements, and steps to clarify career goals in physics and mechanical engineering. Keywords: graduate school advising, application preparation, career planning. </Semantic_Request_Support_Resources>",0,0,1,1,0,tn,fn,opt-yes,tp,tn
+46,generic_1,Department & University Resources,What labs or facilities are available for student use?,120 to 149,2021-2022,"BSCPE Computer Engineering, Machine Learning Concentration",0,0,1,0,0,0,0,0,0,0,1,?,"UNC Charlotte's College of Engineering offers access to a variety of state-of-the-art labs and facilities tailored for students in programs like Computer Engineering. Some of the labs likely available to you as a Computer Engineering major with a Machine Learning concentration include:
+
+1. **Logic and Networks Laboratory**  
+   You’ll gain hands-on experience with circuits, logic design, and network systems, which connects directly to your core coursework.
+
+2. **Systems and Electronics Laboratory**  
+   This lab supports work in electronics, embedded systems, and instrumentation, tying into courses like ECGR 3155.
+
+3. **ECE Junior Design Lab**  
+   Provides resources to complete ECGR 3157, focused on electronic hardware and software projects.
+
+4. **Senior Design Lab**  
+   A dedicated workspace where students collaborate on capstone projects for ECGR 4251 and ECGR 4252, combining hardware, software, and problem-solving skills.
+
+5. **Digital Signal Processing Lab**  
+   Supports work in signal analysis and real-time systems, complementing your Machine Learning concentration and ECGR 4124 coursework.
+
+6. **Machine Learning and AI Research Facilities**  
+   Spaces and computing resources (e.g., high-performance machines, GPUs) for advanced work related to ECGR 4105, ECGR 4106, or other electives within the Machine Learning concentration.
+
+7. **MakerSpaces and Multidisciplinary Labs**  
+   General-purpose engineering design spaces with 3D printers, laser cutters, and prototyping tools, often used collaboratively across engineering disciplines.
+
+To access these labs, you will likely work within the courses connected to those facilities, or you might collaborate on independent or research projects with faculty members. Some spaces might have usage policies or require safety training before access. For any lab-specific inquiries, I recommend reaching out to your professors or the department staff to determine availability and requirements.
+
+Would you like me to help you explore how to get involved in lab-based projects or research opportunities?",1,,2.067017794,0.001891851,5.024735212,1,"The user is asking about available labs or facilities in the context of their program of study, which is the Bachelor of Science in Computer Engineering with a Machine Learning Concentration. They are likely interested in facilities that support their studies, such as computer labs, engineering labs, or research facilities.","<Specific_Request_Current_Major> Request information about the student’s degree program, including details about specialized labs, facilities, or equipment available to students within the program for the 2021-2022 catalog year. </Specific_Request_Current_Major>
+<Semantic_Request_Support_Resources> Request a detailed description of labs and facilities accessible to students in relevant areas, focusing on computer engineering, machine learning, and general engineering or computer science resources. Keywords: ""labs,"" ""facilities,"" ""machine learning,"" ""computer engineering."" </Semantic_Request_Support_Resources>",0,0,1,1,0,tn,tn,tp,fp,tn
+47,generic_1,Department & University Resources,Are there any study abroad programs relevant to engineering students?,90 to 119,2022-2023,"BSCE Civil Engineering, Land Development Engineering Concentration",0,1,1,0,0,0,0,0,0,0,1,?,"Yes! Study abroad programs can be a great opportunity for engineering students, including those in Civil Engineering, to gain global experience and enhance their academic and professional development. Many universities, including UNC Charlotte, offer study abroad options specifically tailored for engineering students.
+
+For engineering students, study abroad programs often focus on:
+
+- **Courses in engineering:** Transferring credits for technical courses relevant to your major.
+- **Global infrastructure projects:** Exploring civil engineering practices in different countries.
+- **Cultural enrichment:** Understanding how engineering solutions differ worldwide.
+- **Internships and hands-on experiences:** Collaborating on international projects or working with organizations abroad.
+
+Because you’re in the Land Development concentration, you could look for programs that might focus on urban planning, sustainable development, or international land use practices.
+
+I recommend contacting the **Office of Education Abroad** at UNC Charlotte to explore programs available for engineering students. Additionally, speak with your academic advisor to ensure courses taken abroad will transfer back toward your degree requirements.
+
+If you have questions about a specific location or program focus, feel free to share, and I can help narrow things down!",1,,1.552800655,0.000205517,3.580436468,1,"The user is inquiring about study abroad programs that are relevant to engineering students. This suggests they may be looking for opportunities specifically aligned with their field of study, such as civil engineering or land development, but they did not explicitly specify the need for alignment to their major or concentration.","<Semantic_Request_Support_Resources>Seek information on study abroad programs specifically tailored to engineering students, especially those that might align with civil engineering or land development engineering concentration, including available partnerships, location details, and course equivalency options.</Semantic_Request_Support_Resources>",0,0,1,0,0,tn,fn,tp,tn,tn
+48,generic_1,Department & University Resources,How do I get involved in departmental committees or student organizations?,90 to 119,2022-2023,BSEE Electrical Engineering,0,0,1,0,0,0,0,0,0,0,?,1,"Getting involved in departmental committees and student organizations is a fantastic way to enhance your academic experience, develop leadership skills, and connect with peers and faculty. Here are some steps to help you get started:
+
+### 1. **Check Out Departmental Opportunities**
+   - **Visit the Electrical and Computer Engineering (ECE) Department Office:** Drop by the department office to inquire about student participation in departmental committees. These might include advisory boards or groups focused on curriculum or events.
+   - **Email Faculty or Advisors:** Reach out to your faculty advisor or the department chair and express your interest in being involved in departmental activities.
+   - **Watch for Announcements:** Pay attention to emails and department newsletters for opportunities to join event planning or advisory groups.
+
+### 2. **Join ECE or Engineering Clubs**
+   - **Explore Clubs and Organizations:** 
+      Look into engineering and design-focused organizations like IEEE (Institute of Electrical and Electronics Engineers), Eta Kappa Nu (HKN), or the Society of Women Engineers (SWE). Many of these groups are specific to electrical engineering and offer leadership opportunities, networking, and project involvement.
+   - **Niner Engage:** Use this online platform to explore and connect with registered UNC Charlotte student organizations related to engineering and beyond.
+   - **Talk to Professors or Peers:** Professors or upperclassmen may recommend relevant student groups or let you know who to contact.
+
+### 3. **Attend Events**
+   - Participate in upcoming department-sponsored events, such as networking panels, career fairs, or research showcases. These are great for meeting active members and learning about involvement opportunities.
+
+### 4. **Volunteer for Projects or Research**
+   - Volunteer to assist a professor or graduate student with research. Being active in departmental research can often lead to opportunities to serve on committees or other departmental groups.
+   - Check for capstone team involvement or project competitions like robotics or sustainability initiatives.
+
+### 5. **Student Governance or Leadership Roles**
+   - Consider running for a student government association (SGA) position or looking into leadership programs in the Lee College of Engineering.
+   - Apply for officer roles in student organizations to actively contribute and lead impactful initiatives.
+
+Let me know if you need more details or contact information for specific groups! Also, consider speaking with your academic advisor for guidance on integrating these opportunities with your academic goals.",1,,2.404403448,0.000375986,5.763616562,1,The user is seeking information on how to get involved in departmental committees and/or student organizations. Their intent is to learn about opportunities for extracurricular engagement within the context of their BSEE Electrical Engineering degree program and potentially within the department or broader university structure.,"<Specific_Request_Current_Major></Specific_Request_Current_Major>  
+<Semantic_Request_Support_Resources>Provide information on student organizations and departmental committees specifically related to the Department of Electrical Engineering and general university opportunities for student engagement. Keywords: Electrical Engineering, student organizations, departmental committees, extracurricular involvement.</Semantic_Request_Support_Resources>",0,0,1,1,0,tn,tn,tp,fp,tn
+49,generic_1,Department & University Resources,What professional development workshops does the department offer?,30 to 59,2022-2023,"BSME Mechanical Engineering, Biomedical Engineering Concentration",0,0,1,0,0,0,0,0,0,0,1,?,"The Mechanical Engineering department, including the Biomedical Engineering concentration, may offer workshops, seminars, or events focused on professional development, such as resume building, interview preparation, networking skills, and industry-specific technical topics. These events are often organized in collaboration with academic advisors, faculty members, or student organizations like ASME (American Society of Mechanical Engineers) or BMES (Biomedical Engineering Society).
+
+To get the most accurate and up-to-date information on workshops specifically available to you, I recommend checking the department's website, reviewing announcements sent to your university email, or reaching out to your academic advisor or the Engineering Career Center. They can guide you through opportunities tailored to your goals and degree progress. 
+
+Let me know if you'd like help finding contact information or additional resources!",1,,1.593749762,0.00103426,2.486153841,1,"The user is inquiring about professional development workshops offered by the Mechanical Engineering (BSME) department, particularly for students in the Biomedical Engineering Concentration. The user seeks specific details about workshops that may enhance their professional skills or career readiness within their field.","<Semantic_Request_Support_Resources> Request information about professional development workshops, events, or resources offered by the Mechanical Engineering department or relevant campus organizations that pertain to career preparation, skills building, or networking for BSME students, specifically for those in the Biomedical Engineering Concentration. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+50,generic_1,Department & University Resources,Who else should I be talking to regularly besides you for academic and career guidance?,Up to 29,2023-2024,BS Dual Degree Physics and Mechanical Engineering,0,0,1,0,0,0,0,0,0,0,1,1,"It’s great that you’re seeking guidance! In addition to using this chatbot for support, here are other people and resources you should connect with regularly for academic and career success:
+
+1. **Academic Advisor**: Your academic advisor is your primary point of contact for developing your course schedule, staying on track with degree requirements, and understanding university policies. Since you're in a dual degree program, you may have two advisors—one for Physics and another for Mechanical Engineering—so ensure you're meeting with both as needed.
+
+2. **Faculty/Department Advisors**: Professors or advisors in the Physics or Mechanical Engineering departments can provide insight into research opportunities, course recommendations, and career advice in their fields.
+
+3. **Career Center**: The university’s Career Center can help you explore internships, co-ops, and full-time opportunities, and they offer resume reviews, mock interviews, and career fairs tailored to your goals.
+
+4. **Peer Mentors or Upperclassmen**: Students further along in your program(s) can share their experiences, study tips, and advice for successfully navigating the dual degree requirements.
+
+5. **Academic Support Services**: Take advantage of resources like tutoring centers, the writing center, or supplemental instruction groups, especially for challenging courses in math, physics, or engineering.
+
+6. **Program-Specific Clubs or Organizations**: Consider joining engineering and physics-related organizations (like ASME or SPS) to network with peers and professionals, develop leadership skills, and explore project opportunities.
+
+Would you like help finding specific contact information or resources for any of these areas?",1,,1.638899326,0.000144243,3.701141596,1,"The user is seeking guidance on who they should consult regularly for academic and career planning beyond this chatbot. Their prompt implies an interest in identifying additional resources, advisors, or professionals relevant to their academic journey and career goals, particularly within the context of their dual-degree program in Physics and Mechanical Engineering.","<Semantic_Request_Support_Resources>Request information about advising resources, career services, and any other relevant support services that the student can access for academic and career guidance, particularly tailored to dual-degree students in Physics and Mechanical Engineering. </Semantic_Request_Support_Resources>",0,0,1,0,0,tn,tn,tp,tn,tn
+247,specific_1,Topic & Career Exploration,How can I get better at data analysis?,60 to 89,2023-2024,BSME Mechanical Engineering,1,0,1,?,?,0,?,?,?,1,1,1,"Getting better at data analysis requires a mix of technical skills, practice, and critical thinking. Here are some steps to help guide your improvement:
+
+---
+
+### **1. Strengthen Your Foundations**
+- **Math Skills**: Improve your understanding of statistics, probability, and linear algebra. These are fundamental to data analysis.
+  - Courses like **STAT 3128: Probability and Statistics for Engineers** or **MATH 2342: Data Analysis and Probability** can help you build key knowledge.
+
+- **Programming**: Learn or improve your skills in programming languages commonly used for data analysis (e.g., Python, R, MATLAB).
+  - Courses like **ETEL 2171: Algorithms and Programming** or **STAT 4116: Statistical Computing** provide hands-on programming experience.
+
+---
+
+### **2. Learn and Use the Right Tools**
+Familiarize yourself with tools and software that analysts commonly use, such as:
+- **Spreadsheets**: Excel/Google Sheets for basic analysis.
+- **Data Visualization and Statistical Software**: R, Python libraries (Pandas, Matplotlib, Seaborn), SAS, or Tableau.
+- **Programming Frameworks**: Join courses like **STAT 3180/ITCS 3156: Predictive Analytics/Machine Learning**, which introduce data visualization and advanced modeling.
+
+---
+
+### **3. Practice Problem-Solving**
+- Work on real-world datasets to improve your skills. Platforms like Kaggle or open-source datasets provide opportunities for hands-on projects.
+- Apply the analytical techniques you’re learning in courses and perform exploratory data analysis, regression, classification, etc.
+
+---
+
+### **4. Focus on Critical Thinking**
+Data analysis isn’t just about the tools; understanding the **story behind the data** is key:
+- Learn how to ask the right questions.
+- Practice identifying meaningful trends, potential errors, and actionable insights.
+- Courses like **MATH 4051: Computer Exploration and Generation of Data** and **SEGR 4141: Experimental Design** emphasize interpreting and visualizing data effectively.
+
+---
+
+### **5. Take Relevant Courses**
+Since you’re a Mechanical Engineering student with 60-89 credit hours, you may qualify for electives or optional topics emphasizing data analysis:
+- **MEGR 2240: Computational Methods for Engineers** – Combines numerical methods and programming to build analysis skills.
+- **SEGR 4141: Engineering Experimental Design** – Offers advanced concepts in analyzing and interpreting data for systems design.
+- **MEGR 2699: MEES Seminars** – Attend presentations to learn how others tackle engineering problems in research.
+
+---
+
+### **6. Engage with Faculty and Peers**
+- Seek advice from professors or TAs for data-focused courses and ask for recommendations.
+- Network with peers who have similar interests to share tools, tips, and experiences.
+
+---
+
+### **7. Explore Online Resources**
+There are plenty of free or affordable online courses and tools, like:
+- **LinkedIn Learning**, **Khan Academy**, or **Coursera** – for foundational and advanced concepts.
+- Tutorials on using libraries like Numpy, Pandas, and Matplotlib in Python.
+
+---
+
+### **8. Apply Data Analysis in Your Field**
+As a Mechanical Engineering student, seek ways to use data in your projects, labs, or research (e.g., modeling, simulations, performance analysis). Courses like **MEGR 3222: Machine Analysis and Design II** and **ETME 3150: Applied CAD Modeling and Simulation** could help you apply analytics directly in engineering contexts.
+
+---
+
+### **9. Seek Feedback and Iterate**
+As you work on projects or assignments, regularly ask for feedback from instructors or peers. This will help you identify gaps in your analysis and refine your skills over time.
+
+---
+
+Data analysis is a valuable skill in any field, especially engineering. If you have a specific goal in mind (e.g., working in research, learning machine learning), feel free to clarify, and I can tailor these suggestions to help you better! I also recommend sharing your goals with your academic advisor to align electives or opportunities with your plan for improvement.",1,,1.851715565,0.875777721,7.686594963,1,"The user is seeking guidance on how to improve their data analysis skills. This inquiry seems oriented toward building competencies that may support their academic and career pursuits, especially in mechanical engineering or related fields.","<Semantic_Request_Support_Resources> Search for support resources, such as workshops, tutoring, or online tools, that can help students improve their data analysis skills. Resources specific to engineering or technical applications of data analysis may be particularly relevant. </Semantic_Request_Support_Resources>
+<Semantic_Request_Courses> Search for courses that teach or include data analysis skills, particularly those relevant to mechanical engineering, such as programming for engineers, statistical analysis, or simulation software. </Semantic_Request_Courses>",1,0,1,0,0,tp,tn,tp,opt-no,opt-no
+248,specific_1,Topic & Career Exploration,"I'm really interested in making rockets, what can I do?",Up to 29,2024-2025,BSME Mechanical Engineering,1,1,?,?,?,0,?,?,0,,1,1,"That’s fantastic! A passion for rocketry aligns well with your Mechanical Engineering degree and your aerospace concentration. Here's what you can do to explore and build expertise in rocket-related topics:
+
+---
+
+### **1. Focus on the Aerospace Engineering Concentration**
+Your B.S.M.E. with an Aerospace Engineering Concentration at UNC Charlotte is a solid start. Courses like **MEGR 3310 (Flight Mechanics)** and technical electives such as **MEGR 4242 (Applied Vehicle Aerodynamics)** and **MEGR 3245 (Advanced Experimental Methods)** will give you exposure to areas relevant to designing and working on rockets, such as aerodynamics, propulsion systems, and experimental analysis.
+
+---
+
+### **2. Take Relevant Technical Electives**
+To build your expertise in rocket design and propulsion, choose electives that cover high-speed vehicles, propulsion systems, and fluid dynamics. For example:
+   - **MEGR 3245: Advanced Experimental Methods** focuses on experimental labs related to rockets, jet propulsion, and other high-speed vehicles.
+   - **MEGR 4312: Aerospace Propulsion** (if available) could introduce you to propulsion systems used in aerospace applications.
+   - **MEGR 4237: Introduction to Control Systems** could help with understanding the stability and control of rocket vehicles.
+
+---
+
+### **3. Stay Engaged in Rocketry-Related Projects**
+UNC Charlotte may have organizations or project-based opportunities where you can work on rocket or flight-related designs. For example:
+   - **Capstone Senior Design Project**: Select a project related to aerospace or rockets.
+   - Look into **Aerospace Senior Design** courses like **MEGR 3315 and MEGR 3316**, and aim to work on approved rocket-related projects.
+
+---
+
+### **4. Join Relevant Student Organizations**
+Find out if there are any student groups dedicated to rocketry or aerospace engineering, such as:
+   - **AIAA (American Institute of Aeronautics and Astronautics)**: A professional society often found on university campuses that focuses on the aerospace field.
+   - Rocketry or UAV clubs: If your school has a team for building rockets or drones, you could gain hands-on experience.
+
+---
+
+### **5. Pursue Internships and Research**
+Gaining practical experience is key. Look for:
+   - **Internships at aerospace companies**: Consider companies like SpaceX, NASA, Boeing, or smaller aerospace startups that focus on rocket propulsion systems.
+   - Research opportunities with professors: Identify faculty members at UNC Charlotte working on propulsion, flight mechanics, or fluid dynamics. Don't hesitate to reach out about getting involved in their research.
+
+---
+
+### **6. Advance Your Skills with Software**
+Rockets involve significant analysis and simulation. Familiarizing yourself with relevant engineering tools can make you stand out:
+   - **Computational Fluid Dynamics (CFD):** Learn tools like ANSYS Fluent for simulating fluid flows around rocket designs.
+   - **Finite Element Analysis (FEA):** Software like SOLIDWORKS and MATLAB-Simulink can help in structural analysis and control system design.
+   - **Rocketry-Specific Design:** Investigate software like OpenRocket (often used in model rocketry).
+
+---
+
+### **7. Explore Graduate Programs or Certifications**
+If you want to deepen your expertise, post-graduate study in aerospace propulsion or astronautics could be valuable down the road.
+
+---
+
+I also encourage you to talk with your academic advisor, since they can help ensure that you’re taking the right classes, meeting prerequisites, and finding enrichment opportunities to pursue your goals. Let me know if you’re interested in more specifics, such as research opportunities or career paths!",1,,2.668914557,0.478559971,8.8018713,1,"The user is expressing interest in the field of rocketry and is likely looking for guidance related to academic and co-curricular opportunities within their Mechanical Engineering program that could help them pursue this interest. This could include courses, extracurricular activities like clubs or research, internships, or career paths in aerospace or rocket engineering.","<Semantic_Request_Programs> Search for degree programs, minors, or specializations within the catalog year 2024-2025 that relate to aerospace or rocket engineering. Include relevant options like an aerospace concentration, minor, or dual degree that complements Mechanical Engineering. </Semantic_Request_Programs>
+<Semantic_Request_Courses> Search for courses related to rocketry, aerospace engineering, propulsion systems, fluid dynamics, and similar topics. Provide course names, codes, and descriptions as well as prerequisites or corequisites within the 2024-2025 catalog. </Semantic_Request_Courses>
+<Semantic_Request_Support_Resources> Look for resources such as aerospace clubs, student organizations, research opportunities, or internships related to rockets or the aerospace industry that are available to Mechanical Engineering students. </Semantic_Request_Support_Resources>",1,1,1,0,0,tp,tp,opt-yes,opt-no,opt-no
+249,specific_1,Topic & Career Exploration,"So I'm basically done with my engineering classes and in my last semester but I feel like I haven't learned much about nuclear energy, are there classes I can take?",90 to 119,2021-2022,"BSEE Electrical Engineering, Power and Energy Systems Concentration",1,?,0,1,?,0,,,,,?,1,"It’s great that you’re thinking about expanding your knowledge in nuclear energy! As a senior Electrical Engineering student with a Power and Energy Systems concentration, there are a few relevant courses offered in the catalog that you might find interesting and beneficial:
+
+1. **MEGR 3452 - Introduction to Nuclear Engineering (3 credits)**  
+   - *Prerequisites:* MEGR 3112, MEGR 3114, MEGR 3116 (all with grades of C or above)  
+   This course introduces the science and technology of nuclear engineering with applications to power plant operation and design. Check the prerequisites to ensure you meet the course requirements.
+
+2. **PHYS 4140 - Nuclear Physics (3 credits)**  
+   - *Prerequisites:* PHYS 3141 and MATH 2171 or MATH 2241 (grades of C or above)  
+   This course explores topics such as the nucleus, radioactivity, nuclear reactions, fission, fusion, radiation interactions, and measurement. It offers a strong foundation in nuclear energy principles from a physics perspective.
+
+3. **MEGR 3451 - Stationary Power Plant Systems (3 credits)**  
+   - *Prerequisites:* MEGR 3112, MEGR 3114, MEGR 3116 (all with grades of C or above)  
+   This course applies thermodynamics and heat transfer principles in the context of stationary power plant systems, which includes nuclear power plants.
+
+4. **SEGR 4961 - Introduction to Energy Systems (3 credits)**  
+   - *Prerequisite:* Basic math, economics, or permission of instructor; Junior or Senior standing  
+   This course covers a broad overview of energy systems (fossil fuel, nuclear, and renewables) along with related environmental impacts, energy storage, and grid technologies.
+
+5. **ETEL 3231 – Power, Machines, and Energy (3 credits)**  
+   - *Prerequisite:* ETEL 3131 or ELET 2241  
+   Includes fundamental concepts of power generation and transmission, including renewable energy and potentially nuclear systems.
+
+It’s recommended to check with your department or academic advisor about availability and if you’re eligible to enroll in these courses before graduation. Additionally, some courses may align closely with your concentration requirements, while others might be taken as electives for extra exposure. 
+
+Would you like help with course selection, prerequisites, or understanding how these might fit into your current credit load?",1,,2.86130476,2.882871866,5.838672876,1,"The user, in their final semester of the BSEE Electrical Engineering program with a Power and Energy Systems Concentration, is seeking information about courses related to nuclear energy. They have expressed an interest in learning more about this topic, potentially through elective or supplementary courses.","<Specific_Request_Current_Major></Specific_Request_Current_Major>
+<Semantic_Request_Courses>Search for courses related to nuclear energy that may be relevant or available as electives for a BSEE Electrical Engineering student, particularly those related to energy systems, power, or nuclear engineering. Focus on prerequisites, course content, and if applicable to the Power and Energy Systems Concentration. Include the catalog year 2021-2022.</Semantic_Request_Courses>
+<Semantic_Request_Programs>Search for degree programs, concentrations, or certificates that include nuclear energy or related topics, which might complement the student's BSEE program. This should include any applicable interdisciplinary opportunities or minors.</Semantic_Request_Programs>",1,1,0,1,0,tp,opt-yes,tn,tp,opt-no
+250,specific_1,Topic & Career Exploration,"I have a little AP credit but haven't started school yet, can you tell me about my major and the classes I'll take?",Up to 29,2025-2026,BS Environmental Engineering,1,0,0,1,?,,,,,,0,1,"Absolutely! Welcome to UNC Charlotte and the **Environmental Engineering B.S. program**—it’s a great choice! This program prepares you to tackle real-world challenges involving soil, water, and atmosphere contamination. You’ll build a strong foundation in engineering principles, paired with design experiences that give you hands-on problem-solving opportunities.
+
+Here’s an overview of what to expect:
+
+---
+
+### **Your First Year: Common First-Year Curriculum**
+In your first year, you’ll complete the **Common First-Year Curriculum (CFY)**, which is shared across all engineering disciplines. These classes provide a foundational knowledge in engineering, math, and science and help give you flexibility if you want to explore other engineering programs. The CFY includes:
+
+- **ENGR 1300:** Exploring Engineering & Technology with Success  
+- **ENGR 1301:** Foundations of Math and Science for Engineering  
+- **ENGR 1302:** Logic and Computational Problem Solving  
+- **ENGR 1303:** Engineering Visualization and Graphical Communication  
+- **PHYS 2101 and PHYS 2101L:** Physics I and its lab  
+- Two math courses:  
+  - **MATH 1241:** Calculus I  
+  - **MATH 1242:** Calculus II (if you’re placed into this level or earn credit for Calc I)
+
+**Important notes**:  
+- It’s required to get at least a **C** in all these courses.  
+- You’ll also need to earn a **2.5 GPA** or higher to continue into sophomore-level engineering courses.
+
+---
+
+### **General Education Courses**
+Like all students, you’ll take classes to fulfill the university’s general education requirements (about 31-32 credit hours). Some of these courses may overlap with your major requirements (e.g., math, sciences). You’ll also have space for electives to explore interests outside your major.
+
+---
+
+### **Your Sophomore–Senior Year**
+Once you declare Environmental Engineering after completing the CFY, you’ll dive deeper into courses focused on principles, analysis, and design. Here’s a breakdown:
+
+#### **Foundation Courses (19 hours):**
+These cover biology, general chemistry, and advanced math:
+- **BIOL 1110:** Principles of Biology I  
+- **CHEM 1352:** General Chemistry for Engineers  
+- Math courses like **Differential Equations (MATH 2171)** and **Calculus III (MATH 2241)**  
+- Additional foundational courses in earth science and statistics.
+
+#### **Major Courses (46 hours):**
+This is where you focus on Environmental and Civil Engineering topics, such as:
+- Environmental lab work and field methods
+- Hydraulics, hydrology, and water/wastewater treatment system design
+- Thermodynamics and applied microbiology
+- Multidisciplinary design projects
+
+#### **Electives (13 credit hours total):**  
+You’ll take technical and specialization electives, with options to tailor your education. For example:
+- **Earth Science Elective:** Choose between courses like Soil Science or Geoenvironmental Site Characterization.  
+- **Subsurface Flow Elective:** Options include Groundwater Engineering or Landfill Design.  
+
+You can also choose two **Technical Electives** from fields like biology, chemistry, GIS, or sustainable energy systems.
+
+---
+
+### **AP Credit Consideration**
+Depending on your AP coursework, you may place out of some requirements (e.g., MATH 1241 for AP Calculus AB or CHEM 1352 for AP Chemistry). Be sure to confirm your scores with your advisor to see how they’ll apply toward your degree plan.
+
+---
+
+### **Next Steps**
+Your first step is to meet with your advisor before registering for your first semester. They’ll help you map out your courses based on your individualized schedule, AP credit, and math placement. The advising team will support you every step of the way to ensure you stay on track.
+
+Let me know if you’d like more details about any specific class or requirements, and good luck—you’re going to do amazing things in this program! 😊",1,,2.143885612,0.000586033,8.115774155,1,"The student is asking for information about their major, which is a BS in Environmental Engineering, as well as details about the courses they will take throughout their program. Their request includes a desire to understand more about their degree requirements and an overview of the classes they will be expected to take. The student has indicated they have AP credit and has not yet started formal coursework in their program.","<Specific_Request_Current_Major></Specific_Request_Current_Major>
+<Specific_Request_Current_Major_Sample_Schedules></Specific_Request_Current_Major_Sample_Schedules>",0,0,0,1,1,fn,tn,tn,tp,opt-yes
+251,specific_1,Topic & Career Exploration,"I'm really interested in desigining and building fast cars, maybe for racing, what are my options?",Up to 29,2025-2026,BSME Mechanical Engineering,1,1,0,?,?,,,,,,?,1,"It sounds like you're in the perfect program for your interests! As a student in the **B.S.M.E. with a Concentration in Motorsports Engineering program**, you’ll have the opportunity to focus specifically on designing and building cars for racing and motorsports applications. Here are several ways your program and opportunities at UNC Charlotte can help you achieve your goals:
+
+---
+
+### Specialization in Motorsports Engineering
+The Motorsports Engineering concentration is uniquely tailored for students like you who are passionate about racing. Highlights of the concentration include:
+- Course options like **MEGR 3211 (Road Vehicle Dynamics)** and **MEGR 4210 (Automotive Powerplants)** that explore the performance aspects of cars, including acceleration, braking, suspension, and engine design.
+- Hands-on opportunities in **MEGR 3355/3356 (Motorsports Senior Design I & II)**, where you’ll work on projects related to motorsports engineering.
+- Technical electives such as:
+  - **MEGR 4242 (Applied Vehicle Aerodynamics)**: Focuses on how air flows around race cars, affecting speed and efficiency.
+  - **MEGR 3244 (Tire Mechanics)**: Covers how tire performance impacts vehicle handling.
+  - **MEGR 3240 (Advanced Automotive Powerplants)**: Teaches the design and optimization of engines for competitive performance.
+
+All of these courses aim to give you both theoretical knowledge and practical, real-world skills in automotive and race car design!
+
+---
+
+### Hands-On Experience
+You'll participate in **MEGR 2299 (Introduction to Motorsports Engineering)** early in your program, where you’ll dive into automotive projects and possibly collaborate with industry partners. This is a great way to start networking and learning about motorsports applications on real racing systems.
+
+---
+
+### Elective Choices and Projects
+In your Motorsports Technical Electives, you can cover a variety of areas like:
+- Advanced data-driven analysis of race cars (**MEGR 3241 - Advanced Motorsports Instrumentation**).
+- Computational modeling with software commonly used for car design and aerodynamics (**MEGR 3231 - Advanced CAD/CAM** and **MEGR 2240 - Computational Methods for Engineers**).
+
+For your **Motorsports Senior Design**, you’ll tackle a major race-focused project in a team setting, emphasizing collaboration and innovation—ideal preparation for a career in motorsports.
+
+---
+
+### Industry Connections Through Motorsports
+UNC Charlotte has strong connections to the motorsports industry, especially considering that the Carolinas region is a hub for NASCAR and related automotive industries. Opportunities such as internships, co-ops, or team competitions (e.g., Baja SAE or Formula SAE) can provide you with professional experience and pave your way into the field.
+
+---
+
+### Recommended Actions:
+1. **Plan Your Technical Electives.** Speak with your advisor to align your elective classes with your interests in aerodynamics, engines, or suspension systems.
+2. **Join Motorsports-Related Projects or Teams.** Look into student organizations like Formula SAE or other performance automotive design teams.
+3. **Explore Internships.** Seek internships with motorsports teams, racing organizations, or companies that produce performance vehicles.
+
+---
+
+Your program is perfectly set up to help you succeed in pursuing a career in designing and building fast cars for racing! If you’d like help planning your schedule or looking at specific internships or extracurriculars, I recommend reaching out to your academic advisor or a faculty member connected to the Motorsports Engineering concentration.",1,,3.298283339,3.53816247,13.15445518,1,"The student is interested in pursuing opportunities related to designing and building fast cars, possibly within the context of racing. This suggests an interest in automotive engineering or related fields that could align with their current degree program in Mechanical Engineering. The student may be seeking information about relevant courses, specializations, student organizations, extracurricular activities, or career pathways within this field.","<Semantic_Request_Programs> Search for any concentrations, specializations, or minors within the Mechanical Engineering program or related programs that focus on automotive engineering, motorsports engineering, or vehicle design. Additionally, look for dual degree or certificate programs that are pertinent. </Semantic_Request_Programs>
+<Semantic_Request_Courses> Search for courses related to automotive design, motorsports engineering, or vehicle dynamics offered within the Mechanical Engineering curriculum or as electives. Include prerequisites or restrictions, if available. </Semantic_Request_Courses>
+<Semantic_Request_Support_Resources> Search for extracurricular or support resources that align with the interest in automotive engineering, such as Formula SAE teams, student groups focused on motorsports, industry partnerships, or internships in the automotive or racing sectors. </Semantic_Request_Support_Resources>",1,1,1,0,0,tp,tp,fp,opt-no,opt-no
+252,specific_1,Topic & Career Exploration,I want to make nano scale devices and work internationally,None yet!,2025-2026,BS Dual Degree Physics and Mechanical Engineering,1,1,1,1,?,,,,,,1,1,"It's great to hear about your interest in nanoscale devices and international work! Several paths in your **BS Dual Degree in Physics and Mechanical Engineering** can prepare you for this goal. Here's how you can align your academic and career planning:
+
+---
+
+### 1. **Focus on Nanoscale Science and Courses**
+   To work with nanoscale devices, you can tailor your education toward courses and technical electives that deepen your knowledge in nanotechnology and materials science. Relevant courses include:
+   - **MEGR 3236 - Introduction to Nanoscale Science and Engineering**: This elective covers nanomanufacturing, nanomaterials, and related environmental issues, directly tying into your interests.
+   - **MEGR 3233 - Introduction to Biomaterials**: If you're working with nanoscale biomedical devices, this course is beneficial.
+   - **PHYS 4181 - Solid State Physics**: Teaches about crystal structures and electronic properties, foundational for developing nanodevices.
+   - **MEGR 3238 - Microscopy for Engineering**: Provides hands-on techniques like Scanning Electron Microscopy, which are crucial for nanoscale research.
+
+---
+
+### 2. **Consider Research Opportunities**
+   Participating in research can help you gain hands-on experience. Look for opportunities in:
+   - Undergraduate research projects, like **PHYS 3900 - Undergraduate Research**, focusing on nanotechnology or materials science.
+   - Labs within the Department of Physics and Department of Mechanical Engineering conducting nanoscale or materials studies.
+
+   Contact professors actively researching in these areas to join their lab or projects.
+
+---
+
+### 3. **Dual Degree International Opportunities**
+   Working internationally requires strong qualifications and global awareness. Here are some steps:
+   - Explore **study abroad programs** offered by UNC Charlotte that align with your major. These can provide international exposure and open networking opportunities for global careers.
+   - Attend career fairs or seminars focusing on international engineering and physics opportunities.
+   - Learn about international organizations or companies in nanotechnology. Look into industry leaders like IBM, Intel, and international materials research labs.
+
+---
+
+### 4. **Plan for Graduate Studies**
+   A master's or Ph.D. in nanotechnology, materials science, or nanodevice engineering can give you deeper specialization and open international career pathways. Programs in these research-driven fields often collaborate globally across universities and industries.
+
+---
+
+### 5. **Skills to Build**
+   - **Programming and Modeling:** Many nanoscale applications rely on simulations. Getting proficient in tools like MATLAB, COMSOL, and CAD software will be invaluable.
+   - **Global Perspective:** Develop cultural competence by taking global elective courses or engaging in multicultural programming on campus.
+
+---
+
+To support your progress, I strongly recommend staying in touch with your academic advisor and departmental resources to discuss your goals and potential elective paths that complement your aspirations. Connecting with the **Department of Physics and Optical Science** or **Mechanical Engineering's advisors** would also be an excellent next step.
+
+If you need help creating a detailed academic plan or finding resources for international opportunities, let me know!",1,,2.461626768,1.557419777,13.68086886,1,"The user is expressing an academic and career interest in developing nano-scale devices and working internationally. This indicates a focus on nanotechnology-related fields and potentially global opportunities. They are likely seeking guidance on aligning their current dual degree program in Physics and Mechanical Engineering with these goals, including specific courses, research options, or career pathways related to nanotechnology and international work environments.","<Specific_Request_Current_Major> </Specific_Request_Current_Major>
+<Semantic_Request_Programs> Please search for degree programs, concentrations, minors, or graduate pathways related to nanotechnology, materials science, or international engineering opportunities that complement a BS in Physics and Mechanical Engineering. </Semantic_Request_Programs>
+<Semantic_Request_Courses> Please search for courses related to nanotechnology or device fabrication within the Physics and Mechanical Engineering programs, including prerequisites and potential electives that may enhance expertise in the field. </Semantic_Request_Courses>",1,1,0,1,0,tp,tp,fn,tp,opt-no
+253,specific_1,Topic & Career Exploration,"So cars are interesting but I'm interested in car crashes and how people get injured and how we can keep them safe, what should I study for that?",30 to 59,2022-2023,"BSME Mechanical Engineering, Motorsports Engineering Concentration",1,1,0,?,0,,,,,,?,1,"It sounds like you're interested in the intersection of vehicle dynamics, crash safety, human biomechanics, and injury prevention—this is an important and fascinating field! To study and work in this area, you'll likely need a mix of knowledge in mechanical engineering, biomechanics, human factors, and safety systems. Here's how you can align your academic path and interests:
+
+### Key Areas to Study:
+1. **Vehicle Dynamics and Automotive Design**
+   - Courses like **MEGR 4211 - Road Vehicle Dynamics** or **MEGR 4244 - Tire Mechanics** are great starting points to develop an understanding of how vehicles behave, including their motion and stability.
+   - This knowledge is crucial for understanding vehicle crash dynamics.
+
+2. **Biomechanics and Injury Analysis**
+   - Courses such as **MEGR 4271 - Orthopedic Biomechanics** and **MEGR 3234 - Introduction to Biodynamics** explore the mechanical properties of human tissues and how forces affect the human body. These are directly tied to understanding injury mechanisms from crashes.
+   - **MEGR 4272 - Mechanics of the Human Locomotor System** could also give you insights into how to simulate and analyze human movement during crash scenarios.
+
+3. **Crash Safety and Human Factors**
+   - **CEGR 4181 - Human Factors in Traffic Engineering** will provide a look at how drivers and pedestrians interact with traffic systems and vehicles, incorporating safety considerations.
+   - **CEGR 4184 - Highway Safety** focuses on accident analysis and countermeasures, which seems to directly align with your interest in preventing crashes and improving safety.
+
+4. **Applied Ergonomics and Systems Safety**
+   - The course **ETGR 4303 - Applied Ergonomics and Human Factors** addresses how human factors are integrated into product and system design, ensuring safety and minimizing injuries.
+   - **ETGR 4305 - System Safety Design and Management** might also help you understand methods of risk assessment and safety design, with applications in automotive safety systems.
+
+### Additional Opportunities:
+- **Focus on Research:** Look for opportunities to get involved in research projects related to transportation safety, crash simulations, or human injury modeling. You may find projects hosted within your department or with organizations focused on automotive safety.
+- **Pursue Internships or Industry Projects:** Seek internships or partnerships with automotive companies, motorsports teams, or government organizations focused on crash research or safety regulations (like NHTSA or IIHS).
+- **Technical Electives:** Customize your electives to include courses related to safety, vehicle design, and biomechanics where possible.
+  
+### Speak with Your Advisor:
+Given your interest and your current academic path in the Motorsports Engineering Concentration of Mechanical Engineering, it would be a great idea to discuss your goals with your academic advisor. They can help guide you toward choosing the right courses to complement your concentration, as well as suggest extracurricular opportunities like internships or clubs related to automotive safety and crash research.
+
+Would you like help narrowing down a potential course list, or are you interested in exploring internships or projects in this field? Let me know!",1,,3.891189337,0.5885818,9.966812611,1,"The user is expressing an academic and career interest related to vehicle safety, specifically focusing on car crashes, human injuries, and methods to ensure passenger safety. They are seeking guidance on what field of study or academic pathway aligns with these interests. Although their current major is BSME with a concentration in Motorsports Engineering, their question suggests they may want to explore additional or alternative academic programs or concentrations that address areas like crash analysis, biomechanics, and safety engineering.","<Semantic_Request_Programs>Search for degree programs or concentrations that align with vehicle safety, crash analysis, biomechanics, or human injury prevention. Include fields like biomechanics, safety engineering, or related mechanical engineering specialties. </Semantic_Request_Programs>
+<Semantic_Request_Courses>Search for courses relevant to vehicle crash dynamics, injury biomechanics, human factors engineering, or automotive safety systems. Focus on courses that deal with engineering or safety-related topics. </Semantic_Request_Courses>
+<Semantic_Request_Support_Resources>Search for guidance or advising resources that could help the user explore academic and career pathways in biomechanics, transportation safety, or engineering solutions for injury prevention. Include resources specific to career exploration or academic program advising. </Semantic_Request_Support_Resources>",1,1,1,0,0,tp,tp,fp,opt-no,tn
+254,specific_1,Graduation Timeline & Requirements,"I've been in school forever and just want to graduate, what do I need to do",150 or more,2022-2023,"BSEE Electrical Engineering, Machine Learning Concentration",0,0,1,1,1,,,,,,1,1,"It sounds like you're eager to wrap things up and graduate—let’s figure out how to get you there! Since you’ve already earned 150+ credit hours, you're well beyond the 120 credit hours required for your B.S.E.E. with a Machine Learning Concentration. Here's what you should do next to confirm what remains and graduate successfully:
+
+---
+
+### 1. **Check Your Degree Requirements**  
+   Review your DegreeWorks audit (or similar tracking tool) to ensure:
+   - **General Education:** Confirm that all general education requirements are completed.
+   - **Core Major Courses:** Check that all required Electrical Engineering and Machine Learning courses, as outlined in the catalog, are completed.
+   - **Concentration/Electives:** Ensure you've met the 9 credit hours of Machine Learning-specific courses and any remaining technical/restricted elective requirements.
+   - **GPA Requirement:** Verify that your overall and major GPA meet the **minimum 2.5** required for the degree.
+
+---
+
+### 2. **Meet with Your Advisor**  
+   Schedule a meeting with your academic advisor as soon as possible. Advisors will:
+   - Review your academic progress and identify any unmet requirements (even small details, like a missing general education course, could delay your graduation).
+   - Help you formalize a plan of action if any requirements are incomplete.
+   - Assist with petitioning for substitutions or waivers if you have unusual circumstances (e.g., extra credits or courses you've completed that don't quite align).
+
+---
+
+### 3. **Apply for Graduation**  
+   If you haven’t already:
+   - Verify the deadlines for submitting your graduation application through your university portal.
+   - Apply immediately for the intended graduation term (Fall, Spring, or Summer).
+
+---
+
+### 4. **Focus on Remaining Classes/Tasks**  
+   - If you discover specific missing classes, prioritize registering for those next semester. 
+   - If you're finishing Senior Design (ECGR 4241/4242), confirm with your instructor that you're on track for completion.
+   - Double-check for any incomplete grades or holds on your account, as they could prevent graduation.
+
+---
+
+### 5. **Leverage Electives Strategically**  
+   - If technical/restricted electives remain, focus on ones that are easier for you to manage or ones closely aligned with what you've previously studied.
+   - Some courses may even overlap requirements if chosen carefully (e.g., Machine Learning technical electives).
+
+---
+
+### Final Suggestions:  
+- Since you’re feeling burnt out, be honest with your advisor about your desire to finish as quickly as possible. They might identify shortcuts like course substitutions, alternative electives, or strategies to prevent taking unnecessary classes.
+- Consider summer courses or late registration options if you want to finish sooner than expected.
+
+---
+
+In short, meeting with your advisor immediately is your best path forward to ensure nothing holds up your degree. You’re almost there—just a few final steps to cross the finish line! Let me know if you need help preparing questions for your advisor.",1,,2.424936533,0.001298666,9.416086197,1,"The user is expressing frustration over their prolonged time in school and is seeking guidance on what steps remain for them to graduate. They are asking for clarity on any remaining degree requirements, including courses, credits, or other obligations, specific to their BSEE Electrical Engineering program with a Machine Learning Concentration. The intent is to get a clear and actionable understanding of how to complete their degree as efficiently as possible.","<Specific_Request_Current_Major> </Specific_Request_Current_Major>
+<Specific_Request_Current_Major_Sample_Schedules> </Specific_Request_Current_Major_Sample_Schedules>",0,0,0,1,1,tn,tn,fn,tp,tp
+255,specific_1,Graduation Timeline & Requirements,"I have a ton of AP credit and want to graduate fast, like 2-3 years max, how fast can I graduate?",30 to 59,2025-2026,"BSEE Electrical Engineering, Machine Learning Concentration",0,0,0,1,1,,,,,,1,1,"Graduating in 2-3 years as an Electrical Engineering major with a Machine Learning concentration at UNC Charlotte is challenging but theoretically possible with significant AP credit **and very careful course planning.** The degree requires 120 credit hours including general education, major courses, concentration requirements, and electives, so your timeline depends on several key factors:
+
+### Steps to Assess Feasibility
+1. **Determine How Many Credits Transferred**
+   - Find out exactly how your AP credits apply to required courses within your degree program. Do they satisfy general education requirements? Have you tested out of foundational courses like calculus or physics? Confirm these with your advisor.
+
+2. **Identify Remaining Core Requirements**
+   - Major-related coursework (like circuits, programming, and machine learning electives) follows a **strict sequence** due to prerequisites, which makes accelerating the program difficult. For example, you cannot take advanced courses until completing foundational ones like MATH 2164 and ECGR 2111.
+
+3. **Course Load and Scheduling**
+   - A maximum full-time course load is typically 18 credit hours per semester. To graduate in two years, you would need to take close to **20-30 credit hours per semester**, including possible summer courses.
+   - Some technical upper-level courses may not be offered every semester, so you'll need to carefully plan your schedule well in advance.
+
+4. **Utilize Summer Courses**
+   - Completing major and general education classes during summer terms can significantly lighten your regular semester load and help you stay on track.
+
+5. **Credit for Technical Electives**
+   - If your AP courses can't apply to the core curriculum but can count as technical electives or unrestricted electives, use this to your advantage to reduce extra credit hours needed.
+
+6. **Senior Design**
+   - Your program finishes with a **Senior Design Project (ECGR 4241/4242)**, which typically spans two semesters your senior year. This may be hard to accelerate based on department scheduling.
+
+---
+
+### General Recommendations
+- **Meet with Your Advisor Immediately**:
+   Your advisor will evaluate your AP credits and help you create a realistic degree plan. This is essential to ensure you only take required courses and stay on top of prerequisites.
+
+- **Plan for Heavy Workload**:
+   Be prepared for intense semesters, as many engineering courses are time-intensive and demanding. Balancing 18+ credits with labs, projects, and studying requires excellent time management.
+
+- **Leverage Opportunities for Substitutions**:
+   Departments sometimes allow course substitutions for equivalent content. Work with your advisor to see if they can waive certain requirements for accelerated progress.
+
+---
+
+### Estimated Timeline Scenarios
+1. **Two-Year Path**:
+   - Likely possible only if you enter with **extensive AP/transfer credit** covering both your general education and lower-division major courses (e.g., Calculus I-III, Physics I-II, programming, etc.) and can handle consistent 18+ credit semesters plus summer coursework.
+
+2. **Three-Year Path**:
+   - More realistic if AP credit has substantially reduced your general education load but you need time to complete (in sequence) your upper-division major courses, including labs and Senior Design.
+
+---
+
+Ultimately, this depends heavily on your AP credit, course sequencing, and your ability to maintain a packed course load. It is highly recommended that you meet with your academic advisor and review your AP evaluation in detail to create a customized plan!",1,,1.90950489,0.000453234,9.504326105,1,"The user wants to know how quickly they can graduate with their current major (BSEE Electrical Engineering, Machine Learning Concentration) based on their AP credit and presumably aims to complete their degree in an accelerated timeframe (2-3 years). Their intent is to understand the feasibility of an expedited graduation timeline and what specific steps or considerations would be involved in accomplishing this goal.","<Specific_Request_Current_Major></Specific_Request_Current_Major>
+<Specific_Request_Current_Major_Sample_Schedules></Specific_Request_Current_Major_Sample_Schedules>
+<Semantic_Request_Support_Resources> Provide information about academic advising or degree-planning resources that can assist the user with creating an accelerated graduation plan. </Semantic_Request_Support_Resources>",0,0,1,1,1,tn,tn,fp,tp,tp

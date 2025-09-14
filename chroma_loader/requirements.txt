@@ -1,0 +1,4 @@
+# Vector database Python API
+chromadb==1.0.9
+chardet==5.2.0
+pandas==2.2.3

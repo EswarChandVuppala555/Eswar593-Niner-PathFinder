@@ -1,0 +1,8 @@
+FROM python:3.13-slim
+WORKDIR /app
+COPY ./chat_frontend_streamlit /app
+COPY ./rag_corpus/staged/ug_cat/ug_cat_metadata.csv /app/rag_corpus/ug_cat/ug_cat_metadata.csv
+RUN python -m pip install --upgrade pip
+RUN python -m pip install -r requirements.txt
+EXPOSE 8501
+CMD ["streamlit", "run","chat_frontend.py"]

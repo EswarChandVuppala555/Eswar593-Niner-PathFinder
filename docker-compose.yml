@@ -1,0 +1,93 @@
+
+services:
+
+  chroma:
+    image: chromadb/chroma:latest
+    environment:
+      - ALLOW_RESET=true
+      - ANONYMIZED_TELEMETRY=False
+    ports:
+      - "${CHROMA_PORT}:8000"
+    healthcheck:
+      test: ["CMD-SHELL", "echo 'health check running'"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+    # networks:
+    #   - chroma-network
+    
+    
+  chroma-loader:
+    build:
+      context: .
+      dockerfile: Dockerfile_chroma_loader
+    environment:
+      - CHROMA_HOST=chroma
+      - CHROMA_PORT=$CHROMA_PORT
+      - EMBEDDING_MODEL_NAME=$EMBEDDING_MODEL_NAME
+      - EMBEDDING_MODEL_FORMAT=$EMBEDDING_MODEL_FORMAT
+      - COLLECTION_NAME_DEGREE_PROGRAMS=$COLLECTION_NAME_DEGREE_PROGRAMS
+      - COLLECTION_NAME_COURSES=$COLLECTION_NAME_COURSES
+      - STORAGE_RETRIEVAL_MODE=$STORAGE_RETRIEVAL_MODE
+    depends_on:
+      chroma:
+        condition: service_healthy
+    # networks:
+    #   - chroma-network
+
+  chat-backend:
+    build: 
+      context: .
+      dockerfile: Dockerfile_chat_backend
+    ports:
+      - "${CHAT_BACKEND_PORT}:${CHAT_BACKEND_PORT}"
+    environment:
+      - OPENAI_API_KEY=$OPENAI_API_KEY
+      - CHROMA_HOST=chroma
+      - CHROMA_PORT=$CHROMA_PORT
+      - EMBEDDING_MODEL_NAME=$EMBEDDING_MODEL_NAME
+      - EMBEDDING_MODEL_FORMAT=$EMBEDDING_MODEL_FORMAT
+      - COLLECTION_NAME_DEGREE_PROGRAMS=$COLLECTION_NAME_DEGREE_PROGRAMS
+      - COLLECTION_NAME_COURSES=$COLLECTION_NAME_COURSES
+      - STORAGE_RETRIEVAL_MODE=$STORAGE_RETRIEVAL_MODE
+      - PLANNING_MODEL_ID=$PLANNING_MODEL_ID
+      - GENERATION_MODEL_ID=$GENERATION_MODEL_ID
+    depends_on:
+      chroma:
+        condition: service_healthy
+    # networks:
+    #   - chroma-network
+    #   - chat-network
+
+  chat-frontend-streamlit:
+    build: 
+      context: .
+      dockerfile: Dockerfile_chat_frontend_streamlit
+    ports:
+      - "${CHAT_FRONTEND_STREAMLIT_PORT}:${CHAT_FRONTEND_STREAMLIT_PORT}"
+    environment:
+      - CHAT_BACKEND_PORT=$CHAT_BACKEND_PORT
+    depends_on:
+      - chat-backend
+    # networks:
+    #   - chat-network
+  
+  # chat-frontend-react:
+  #   build: 
+  #     context: .
+  #     dockerfile: Dockerfile_chat_frontend_react
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - chat-backend
+  #   environment:
+  #     - REACT_APP_API_URL=http://localhost:8001
+    # networks:
+    #   - app-network
+
+# networks:
+#   chroma-network:
+#     driver: bridge
+#   chat-network:
+#     driver: bridge

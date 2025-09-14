@@ -1,0 +1,54 @@
+# Department of Industrial and Systems Engineering
+
+The main objective of the [Department of Industrial and Systems Engineering](http://seem.charlotte.edu/) is to equip graduates with the essential Systems Engineering skills that are needed in industry to enable them to perform in a global engineering environment. These skills include:
+
+- Decision and Risk Analysis
+- Systems Modeling and Optimization
+- Systems Design, Planning, and Analysis
+- Supply Chain and Logistics Engineering
+- Quality Engineering
+- Engineering Management
+- Energy Systems Design and Planning
+- Communication and Presentation
+- Understanding of Global Business Dynamics
+
+These objectives are accomplished through a flexible curriculum and through interactions with other departments and colleges of the University and with the professional community.
+
+_"Systems Engineering is an engineering discipline whose responsibility is creating and executing an interdisciplinary process to ensure that the customers' and stakeholders' needs are satisfied in a high quality, trustworthy, cost-efficient and schedule-compliant manner throughout a system's entire life cycle." (INCOSE, 2007)_
+
+Systems Engineering as an engineering field has very broad applications in a wide variety of industries including energy, telecommunications, construction, manufacturing, transportation and distribution, information technology, financial services, automotive, retail, healthcare and airlines, at all levels from an entry position to top management. This wide applicability, along with a very strong focus to model, analyze and manage complex engineered systems with proven tools and techniques are the primary strengths of SE. Practically every organization requires Systems Engineers to identify, characterize, and solve the right problems and to eliminate inefficiencies and root-causes that generate these problems.
+
+### Degree Programs
+
+The department offers a Bachelor of Science in Systems Engineering (BSSE) degree and a Master of Science in Engineering Management (MSEM) degree. For information about the master's program, see the _UNC Charlotte Graduate Catalog_.
+
+Concentrations and technical and liberal studies electives allow flexibility for study in specific areas. Each student may design a technical elective program with his or her advisor's approval in order to achieve individual goals and follow a desired track.
+
+Qualified students may apply for Early Entry into the graduate program in Engineering Management during their Junior or Senior year. If accepted, students may take optional courses for graduate credit and begin work on their master's degree while completing their undergraduate degree.
+
+### Student Outcomes
+
+Upon graduation, students have:
+
+1. An ability to apply knowledge of mathematics, science, and engineering to identify, formulate, and solve complex engineering problems.
+2. An ability to apply the engineering design process to create thermal or mechanical systems that meet specified application goals with consideration for public health, safety, and welfare, as well as global, cultural, social, environmental, and economic factors.
+3. An ability to communicate effectively with a range of audiences through technical writing and oral presentations.
+4. An ability to recognize ethical and professional responsibilities in engineering situations and make informed judgments, which must consider the impact of engineering solutions in global, economic, environmental, and societal contexts.
+5. A record of productive participation as team members or in leadership roles on multidisciplinary teams which create a collaborative and inclusive environment, establish goals, plan tasks, and meet objectives.
+6. An ability to develop experimental protocols and perform experiments designed to test or verify mechanical principles, components, and properties; analyze results; interpret data; and use engineering judgment to draw conclusions.
+7. An ability to acquire and apply new knowledge as needed, using appropriate learning strategies.
+
+### Accreditation
+
+The Bachelor of Science in Systems Engineering (BSSE) degree program within the Industrial and Systems Engineering Department at The University of North Carolina at Charlotte is accredited by the Engineering Accreditation Commission of ABET, www.abet.org.
+
+### Programs
+
+**Majors**
+
+- [Systems Engineering, B.S.S.E.](https://catalog.charlotte.edu/preview_program.php?catoid=40&poid=11504)
+- [Systems Engineering, Energy Systems Concentration, B.S.S.E.](https://catalog.charlotte.edu/preview_program.php?catoid=40&poid=11850)
+
+**Early Entry Programs**
+
+- [Engineering Management, M.S., Early Entry](https://catalog.charlotte.edu/preview_program.php?catoid=40&poid=11614)
