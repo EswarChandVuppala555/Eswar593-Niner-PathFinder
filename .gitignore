@@ -169,3 +169,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# VS Code settings
+.vscode/
+
+# Docker
+*.pid
+*.log
+
+# Jupyter notebook hidden folders
+*.ipynb_checkpoints/
