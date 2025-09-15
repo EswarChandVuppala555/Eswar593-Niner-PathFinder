@@ -39,10 +39,10 @@ If you forget this command before start and get an error message due to not savi
  
 2. git status   ------- To check the modifications files names from the project folder
 
-3. git add .  (or) git add filename.py   ------- This adds all modified files into GitHub
+3. git add .  (or) git add filename.py   ------- (Prepare locally) This adds all modified files into GitHub
 3. git status   ------ Check again for all modifications/ updated
-4. git commit -m "Enhanced feature X in chat_backend"   ------- Commit the changes
-5. git push   ------ (This is the main command) For saving and sending changes to the GitHub repository
+4. git commit -m "Enhanced feature X in chat_backend"   ------- (Save locally) Commit the changes
+5. git push   ------ (This is the main command) (Update in GitHub) For saving and sending changes to the GitHub repository
 
 
 So from now on, the cycle is:
