@@ -13,7 +13,7 @@
 2. **Clone repository using Git** - From the command line, run:
 
     ```bash
-    git clone https://github.com/neal-logan/niner-pathfinder
+    git clone https://github.com/EswarChandVuppala555/Eswar593-Niner-PathFinder
     ```
 
 3. **Set up environmental variables** - In the project folder, create a file called **.env** according to .env.example with necessary secrets.
