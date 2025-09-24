@@ -1,0 +1,7 @@
+FROM python:3.13-slim
+WORKDIR /app
+COPY ./feedback_dashboard /app
+RUN python -m pip install --upgrade pip
+RUN python -m pip install -r requirements.txt
+EXPOSE 8502
+CMD ["streamlit", "run", "dashboard.py", "--server.port", "8502", "--server.address", "0.0.0.0"]

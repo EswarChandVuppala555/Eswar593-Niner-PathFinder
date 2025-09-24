@@ -238,6 +238,13 @@ else:
                 st.error(f"Error: {e}")
 
         # Feedback section
+        feedback_reasons = [
+                    "Not accurate",
+                    "Not enough detail",
+                    "Off-topic",
+                    "Too vague",
+                    "Other"
+                ]
         if len(st.session_state.messages) > 1:
             if "feedback_submitted" not in st.session_state:
                 st.session_state.feedback_submitted = False
@@ -259,20 +266,33 @@ else:
                         st.rerun()
             
             if st.session_state.get("show_feedback_form", False) and not st.session_state.feedback_submitted:
+                # Show dropdown if negative feedback
+                feedback_reason = ""
+                if st.session_state.get("feedback_type") == "negative":
+                    feedback_reason = st.selectbox(
+                        "Why was it not helpful?",
+                        [""] + feedback_reasons,
+                        key="feedback_reason"
+                    )
+
+                # Free-text area (optional for both positive/negative)
                 feedback_text = st.text_area("Please share your suggestions:", key="feedback_text")
+
                 if st.button("Submit Feedback"):
                     try:
                         feedback_response = requests.post(
                             "http://host.docker.internal:8001/submit-feedback",
                             json={
                                 "feedback_type": st.session_state.get("feedback_type", ""),
+                                "feedback_reason": feedback_reason,  # <-- new field
                                 "feedback_text": feedback_text,
                                 "student_catalog_year": st.session_state.get("catalog_year", ""),
                                 "student_degree_program": st.session_state.get("degree_program", ""),
+                                "student_credits_earned": st.session_state.get("credits_earned", ""),
                                 "conversation_history": st.session_state.messages
                             }
                         )
-                        
+
                         if feedback_response.status_code == 200:
                             st.success("Thank you for your feedback!")
                             st.session_state.feedback_submitted = True
@@ -282,6 +302,7 @@ else:
                             st.error(f"Error submitting feedback: {feedback_response.text}")
                     except Exception as e:
                         st.error(f"Connection error: {e}")
+
 
     # Right column - Response Details (this will stay in view)
     with right_col:

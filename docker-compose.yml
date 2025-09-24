@@ -53,9 +53,12 @@ services:
       - STORAGE_RETRIEVAL_MODE=$STORAGE_RETRIEVAL_MODE
       - PLANNING_MODEL_ID=$PLANNING_MODEL_ID
       - GENERATION_MODEL_ID=$GENERATION_MODEL_ID
+    volumes:
+      - ./data:/app/data   # 👈 Mounts local ./data folder into container
     depends_on:
       chroma:
         condition: service_healthy
+
     # networks:
     #   - chroma-network
     #   - chat-network
@@ -68,8 +71,24 @@ services:
       - "${CHAT_FRONTEND_STREAMLIT_PORT}:${CHAT_FRONTEND_STREAMLIT_PORT}"
     environment:
       - CHAT_BACKEND_PORT=$CHAT_BACKEND_PORT
+    volumes:
+      - ./data:/app/data
     depends_on:
       - chat-backend
+  
+  feedback-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile_feedback_dashboard
+    ports:
+      - "8502:8502"
+    volumes:
+      - ./data:/app/data   # 👈 share the same feedback_log.csv with backend
+    depends_on:
+      - chat-backend
+   
+  
+
     # networks:
     #   - chat-network
   

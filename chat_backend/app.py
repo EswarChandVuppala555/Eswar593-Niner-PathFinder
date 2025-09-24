@@ -1,6 +1,9 @@
 import os
 import logging
 from typing import Optional, List, Dict, Any
+import csv
+from datetime import datetime
+from fastapi import Request
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -55,6 +58,25 @@ class FeedbackResponse(BaseModel):
 # SET UP LOGGING
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+
+FEEDBACK_FILE = "data/feedback_log.csv"
+
+# Ensure the CSV exists with headers
+if not os.path.exists(FEEDBACK_FILE):
+    with open(FEEDBACK_FILE, mode="w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow([
+            "timestamp",
+            "feedback_type",
+            "feedback_reason",
+            "feedback_text",
+            "student_catalog_year",
+            "student_degree_program",
+            "student_credits_earned",
+            "chat_response",
+            "conversation_history"
+        ])
 
 # Initialize the FastAPI app
 app = FastAPI(
@@ -177,8 +199,55 @@ async def chat_request(chat_request: ChatRequest):
     """Process user prompt and return response"""
     return chatbot.chat(chat_request)
 
-# @app.post("/submit-feedback", response_model=FeedbackResponse)
-# async def submit_feedback_endpoint(feedback_request: FeedbackRequest):
+@app.post("/submit-feedback", response_model=FeedbackResponse)
+async def submit_feedback_endpoint(request: Request):
+    """Submit user feedback about the chatbot"""
+    try:
+        data = await request.json()
+
+        feedback_type = data.get("feedback_type", "")
+        feedback_reason = data.get("feedback_reason", "")
+        feedback_text = data.get("feedback_text", "")
+        catalog_year = data.get("student_catalog_year", "")
+        degree_program = data.get("student_degree_program", "")
+        credits = data.get("student_credits_earned", "")
+        conversation_history = str(data.get("conversation_history", ""))
+        chat_response = ""
+
+        # Extract last assistant reply (if available)
+        if isinstance(data.get("conversation_history"), list):
+            for msg in reversed(data["conversation_history"]):
+                if msg.get("role") == "assistant":
+                    chat_response = msg.get("content", "")
+                    break
+
+        # Append feedback to CSV
+        with open(FEEDBACK_FILE, mode="a", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow([
+                datetime.utcnow().isoformat(),
+                feedback_type,
+                feedback_reason,
+                feedback_text,
+                catalog_year,
+                degree_program,
+                credits,
+                chat_response,
+                conversation_history
+            ])
+
+        return FeedbackResponse(
+            status="success",
+            message="Feedback logged successfully",
+            error_code=0
+        )
+    except Exception as e:
+        logger.error(f"Error logging feedback: {e}")
+        return FeedbackResponse(
+            status="error",
+            message=f"Error logging feedback: {e}",
+            error_code=500
+        )
 #     """Submit user feedback about the chatbot"""
 #     return process_feedback(feedback_request)
 

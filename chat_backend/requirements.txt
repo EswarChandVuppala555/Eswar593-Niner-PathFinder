@@ -1,23 +1,21 @@
-# # NLP stuff for keyword search
-# rake_nltk==1.0.6
-# nltk==3.9.1
-
 # API framework
 fastapi[standard]==0.115.8
 
 # Handles data validation, parsing, error handling, 
 # conversions, and type hints
-# Necessary for the API
 pydantic==2.10.6
 
 # Web server used by FastAPI
 uvicorn[standard]==0.34.0
 
-# Weaviate vector database Python API
-# weaviate-client==4.11.0
+# Vector database Python API
 chromadb-client==1.0.9
 
 # OpenAI Python API for interacting with generative
 # and embedding models
 openai==1.64.0
 
+# Optional NLP libraries (currently not used, safe to leave commented)
+# rake_nltk==1.0.6
+# nltk==3.9.1
+# weaviate-client==4.11.0
