@@ -76,16 +76,16 @@ services:
     depends_on:
       - chat-backend
   
-  feedback-dashboard:
-    build:
-      context: .
-      dockerfile: Dockerfile_feedback_dashboard
-    ports:
-      - "8502:8502"
-    volumes:
-      - ./data:/app/data   # 👈 share the same feedback_log.csv with backend
-    depends_on:
-      - chat-backend
+#  feedback-dashboard:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile_chat_frontend_streamlit
+#    ports:
+#      - "8502:8502"
+#    volumes:
+#      - ./data:/app/data   # 👈 share the same feedback_log.csv with backend
+#    depends_on:
+#      - chat-backend
    
   
 
