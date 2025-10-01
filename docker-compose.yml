@@ -76,6 +76,20 @@ services:
     depends_on:
       - chat-backend
   
+  
+  feedback-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile_feedback_dashboard
+    ports:
+      - "8502:8502"
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - chat-backend
+
+
+
 #  feedback-dashboard:
 #    build:
 #      context: .

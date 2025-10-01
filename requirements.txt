@@ -14,3 +14,10 @@ openai==1.64.0
 anthropic == 0.50.0
 
 firecrawl-py == 2.2.0
+
+streamlit==1.42.1
+pandas==2.2.3
+chardet==5.2.0
+
+matplotlib==3.9.2
+plotly==5.24.1

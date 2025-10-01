@@ -7,6 +7,9 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+import streamlit as st
+st.set_page_config(page_title="Student Chat", page_icon="💬")
+
 st.title("⛏️ Niner Pathfinder ⛏️")
 
 
