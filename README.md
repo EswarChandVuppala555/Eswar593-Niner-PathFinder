@@ -28,7 +28,13 @@
 
 5. **Chat!** - To interact with the Streamlit: Open a web browser and navigate to [**localhost:8501**](localhost:8501)
 
-6. **Shutdown/cleanup** - Remember to shut down and clean up by deleting your Docker Containers and Docker Images in Docker Desktop - otherwise it'll keep running in the background
+6. **API Error: Internal Server Error** - If you get this error in the frontend for every question in the LLM chat, then in the project folder in cmd,
+                                            1. Type **docker ps**
+                                            2. Get the container ID(######) for the chat-backend image
+                                            3. Now type **docker logs ######**
+                                            4. You can check the error that causing the LLM with API error.
+   
+8. **Shutdown/cleanup** - Remember to shut down and clean up by deleting your Docker Containers and Docker Images in Docker Desktop - otherwise it'll keep running in the background
 
 
 ### **Imp, to save the changes of local repo (files) into GitHub Repository**
