@@ -30,6 +30,7 @@
 
 6. **API Error: Internal Server Error** - If you get this error in the frontend for every question in the LLM chat, then in the project folder in cmd,
                                             - 1. Type **docker ps**
+                                               - [**Dock
                                             - 2. Get the container ID(######) for the chat-backend image
                                             - 3. Now type **docker logs ######**
                                             - 4. You can check the error that causing the LLM with API error.
