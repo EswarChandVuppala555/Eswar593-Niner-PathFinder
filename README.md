@@ -27,8 +27,9 @@
     ```
 5. **Restaring Backend container**
    - After making changes to some backend code, use,
-       - docker compose restart chat-backend
-
+    ```bash
+    docker compose restart chat-backend
+    ```
 
 6. **Chat!** - To interact with the Streamlit: Open a web browser and navigate to [**localhost:8501**](localhost:8501)
 
