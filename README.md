@@ -25,10 +25,14 @@
     ```bash
     docker compose -f docker-compose.yml --env-file .env up -d --build
     ```
+5. **Restaring Backend container**
+   - After making changes to some backend code, use,
+       - docker compose restart chat-backend
 
-5. **Chat!** - To interact with the Streamlit: Open a web browser and navigate to [**localhost:8501**](localhost:8501)
 
-6. **API Error: Internal Server Error** - If you get this error in the frontend for every question in the LLM chat, then in the project folder in cmd,
+6. **Chat!** - To interact with the Streamlit: Open a web browser and navigate to [**localhost:8501**](localhost:8501)
+
+7. **API Error: Internal Server Error** - If you get this error in the frontend for every question in the LLM chat, then in the project folder in cmd,
     - 1 Type **docker ps**
     - 2 Get the container ID(######) for the chat-backend image
     - 3 Now type **docker logs ######**
