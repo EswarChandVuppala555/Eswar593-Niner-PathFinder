@@ -9,32 +9,35 @@
 | Course Subject and Title | Credits | Min. Grade | Major GPA | Prerequisites | Co-requisites | Important Notes |
 |--------------------------|---------|------------|-----------|---------------|--------------|----------------|
 | ENGR 1201 Intro to Engineering I | 2 | C | X | MATH 1241 | | |
-| CHEM 1251 Chemistry I | 3 | C | | | CHEM 1251L | GE; Complete MEGR 1100 **OR** CHEM 1251/1251L |
-| CHEM 1251L Chemistry Lab | 1 | C | | | CHEM 1251 | |
-| MEGR 1100 Fund Sci and Math | 4 | | | ENGR 1201 | | |
+| CHEM 1251 Chemistry I | 0 | C | | | CHEM 1251L | GE; Complete MEGR 1100 **OR** CHEM 1251/1251L |
+| CHEM 1251L Chemistry Lab | 0 | C | | | CHEM 1251 | |
+| MEGR 1100 Fund Sci and Math | 0 | | | ENGR 1201 | | |
 | MATH 1241 Calculus I | 3 | C | | MATH 1103 or Placement | | GE |
 | Science Elective | 3 | | | | | PHYS 1130, BIOL 1110, BIOL 2120, CHEM 1252 or GEOL 1200. A lab is not required. Biomedical Concentration should take BIOL 1110. |
+| XXXX 1501 Global Social Science | 3 | C | | | | |
 | Theme Course 1 | 3 | | | | | GE |
 
 ## Semester Two: (15/16 credit hours)
 
 | Course Subject and Title | Credits | Min. Grade | Major GPA | Prerequisites | Co-requisites | Important Notes |
 |--------------------------|---------|------------|-----------|---------------|--------------|----------------|
-| ENGR 1202 Intro to Engineering II | 2 | C | X | ENGR 1201, MATH 1241 | | |
+| ENGR 1202 Intro to Engineering II | 2 | C | X | MATH 1241,ENGR 1201 | | |
 | PHYS 2101 Physics I | 3 | C | | MATH 1241 | PHYS 2101L | GE |
 | PHYS 2101L Physics I Lab | 1 | C | | | PHYS 2101 | PHYS 1101L equivalent to PHYS 2101L |
 | MATH 1242 Calculus II | 3 | C | | MATH 1241 | | GE |
 | WRDS 1103/1104 Writing & Inquiry | 3/4 | C | | | | GE; Placement by First Year Writing |
+| XXXX 1502 Global Arts/Humanities | 3 | C | | | | |
 | Theme Course 2 | 3 | | | | | GE |
 
 ## Semester Three: (16/17 credit hours)
 
 | Course Subject and Title | Credits | Min. Grade | Major GPA | Prerequisites | Co-requisites | Important Notes |
 |--------------------------|---------|------------|-----------|---------------|--------------|----------------|
-| PHYS 2102 Physics II | 3 | C | | PHYS 2101, MATH 1242 | PHYS 2102L | |
+| PHYS 2102 Physics II | 3 | C | | PHYS 2101,MATH 1242 | PHYS 2102L | |
 | PHYS 2102L Physics II Lab | 1 | C | | | PHYS 2102 | PHYS 1102L equivalent to PHYS 2102L |
 | MEGR 2141 Engineering Mechanics I | 3 | C | X | PHYS 2101, MATH 1242 | | |
 | MATH 2171 Differential Equations | 3 | C | | MATH 1242 | | |
+| XXXX 1511 Local Social Science | 3 | C | | | | |
 | Theme Course 3 | 3 | | | | | GE |
 | CTCM 2530 Critical Thinking and Communication | 3 | | | WRDS 110x | | GE |
 | MEGR 2299 Intro to Motorsports Engineering | 1 | C | X | Admission to Motorsports | | Motorsports Engineering Concentration Only |
@@ -69,10 +72,10 @@
 | Course Subject and Title | Credits | Min. Grade | Major GPA | Prerequisites | Co-requisites | Important Notes |
 |--------------------------|---------|------------|-----------|---------------|--------------|----------------|
 | MEGR 3112 Thermodynamics II | 3 | | X | MEGR 3111 | | |
-| MEGR 3122 Dynamics II | 3 | | X | MEGR 3121, MEGR 2240, MATH 2171 | | |
+| MEGR 3122 Dynamics Systems II | 3 | | X | MEGR 3121, MEGR 2240, MATH 2171 | | |
 | MEGR 3114 Fluid Mechanics | 3 | C | X | MEGR 3121, MATH 2241 | | |
 | MEGR 3156 Design Project Lab II | 2 | C | X | ECGR 2161, MEGR 2144, MEGR 2156, MEGR 2180 | | |
-| MEGR 3116 Heat Transfer | 3 | | X | MATH 2171, MEGR 3111 | MEGR 3114 | MEGR 3116 may be taken in the summer after the 6th semester or moved to the 7th semester. |
+| MEGR 3116 Heat Transfer | 3 | | X | MATH 2171, MEGR 3111 | MEGR 3114 | MEGR 3116 may be taken in the summer after the 6th semester or moved to the 7th semester |
 | MEGR 3152 Mechanics & Materials Lab | 2 | | X | MEGR 2144, MEGR 3171L, MEGR 3161, MEGR 3121 | | |
 
 ## Semester Seven: (13 credit hours)

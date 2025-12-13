@@ -33,6 +33,7 @@ class Catalog_Menu_Options_Loader:
         self.df = pd.read_csv(metadata_file_path, encoding=encoding)
         # Limit to type == 'major'
         self.df = self.df[self.df['type'] == 'major'].copy()
+        print(f"Loaded {len(self.df)} rows from course_catalog.csv")
 
         # Back-compat mapping
         self.year_degree_major_conc_options = {}
@@ -47,6 +48,28 @@ class Catalog_Menu_Options_Loader:
         self._build_structures()
 
     # ---------------- helpers ----------------
+
+    def get_courses_for_program(self, year, degree_major, concentration=""):
+        """
+        Returns a list of courses for a specific catalog year, degree_major, and concentration.
+        Only returns rows of type='course'.
+        """
+        df_filtered = self.df[
+            (self.df["catalog_year"] == year) &
+            (self.df["degree_major"] == degree_major)
+        ]
+        if concentration:
+            df_filtered = df_filtered[df_filtered["concentration"] == concentration]
+
+        df_filtered = df_filtered[df_filtered["type"] == "course"]
+
+        # Return unique course names
+        col = next((c for c in df_filtered.columns if "course" in c.lower()), None)
+        if col:
+            return df_filtered[col].dropna().unique().tolist()
+        else:
+            print(f"⚠️ No course column found in data: {df_filtered.columns}")
+            return []
 
     def _load_program_code_map(self, path: str):
         """

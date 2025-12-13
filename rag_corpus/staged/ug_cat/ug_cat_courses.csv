@@ -1,0 +1,17 @@
+catalog_year,degree_major,major_name,concentration,course_name,course_code,credit_hours
+2022-2023,Bachelors,BSCPE,,ITSC 1212 - Introduction to Computer Science I,ITSC 1212,3
+2022-2023,Bachelors,BSCPE,Machine Learning,ITSC 1213 - Introduction to Computer Science II,ITSC 1213,3
+2022-2023,Bachelors,BSCPE,Machine Learning,ITSC 2175 - Logic and Algorithms,ITSC 2175,3
+2022-2023,Bachelors,CPE Computer Engineering,Machine Learning,ITSC 3216 - Artificial Intelligence,ITSC 3216,3
+2022-2023,Bachelors,CPE Computer Engineering,Machine Learning,ITSC 3160 - Database Design and Implementation,ITSC 3160,3
+2022-2023,Bachelors,CPE Computer Engineering,AI,ITSC 3216 - Artificial Intelligence,ITSC 3216,3
+2023,CPE Computer Engineering,CPE Computer Engineering,AI,TSC 4220 - Machine Learning,ITSC 4220,3
+2023,,BSEE,,ECGR 2111 - Circuits I,ECGR 2111,3
+2023,,BSEE,,ECGR 2155 - Instrumentation and Measurements,ECGR 2155,3
+2023,,BSEE,,ECGR 3121 - Signals and Systems,ECGR 3121,3
+2023,,BSEE,,ECGR 3131 - Electronics I,ECGR 3131,3
+2023,,BSEE,Power Systems,ECGR 4141 - Power Systems Analysis,ECGR 4141,3
+2023,,BSEE,Power Systems,ECGR 4143 - Electrical Machines,ECGR 4143,3
+2023,,BSCM,,CEGR 2144 - Construction Methods and Materials,CEGR 2144,3
+2023,,BSCM,,CEGR 3161 - Structural Analysis I,CEGR 3161,3
+2023,,BSCM,,CEGR 3252 - Construction Equipment and Procedures,CEGR 3252,3
