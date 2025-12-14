@@ -120,7 +120,8 @@ try:
     chromadb_client = chromadb.HttpClient(host=CHROMA_HOST, port=CHROMA_PORT)
 except Exception as e:
     logger.error(f"ChromaDB connection error: {e}")
-    logger.exception()
+    logger.exception(f"ChromaDB connection error: {e}")
+    chromadb_client = None 
 
 
 # STORAGE AND RETRIEVAL CONFIGURATION - TODO move this elsewhere
@@ -196,7 +197,12 @@ chatbot = Chatbot(
 
 @app.post("/chat-request", response_model=ChatResponse)
 async def chat_request(chat_request: ChatRequest):
-    """Process user prompt and return response"""
+    # temporary visibility
+    try:
+        pc = getattr(chat_request, "pursued_courses", [])
+    except Exception:
+        pc = []
+    logger.info(f"/chat-request pursued_courses: {len(pc)} items -> {pc[:5]}")
     return chatbot.chat(chat_request)
 
 @app.post("/submit-feedback", response_model=FeedbackResponse)
@@ -248,6 +254,57 @@ async def submit_feedback_endpoint(request: Request):
             message=f"Error logging feedback: {e}",
             error_code=500
         )
+
+
+@app.post("/upload-courses")
+async def upload_courses(request: Request):
+    """
+    Handle uploaded Excel/CSV of pursued courses from students.
+    """
+    import pandas as pd
+    from io import BytesIO
+
+    try:
+        form = await request.form()
+        upload_file = form.get("file")
+
+        if not upload_file:
+            logger.warning("No file uploaded.")
+            return {"status": "error", "message": "No file received"}
+
+        logger.info(f"Received file: {upload_file.filename} | Size: {upload_file.size} bytes")
+
+        # Read into DataFrame
+        df = pd.read_excel(BytesIO(await upload_file.read())) if upload_file.filename.endswith(".xlsx") else pd.read_csv(BytesIO(await upload_file.read()))
+
+        logger.info(f"File columns: {list(df.columns)} | Total rows: {len(df)}")
+
+        # Optionally save to disk
+        save_path = f"data/uploads/{upload_file.filename}"
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        df.to_csv(save_path, index=False)
+        logger.info(f"Saved uploaded file to {save_path}")
+
+        return {"status": "success", "message": f"Received {len(df)} rows from {upload_file.filename}"}
+
+    except Exception as e:
+        logger.error(f"Error processing uploaded file: {e}")
+        return {"status": "error", "message": str(e)}
+
+
+@app.get("/debug/last-upload")
+def debug_last_upload():
+    import glob
+    files = sorted(glob.glob("/app/data/uploads/*.csv"))
+    if not files:
+        return {"message": "No uploads yet"}
+    latest = files[-1]
+    import pandas as pd
+    df = pd.read_csv(latest)
+    sample = df.head(5).to_dict(orient="records")
+    return {"file": latest, "rows": len(df), "sample": sample}
+
+
 #     """Submit user feedback about the chatbot"""
 #     return process_feedback(feedback_request)
 
