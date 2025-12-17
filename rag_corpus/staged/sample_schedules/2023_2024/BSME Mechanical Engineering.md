@@ -13,7 +13,7 @@
 | CHEM 1251L Chemistry Lab | 0 | C | | | CHEM 1251 | |
 | MEGR 1100 Fund Sci and Math | 0 | | | ENGR 1201 | | |
 | MATH 1241 Calculus I | 3 | C | | MATH 1103 or Placement | | GE |
-| Science Elective | 3 | | | | | PHYS 1130, BIOL 1110, BIOL 2120, CHEM 1252 or GEOL 1200. A lab is not required. Biomedical Concentration should take BIOL 1110. |
+| Science Elective | 3 | | | | | PHYS 1130, BIOL 1110, BIOL 2120, CHEM 1252 or GEOL 1200. A lab is not required, Biomedical Concentration should take BIOL 1110 |
 | XXXX 1501 Global Social Science | 3 | C | | | | |
 | Theme Course 1 | 3 | | | | | GE |
 
