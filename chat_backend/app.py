@@ -1,9 +1,10 @@
 import os
 import logging
-from typing import Optional, List, Dict, Any
+from typing import Optional, Dict, Any
+from typing import List
 import csv
 from datetime import datetime
-from fastapi import Request
+from fastapi import Request, UploadFile, File
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -48,7 +49,7 @@ class FeedbackRequest(BaseModel):
     feedback_text: str = Field(..., min_length=0, max_length=1000)
     student_catalog_year: str = Field("", max_length=9)
     student_degree_program: str = Field("", max_length=100)
-    student_credits_earned: str = Field("", min_length=1, max_length=10)
+    student_credits_earned: str = Field("", min_length=0, max_length=30)
     
 class FeedbackResponse(BaseModel):
     error_code: int = 0
@@ -59,24 +60,35 @@ class FeedbackResponse(BaseModel):
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+FEEDBACK_FILE = "/app/data/feedback_log.csv"  # matches your docker volume: ./data:/app/data
 
-FEEDBACK_FILE = "data/feedback_log.csv"
+FEEDBACK_FIELDS = [
+    "timestamp",
+    "feedback_type",
+    "feedback_reason",
+    "feedback_text",
+    "student_catalog_year",
+    "student_degree_program",
+    "student_credits_earned",
+    "pursued_courses",
+    "last_chat_response",
+    "conversation_history",
+]
 
-# Ensure the CSV exists with headers
-if not os.path.exists(FEEDBACK_FILE):
-    with open(FEEDBACK_FILE, mode="w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow([
-            "timestamp",
-            "feedback_type",
-            "feedback_reason",
-            "feedback_text",
-            "student_catalog_year",
-            "student_degree_program",
-            "student_credits_earned",
-            "chat_response",
-            "conversation_history"
-        ])
+os.makedirs(os.path.dirname(FEEDBACK_FILE), exist_ok=True)
+
+def _ensure_feedback_file():
+    if not os.path.exists(FEEDBACK_FILE):
+        with open(FEEDBACK_FILE, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(
+                f,
+                fieldnames=FEEDBACK_FIELDS,
+                quoting=csv.QUOTE_ALL,           # <-- add this
+            )
+            writer.writeheader()
+
+_ensure_feedback_file()
+
 
 # Initialize the FastAPI app
 app = FastAPI(
@@ -105,12 +117,12 @@ GENERATION_MODEL_ID = os.getenv('GENERATION_MODEL_ID')
 try:
     embedding_client = OpenAI(api_key=OPENAI_API_KEY)
 except Exception as e:
-    logger.error(f"Embedding client connection error: {e}")
+    logger.exception(f"Embedding client connection error: {e}")
 
 try:     
     generation_client = OpenAI(api_key=OPENAI_API_KEY)
 except Exception as e:
-    logger.error(f"Generative client connection error: {e}")
+    logger.exception(f"Generative client connection error: {e}")
 
 # CHROMA DATABASE CONNECTION
 time.sleep(8)  # Wait for ChromaDB to start up
@@ -119,9 +131,8 @@ CHROMA_HOST = os.getenv('CHROMA_HOST')
 try:
     chromadb_client = chromadb.HttpClient(host=CHROMA_HOST, port=CHROMA_PORT)
 except Exception as e:
-    logger.error(f"ChromaDB connection error: {e}")
     logger.exception(f"ChromaDB connection error: {e}")
-    chromadb_client = None 
+    logger.exception()
 
 
 # STORAGE AND RETRIEVAL CONFIGURATION - TODO move this elsewhere
@@ -197,113 +208,95 @@ chatbot = Chatbot(
 
 @app.post("/chat-request", response_model=ChatResponse)
 async def chat_request(chat_request: ChatRequest):
-    # temporary visibility
-    try:
-        pc = getattr(chat_request, "pursued_courses", [])
-    except Exception:
-        pc = []
-    logger.info(f"/chat-request pursued_courses: {len(pc)} items -> {pc[:5]}")
+    """Process user prompt and return response"""
     return chatbot.chat(chat_request)
 
 @app.post("/submit-feedback", response_model=FeedbackResponse)
 async def submit_feedback_endpoint(request: Request):
     """Submit user feedback about the chatbot"""
     try:
+        _ensure_feedback_file()
+
         data = await request.json()
 
         feedback_type = data.get("feedback_type", "")
         feedback_reason = data.get("feedback_reason", "")
-        feedback_text = data.get("feedback_text", "")
+        feedback_text = (data.get("feedback_text", "") or "").replace("\r\n", " ").replace("\n", " ")
         catalog_year = data.get("student_catalog_year", "")
         degree_program = data.get("student_degree_program", "")
         credits = data.get("student_credits_earned", "")
-        conversation_history = str(data.get("conversation_history", ""))
-        chat_response = ""
+        pursued_courses = str(data.get("pursued_courses", []))
 
         # Extract last assistant reply (if available)
-        if isinstance(data.get("conversation_history"), list):
-            for msg in reversed(data["conversation_history"]):
+        last_chat_response = ""
+        conv_hist = data.get("conversation_history", [])
+        if isinstance(conv_hist, list):
+            for msg in reversed(conv_hist):
                 if msg.get("role") == "assistant":
-                    chat_response = msg.get("content", "")
+                    last_chat_response = (msg.get("content", "") or "").replace("\r\n", " ").replace("\n", " ")
                     break
 
-        # Append feedback to CSV
-        with open(FEEDBACK_FILE, mode="a", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
-            writer.writerow([
-                datetime.utcnow().isoformat(),
-                feedback_type,
-                feedback_reason,
-                feedback_text,
-                catalog_year,
-                degree_program,
-                credits,
-                chat_response,
-                conversation_history
-            ])
+        # Serialize conversation history compactly (single line)
+        conversation_history = ""
+        if isinstance(conv_hist, list):
+            try:
+                conversation_history = "; ".join(
+                    f"{m.get('role','')}: {(m.get('content','') or '').replace(chr(10), ' ').replace(chr(13), ' ')}"
+                    for m in conv_hist
+                )
+            except Exception:
+                conversation_history = str(conv_hist)
+
+        row = {
+            "timestamp": datetime.utcnow().isoformat(),
+            "feedback_type": feedback_type,
+            "feedback_reason": feedback_reason,
+            "feedback_text": feedback_text,
+            "student_catalog_year": catalog_year,
+            "student_degree_program": degree_program,
+            "student_credits_earned": credits,
+            "pursued_courses": pursued_courses,
+            "last_chat_response": last_chat_response,
+            "conversation_history": conversation_history,
+        }
+
+        with open(FEEDBACK_FILE, "a", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=FEEDBACK_FIELDS,quoting=csv.QUOTE_ALL,)
+            # header already ensured; just write the row
+            writer.writerow(row)
 
         return FeedbackResponse(
             status="success",
             message="Feedback logged successfully",
-            error_code=0
+            error_code=0,
         )
     except Exception as e:
-        logger.error(f"Error logging feedback: {e}")
+        logger.exception(f"Error logging feedback: {e}")
         return FeedbackResponse(
             status="error",
             message=f"Error logging feedback: {e}",
-            error_code=500
+            error_code=500,
         )
 
-
 @app.post("/upload-courses")
-async def upload_courses(request: Request):
-    """
-    Handle uploaded Excel/CSV of pursued courses from students.
-    """
-    import pandas as pd
-    from io import BytesIO
-
+async def upload_courses(file: UploadFile = File(...)):
+    """Handle uploaded course file"""
     try:
-        form = await request.form()
-        upload_file = form.get("file")
+        logger.info(f"📂 Received upload: {file.filename}")
+        content = await file.read()
+        logger.info(f"File size: {len(content)} bytes")
 
-        if not upload_file:
-            logger.warning("No file uploaded.")
-            return {"status": "error", "message": "No file received"}
-
-        logger.info(f"Received file: {upload_file.filename} | Size: {upload_file.size} bytes")
-
-        # Read into DataFrame
-        df = pd.read_excel(BytesIO(await upload_file.read())) if upload_file.filename.endswith(".xlsx") else pd.read_csv(BytesIO(await upload_file.read()))
-
-        logger.info(f"File columns: {list(df.columns)} | Total rows: {len(df)}")
-
-        # Optionally save to disk
-        save_path = f"data/uploads/{upload_file.filename}"
+        # Save file locally (temporary)
+        save_path = f"/app/data/uploads/{file.filename}"
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
-        df.to_csv(save_path, index=False)
-        logger.info(f"Saved uploaded file to {save_path}")
+        with open(save_path, "wb") as f:
+            f.write(content)
 
-        return {"status": "success", "message": f"Received {len(df)} rows from {upload_file.filename}"}
-
+        logger.info(f"✅ Saved uploaded file to {save_path}")
+        return {"status": "success", "message": f"File '{file.filename}' uploaded successfully."}
     except Exception as e:
-        logger.error(f"Error processing uploaded file: {e}")
+        logger.exception(f"❌ Upload failed: {e}")
         return {"status": "error", "message": str(e)}
-
-
-@app.get("/debug/last-upload")
-def debug_last_upload():
-    import glob
-    files = sorted(glob.glob("/app/data/uploads/*.csv"))
-    if not files:
-        return {"message": "No uploads yet"}
-    latest = files[-1]
-    import pandas as pd
-    df = pd.read_csv(latest)
-    sample = df.head(5).to_dict(orient="records")
-    return {"file": latest, "rows": len(df), "sample": sample}
-
 
 #     """Submit user feedback about the chatbot"""
 #     return process_feedback(feedback_request)
