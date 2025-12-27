@@ -3,9 +3,13 @@ import time
 import re
 from typing import List, Dict, Set, Any
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
+from pydantic import Field
 
-from src.retrieval import openai_extract_vector, vector_query, load_courses
+from src.retrieval import openai_extract_vector
+
+
+from src.retrieval import vector_query, load_courses
 from src.retrieval import rerank_and_filter_candidates  # currently unused, but keep for future work
 
 
@@ -123,14 +127,14 @@ Important constraints for the table:
 # API Models for Chatbot Requests and Responses
 # ----------------------------------------------------
 class ChatRequest(BaseModel):
-    conversation_history : List
+    conversation_history : List = Field(default_factory=list)
     user_prompt_text: str = Field(..., min_length=1, max_length=1000)
     student_catalog_year: str = Field(..., min_length=1, max_length=9)
     student_degree_program: str = Field(..., min_length=1, max_length=120)
     # allow empty string:
-    student_credits_earned: str = Field(..., min_length=0, max_length=40)
-    pursued_courses: List[str] = []
-    pursued_courses_detailed: List[Dict[str, str]] = []  # {course_code, course_name, grade}
+    student_credits_earned: str = Field("", min_length=0, max_length=40)
+    pursued_courses: List[str] = Field(default_factory=list)
+    pursued_courses_detailed: List[Dict[str, str]] = Field(default_factory=list)  # {course_code, course_name, grade}
 
 
 class ChatResponse(BaseModel):
@@ -138,7 +142,7 @@ class ChatResponse(BaseModel):
     chat_response_content: str = Field(..., min_length=1, max_length=10000)
     analytical_summary: str = Field(..., min_length=1, max_length=10000)
     information_requests: str = Field(..., min_length=0, max_length=1000)
-    retrieved_context: Dict[str, List]
+    retrieved_context: Dict[str, List] = Field(default_factory=dict)
     flattened_context: str = Field(..., min_length=0, max_length=120000)
     planning_generation_time_required: float = Field(..., ge=0)
     retrieval_time_required: float = Field(..., ge=0)
@@ -149,7 +153,7 @@ class ChatResponse(BaseModel):
     chat_response_input_tokens: int = Field(..., ge=0)
     chat_response_output_tokens: int = Field(..., ge=0)
     # Clean structured suggestions for frontend/export
-    suggested_courses: List[Dict[str, str]] = []   # [{"course_code": "...", "course_name": "...", "notes": "..."}]
+    suggested_courses: List[Dict[str, str]] = Field(default_factory=list)   # [{"course_code": "...", "course_name": "...", "notes": "..."}]
 
     # 🔹 NEW: markdown export for this single prompt/answer
     export_markdown: str = ""
@@ -248,15 +252,17 @@ class Chatbot:
             return True  # conservative
 
         passed_codes = {
-            (r.get("course_code", "") or "").upper().strip()
+            self._norm_code(r.get("course_code", ""))
             for r in detailed
             if _is_pass(r.get("grade", ""))
         }
+
         failed_codes = {
-            (r.get("course_code", "") or "").upper().strip()
+            self._norm_code(r.get("course_code", ""))
             for r in detailed
             if not _is_pass(r.get("grade", ""))
         }
+
 
         # Prepare system context for the LLM
         student_context: List[str] = []
@@ -389,18 +395,45 @@ class Chatbot:
             self.logger.exception("Failed to parse suggested courses table.")
             parsed_from_llm = []
 
-        # Enforce prerequisite rules on whatever the LLM suggested
-        if parsed_from_llm:
-            filtered_llm = self._filter_suggestions_by_prereqs(
-                parsed_from_llm,
-                passed_codes=passed_codes,
-                failed_codes=failed_codes,
-            )
-        else:
-            filtered_llm = []
+        # 1) Filter LLM table suggestions by prerequisites (retakes allowed)
+        filtered_llm = self._filter_suggestions_by_prereqs(
+            parsed_from_llm,
+            passed_codes=passed_codes,
+            failed_codes=failed_codes,
+        )
 
-        # Prefer filtered table; if empty, fall back to structured engine
+        # 2) Build canonical course-name map (catalog JSON first, program markdown fallback)
+        name_map = self._build_canonical_course_name_map(
+            catalog_year=chat_request.student_catalog_year,
+            flattened_context=flattened_context,
+        )
+
+        def _apply_names(rows):
+            fixed = []
+            for r in (rows or []):
+                code = self._norm_code(r.get("course_code") or "")
+                name = (r.get("course_name") or "").strip()
+                canonical = name_map.get(code)
+                if canonical:
+                    name = canonical
+
+                fixed.append({
+                    "course_code": code,
+                    "course_name": name,
+                    "notes": (r.get("notes") or "").strip(),
+                })
+            return fixed
+
+
+
+        # 3) Apply canonical names
+        filtered_llm = _apply_names(filtered_llm)
+        structured_suggestions = _apply_names(structured_suggestions)
+
+        # 4) Final fallback decision
         final_suggestions = filtered_llm or structured_suggestions
+
+
 
 
         # --- Build Markdown export for this prompt (for professor + frontend) ---
@@ -553,7 +586,7 @@ class Chatbot:
                 self.STORAGE_RETRIEVAL_MODE
             ]
             planning_pattern_match = bool(
-                re.match(pattern, planning_response_content, re.DOTALL)
+                re.search(pattern, planning_response_content, re.DOTALL)
             )
 
             if planning_pattern_match:
@@ -647,16 +680,26 @@ class Chatbot:
 
         # Flatten the retrieved context into a single string
         flattened_context = student_info_from_ui_text
+
         for information_type_tag, information in retrieved_context.items():
-            flattened_context += f"#{information_type_tag} \n"
-            for i in range(len(information)):
-                if isinstance(information[i], str):
-                    flattened_context += f"{information[i]}\n\n"
-                elif isinstance(information[i], dict):
-                    flattened_context += f"{str(information[i])}\n\n"
+            # information_type_tag is something like "<Semantic_Request_Courses>"
+            tag_name = str(information_type_tag).strip().strip("<>").strip("/")
+
+            # Proper open tag
+            flattened_context += f"\n### Context: {tag_name}\n<{tag_name}>\n"
+
+            # Content
+            for item in (information or []):
+                if isinstance(item, str):
+                    flattened_context += f"{item}\n\n"
+                elif isinstance(item, dict):
+                    flattened_context += f"{str(item)}\n\n"
                 else:
-                    flattened_context += f"{str(information[i])}\n\n"
-            flattened_context += f"#</{information_type_tag}>\n\n"
+                    flattened_context += f"{str(item)}\n\n"
+
+            # Proper close tag
+            flattened_context += f"</{tag_name}>\n"
+
 
         self.logger.info(
             f"\n  Flattened context characters: {len(flattened_context)}, "
@@ -699,8 +742,7 @@ class Chatbot:
                     "rag_corpus",
                     "sample_schedules",
                     student_catalog_year,
-                    student_degree_program,
-                    ".md",
+                    f"{student_degree_program}.md"
                 )
 
                 if os.path.exists(sample_schedule_file_path):
@@ -979,6 +1021,53 @@ class Chatbot:
                 dedup[code] = c
 
         return list(dedup.values())
+    
+    # use the SAME regex as _norm_code
+    COURSE_CODE_RE = re.compile(r"\b([A-Z]{2,6})\s*([0-9]{3,4})\b", re.I)
+
+    def _extract_course_names_from_program_markdown(self, markdown_text: str) -> dict[str, str]:
+        """
+        Extract course_code -> course_name from markdown tables like:
+        | XXXX 1501 Global Social Science | 3 | C | ... |
+        """
+        mapping: dict[str, str] = {}
+        if not markdown_text:
+            return mapping
+
+        for line in markdown_text.splitlines():
+            line = line.strip()
+            if not line.startswith("|"):
+                continue
+
+            cells = [c.strip() for c in line.strip("|").split("|")]
+            if not cells:
+                continue
+
+            first_cell = cells[0]  # "XXXX 1501 Global Social Science"
+
+            # Find a course code inside the first cell
+            m = self.COURSE_CODE_RE.search(first_cell.upper())
+            if not m:
+                continue
+
+            # Build normalized code like "XXXX 1501" (works for 2-6 letter departments too)
+            dept = m.group(1).upper()
+            num = m.group(2)
+            code = f"{dept} {num}"
+
+            # Everything AFTER the matched code is the course name
+            name = first_cell[m.end():].strip()
+
+            # Skip obvious header rows
+            if not name or name.lower() in {"course", "course code"}:
+                continue
+
+            mapping[code] = name
+
+        return mapping
+
+
+
 
     def _keywords_from_query(self, q: str):
         toks = [t for t in re.split(r"[^a-z0-9+]+", q) if len(t) >= 3]
@@ -1002,63 +1091,83 @@ class Chatbot:
 
     # ---------------------------------------------------------------
     # ---------------------- PREREQ EVALUATION ----------------------
-    def _missing_prereqs(self, course_code: str, passed_codes: set) -> list:
-        """
-        Look up the course in the catalog (via _iter_catalog_courses) and
-        return the list of *missing* prerequisite codes, i.e., those that
-        are NOT in passed_codes.
-
-        This is robust because _iter_catalog_courses() already normalizes rows.
-        """
-        target = (course_code or "").upper().strip()
+    def _missing_prereqs(self, course_code: str, passed_codes: set) -> list[str]:
+        target = self._norm_code(course_code)
         if not target:
             return []
 
-        prereqs: list[str] = []
+        # 1) Manual overrides take precedence
+        override = self.prereq_overrides.get(target)
+        if override is not None:
+            prereqs = [self._norm_code(p) for p in override if str(p).strip()]
+            passed_norm = {self._norm_code(c) for c in (passed_codes or set())}
+            return [p for p in prereqs if p and p not in passed_norm]
 
+        # 2) Otherwise: read from catalog
+        prereqs: list[str] = []
         try:
-            # We scan across all catalog entries. If later you want
-            # catalog-year-specific prereqs, you can call:
-            #   for row in self._iter_catalog_courses(catalog_year=some_year):
             for row in self._iter_catalog_courses():
                 if not isinstance(row, dict):
                     continue
-
-                code = (row.get("course_code") or "").upper().strip()
+                code = self._norm_code(row.get("course_code") or "")
                 if code != target:
                     continue
 
                 raw = row.get("prerequisites") or row.get("prereqs") or []
-
                 if isinstance(raw, str):
-                    prereqs = [
-                        p.strip().upper()
-                        for p in raw.split(",")
-                        if p.strip()
-                    ]
+                    prereqs = [self._norm_code(p) for p in raw.split(",") if p.strip()]
                 elif isinstance(raw, (list, tuple, set)):
-                    prereqs = [
-                        str(p).strip().upper()
-                        for p in raw
-                        if str(p).strip()
-                    ]
+                    prereqs = [self._norm_code(p) for p in raw if str(p).strip()]
                 else:
                     prereqs = []
-
-                # Found the matching course, no need to keep looping.
                 break
-
         except Exception as e:
-            # Log and fail gracefully (treat as no prereqs known)
             self.logger.exception(f"_missing_prereqs failed for {course_code}: {e}")
             return []
 
-        # Normalize passed codes
-        passed_norm = {(c or "").upper().strip() for c in passed_codes}
+        passed_norm = {self._norm_code(c) for c in (passed_codes or set())}
+        return [p for p in prereqs if p and p not in passed_norm]
 
-        # Any prereq not in passed_norm is "missing"
-        missing = [p for p in prereqs if p not in passed_norm]
-        return missing
+    
+    def _build_canonical_course_name_map(self, catalog_year: str, flattened_context: str) -> dict[str, str]:
+        """
+        Priority:
+        1) Course catalog (JSON) via _iter_catalog_courses(catalog_year)
+        2) Program markdown tables parsed from flattened_context (catches XXXX courses)
+        """
+        name_map: dict[str, str] = {}
+
+        # 1) From course catalog JSON (best)
+        for row in self._iter_catalog_courses(catalog_year=catalog_year):
+            code = self._norm_code(row.get("course_code") or "")
+            name = (row.get("course_name") or "").strip()
+            if code and name:
+                name_map[code] = name
+
+
+        # 2) From program markdown tables present in flattened_context (fallback)
+        # flattened_context contains the program markdown you read from rag_corpus/.../programs/*.md
+        prog_map = self._extract_course_names_from_program_markdown(flattened_context or "")
+        for code, name in prog_map.items():
+            # Only fill if missing, so catalog JSON wins
+            if code not in name_map and name:
+                name_map[code] = name
+
+        return name_map
+    
+
+
+    def _norm_code(self, code: str) -> str:
+        s = (code or "").upper().strip()
+        m = self.COURSE_CODE_RE.search(s)
+        if not m:
+            return ""
+        dept, num = m.group(1).upper(), m.group(2)
+        return f"{dept} {num}"
+
+
+
+
 
     def _filter_suggestions_by_prereqs(
         self,
@@ -1076,25 +1185,26 @@ class Chatbot:
         """
         filtered: List[Dict[str, str]] = []
 
+        passed_norm = {self._norm_code(c) for c in (passed_codes or set())}
+        failed_norm = {self._norm_code(c) for c in (failed_codes or set())}
+
         for row in suggestions:
-            code = (row.get("course_code") or "").upper().strip()
+            code = self._norm_code(row.get("course_code") or "")
             if not code:
                 continue
 
-            # Always allow a *retake* course (previously failed/withdrawn)
-            if code in failed_codes:
-                filtered.append(row)
+            if code in failed_norm:
+                filtered.append({**row, "course_code": code})
                 continue
 
-            # For new courses: require all prereqs to be passed
-            missing = self._missing_prereqs(code, passed_codes)
+            missing = self._missing_prereqs(code, passed_norm)
             if missing:
                 self.logger.info(
                     f"Dropping {code} from suggested list; missing prerequisites: {missing}"
                 )
                 continue
 
-            filtered.append(row)
+            filtered.append({**row, "course_code": code})
 
         return filtered
 
@@ -1136,25 +1246,17 @@ class Chatbot:
                     ]
 
                 for _, row in df.iterrows():
-                    code = str(row.get("course_code", "")).strip().upper()
+                    code = self._norm_code(row.get("course_code",""))
                     name = str(row.get("course_name", "")).strip()
 
-                    raw = row.get("prerequisites", [])
+                    raw = row.get("prerequisites", []) or row.get("prereqs", [])
                     if isinstance(raw, str):
-                        prereqs = [
-                            p.strip().upper()
-                            for p in raw.split(",")
-                            if p.strip()
-                        ]
+                        prereqs = [self._norm_code(p) for p in raw.split(",") if p.strip()]
                     elif isinstance(raw, (list, tuple, set)):
-                        prereqs = [
-                            str(p).strip().upper()
-                            for p in raw
-                            if str(p).strip()
-                        ]
+                        prereqs = [self._norm_code(str(p)) for p in raw if str(p).strip()]
                     else:
                         prereqs = []
-
+                       
                     yield {
                         "course_code": code,
                         "course_name": name,
@@ -1179,24 +1281,17 @@ class Chatbot:
                     if row_year and row_year != str(catalog_year).strip():
                         continue
 
-                code = str(row.get("course_code", "")).strip().upper()
+                code = self._norm_code(row.get("course_code") or "")
                 name = str(row.get("course_name", "")).strip()
 
-                raw = row.get("prerequisites", [])
+                raw = row.get("prerequisites", []) or row.get("prereqs", [])
                 if isinstance(raw, str):
-                    prereqs = [
-                        p.strip().upper()
-                        for p in raw.split(",")
-                        if p.strip()
-                    ]
+                    prereqs = [self._norm_code(p) for p in raw.split(",") if p.strip()]
                 elif isinstance(raw, (list, tuple, set)):
-                    prereqs = [
-                        str(p).strip().upper()
-                        for p in raw
-                        if str(p).strip()
-                    ]
+                    prereqs = [self._norm_code(p) for p in raw if str(p).strip()]
                 else:
                     prereqs = []
+
 
                 yield {
                     "course_code": code,
@@ -1227,29 +1322,44 @@ class Chatbot:
         - ignores failed_codes (retake vs new is handled by the LLM)
         - only uses the selected catalog_year if the catalog data supports it
         """
+        failed_norm = {self._norm_code(c) for c in (failed_codes or set())}
+        retake_rows = []
+
+        for code in sorted(failed_norm):
+            if code:
+                # Name resolution will happen later via name_map anyway
+                retake_rows.append({"course_code": code, "course_name": ""})
+
         suggestions: List[Dict[str, str]] = []
 
         # Iterate over catalog entries for this catalog_year (if filter is available)
+        passed_norm = {self._norm_code(c) for c in (passed_codes or set())}
+
         for row in self._iter_catalog_courses(catalog_year):
-            code = row["course_code"]
-            name = row["course_name"]
-            prereqs = row["prerequisites"]
+            code = self._norm_code(row.get("course_code") or "")
+            name = (row.get("course_name") or "").strip()
+            prereqs = [self._norm_code(p) for p in (row.get("prerequisites") or []) if str(p).strip()]
 
             if not code:
                 continue
-
-            # Already passed? skip
-            if code in passed_codes:
+            if code in passed_norm:
+                continue
+            if prereqs and not set(prereqs).issubset(passed_norm):
                 continue
 
-            # Prereqs not satisfied? skip
-            if prereqs and not set(prereqs).issubset(passed_codes):
-                continue
+            suggestions.append({"course_code": code, "course_name": name})
 
-            suggestions.append({
-                "course_code": code,
-                "course_name": name,
-            })
+        suggestions = retake_rows + suggestions
+        # de-dupe by course_code preserving order
+        seen = set()
+        deduped = []
+        for r in suggestions:
+            c = r["course_code"]
+            if c and c not in seen:
+                seen.add(c)
+                deduped.append(r)
+        return deduped[:max_results]
+
 
         # simple deterministic ordering: alphabetic by code
         suggestions.sort(key=lambda r: r["course_code"])
