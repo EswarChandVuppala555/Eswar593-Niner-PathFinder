@@ -79,8 +79,10 @@ git pull → edit → git add → git commit → git push → Good
 ```
 ### Docker-Compose Containers 
 For going into Docker container in the power shell use this code line in the power shell,
+    ```bash
     docker compose exec chat-backend sh
-
+    ```
+    
 The Docker deployment consists of four containers:
 
 - **chat_backend** - FastAPI interface that handles chat requests, coordinating planning, information retrieval, and generation tasks and providing responses to the frontend (or evaluation scripts)  
