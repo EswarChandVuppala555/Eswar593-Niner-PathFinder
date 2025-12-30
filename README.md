@@ -78,11 +78,11 @@ git pull → edit → git add → git commit → git push → Good
  ├─ **/staged** - contains fully-processed documents staged for production.  NOTE: In production, the Dockerfiles copy this folder or certain contents to their respective /app/rag_corpus folders, omitting "staged".  The entire folder is provided to the backend and to the Chroma loader, while the frontend takes only enough information to populate dropdown menus.
 ```
 ### Docker-Compose Containers 
-For going into Docker container in the power shell use this code line in the power shell:
+For getting into Docker container in the power shell use this code line in the power shell:
 
-    ```bash
+    
     docker compose exec chat-backend sh
-    ```
+    
     
 The Docker deployment consists of four containers:
 
