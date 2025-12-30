@@ -79,6 +79,7 @@ git pull → edit → git add → git commit → git push → Good
 ```
 ### Docker-Compose Containers 
 For going into Docker container in the power shell use this code line in the power shell:
+
     ```bash
     docker compose exec chat-backend sh
     ```
