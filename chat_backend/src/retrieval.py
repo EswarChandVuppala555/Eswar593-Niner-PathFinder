@@ -62,7 +62,7 @@ def _extract_code_and_title_from_raw(raw: str) -> (str, str):
         "ENGR 1202 Intro to Engineering II | 2 | C | X | MATH 1241, ENGR 1201 |"
 
     Strategy:
-    - Find first pattern of 2–4 letters + 3–4 digits (course code).
+    - Find first pattern of 2–6 letters + 3–4 digits (course code).
     - Course title is the text immediately after that, up to the next '|'.
     """
     if not raw:
@@ -70,16 +70,16 @@ def _extract_code_and_title_from_raw(raw: str) -> (str, str):
 
     text = raw.strip()
     # Find something like ENGR 1202 or MATH1241
-    m = re.search(r"\b([A-Z]{2,4}\s*\d{3,4})\b", text)
+    m = re.search(r"\b([A-Z]{2,6}\s*\d{3,4})\b", text)
     if not m:
         return "", ""
 
-    code = m.group(1).strip().upper()
+    code = re.sub(r"\s+", " ", m.group(1).strip().upper())
     tail = text[m.end():]  # everything after the code
     # Stop at first '|' if present
     if "|" in tail:
         tail = tail.split("|", 1)[0]
-    title = tail.strip()
+    title = re.sub(r"^[\.\s]+", "", tail.strip())
     return code, title
 
 
@@ -117,15 +117,17 @@ def normalize_catalog_row(
             name = parsed_title
 
     if code:
-        out["course_code"] = code.upper()
+        out["course_code"] = re.sub(r"\s+", " ", code.strip().upper())
 
     # 2) Course name
     if name:
-        out["course_name"] = name
+        clean_name = re.sub(r"^[\.\s]+", "", name.strip())
+        out["course_name"] = clean_name
 
     # 3) Catalog year
     out["catalog_year"] = str(catalog_year)
 
+    
     # 4) Prerequisites → list of codes
     prereq_raw = meta.get("prerequisites") or meta.get("prereqs") or ""
     prereq_list: List[str] = []
@@ -139,28 +141,57 @@ def normalize_catalog_row(
 
     for p in pieces:
         up = p.upper()
-        # Try to extract a clean course code from things like "MATH 1241 (C or better)"
-        m = re.search(r"([A-Z]{2,4}\s*\d{3,4})", up)
+        m = re.search(r"([A-Z]{2,6}\s*\d{3,4}[A-Z]?)", up)
         if m:
-            prereq_list.append(m.group(1).strip())
-        else:
-            # As a fallback, keep the whole token
-            prereq_list.append(up)
+            prereq_code = re.sub(r"\s+", " ", m.group(1).strip().upper())
+            prereq_list.append(prereq_code)
 
-    out["prerequisites"] = prereq_list
+    # fallback: only use raw content if metadata had no prereqs
+    if not prereq_list and raw_content:
+        prereq_list = _extract_prereqs_from_text(raw_content)
+
+    out["prerequisites"] = list(dict.fromkeys(prereq_list))
     return out
 
+def _extract_prereqs_from_text(raw: str) -> List[str]:
+    if not raw:
+        return []
 
-def load_courses(logger) -> Dict[str, Dict[str, Any]]:
+    text = raw.upper()
+    prereq_section = ""
+
+    patterns = [
+        r"PREREQUISITES?:\s*(.*)",
+        r"PREREQ(?:UISITE)?S?\s*[:\-]\s*(.*)",
+    ]
+
+    for pat in patterns:
+        m = re.search(pat, text, re.I)
+        if m:
+            prereq_section = m.group(1)
+            break
+
+    if not prereq_section:
+        return []
+
+    codes = []
+    for m in re.finditer(r"\b([A-Z]{2,6})\s*([0-9]{3,4}[A-Z]?)\b", prereq_section):
+        code = f"{m.group(1)} {m.group(2)}"
+        if code not in codes:
+            codes.append(code)
+
+    return codes
+
+def load_courses(logger) -> List[Dict[str, Any]]:
     """
     Load ALL undergrad catalog course JSON files under:
 
         rag_corpus/ug_cat/<catalog_year>/courses/*.json
 
-    Returns a dict keyed by COURSE_CODE (upper-case), value is the normalized row.
+    Returns a list of normalized course rows across all catalog years.
     """
     base_dir = os.path.join("rag_corpus", "ug_cat")
-    courses: Dict[str, Dict[str, Any]] = {}
+    courses: List[Dict[str, Any]] = []
 
     if not os.path.isdir(base_dir):
         logger.warning(f"load_courses: base directory not found: {base_dir}")
@@ -213,7 +244,7 @@ def load_courses(logger) -> Dict[str, Dict[str, Any]]:
                     # Without a code we can't really use it for prereq filtering, skip.
                     continue
 
-                courses[code] = row
+                courses.append(row)
                 file_count += 1
                 total_count += 1
 
@@ -222,7 +253,8 @@ def load_courses(logger) -> Dict[str, Dict[str, Any]]:
             )
 
     logger.info(f"Total courses loaded across all years: {total_count}")
-    logger.info(f"Unique course codes in catalog: {len(courses)}")
+    logger.info(f"Total normalized catalog rows: {len(courses)}")
+    logger.info(f"Unique course codes in catalog: {len({r.get('course_code') for r in courses if r.get('course_code')})}")
     return courses
 
 

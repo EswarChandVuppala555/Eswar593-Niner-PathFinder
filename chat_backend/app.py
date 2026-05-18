@@ -15,6 +15,7 @@ from chromadb import Client
 
 from src.chatbot import Chatbot, ChatRequest, ChatResponse
 
+
 # from chromadb.config import Settings
 # from chromadb.utils import embedding_functions
 # from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
@@ -74,6 +75,7 @@ FEEDBACK_FIELDS = [
     "last_chat_response",
     "conversation_history",
 ]
+logger.info(f"OPENAI_API_KEY loaded: {'YES' if os.getenv('OPENAI_API_KEY') else 'NO'}")
 
 os.makedirs(os.path.dirname(FEEDBACK_FILE), exist_ok=True)
 
