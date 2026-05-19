@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 streamlit==1.42.1
 pandas==2.2.3
 chardet==5.2.0
 matplotlib==3.9.2
 plotly==5.24.1
 openpyxl==3.1.5
+=======
+streamlit==1.42.1
+pandas==2.2.3
+chardet==5.2.0
+matplotlib==3.9.2
+plotly==5.24.1
+openpyxl==3.1.5
+>>>>>>> 78649f519af039264048d2e2e17f8f354f3c13c6
 openpyxl>=3.1
