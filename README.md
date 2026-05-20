@@ -45,7 +45,7 @@
 8. **Shutdown/cleanup** - Remember to shut down and clean up by deleting your Docker Containers and Docker Images in Docker Desktop - otherwise it'll keep running in the background
 
 
-### ****Imp**** To save the changes of local repo (files) into GitHub Repository
+### ***Imp*** To save the changes of local repo (files) into GitHub Repository
 - 1st step - Go to Git Bash application(app) and in it, go into the project folder (niner-pathfinder)
 - If you have spaces in the file name then put double quotes for the complete file.
 1. git pull origin main   ------- This makes sure your local copy has the latest changes from GitHub before you add your own edits. (If you’re working on multiple machines or with teammates)
