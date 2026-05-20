@@ -64,6 +64,7 @@ So from now on, the cycle is:
 git pull → edit → git add → git commit → git push → Good 
 
 ## Project Structure
+(Look into the report that was made for clear and detailed KT about the whole project repository)
 
 ### Folders
 ```
